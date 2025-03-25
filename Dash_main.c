@@ -1,12 +1,15 @@
 #include <xc.h>
 #include "i2c.h"
 #include "can.h"
+#include <stdlib.h>
 
 #include <pic18f47q84.h>
 
+#define _XTAL_FREQ 4000000
+
 void main(void) {
     OSCCON1 = 0x60;  // HFINTOSC, no divider
-    OSCFRQ = 0x08;   // 64 MHz
+    OSCFRQ = 0x02;   // 4 MHz
 
     i2c_init();
     can_init();

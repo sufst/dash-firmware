@@ -31,27 +31,32 @@ void can_init(void) {
     C1CONLbits.DNCNT = 0;
 
 
-    // Configure bit rate (e.g., 500 kbps with 64 MHz clock)
-    // Fcan = Fosc / (2 * (BRP + 1) * (SJW + 1) * (SEG1 + SEG2 + 3))
-    // BRP = 7, SJW = 0, SEG1 = 6, SEG2 = 7 for 500 kbps
-    C1NBTCFGL = 0x83;         // BRP = 7, SJW = 0
-    C1CFG2 = 0xA4;         // SEG1 = 6, SEG2 = 7, SAM = 1
+    //Configuring the bitrate of the CAN module
+    C1NBTCFGTbits.BRP = 0; // Nominal Baud Rate Prescaler of 0
+    C1NBTCFGUbits.TSEG1 = 5; //Nominal Time Segment 1 of 5
+    C1NBTCFGHbits.TSEG2 = 2; //Nominal Time Segment 2 of 2
+    C1NBTCFGLbits.SJW = 1; //Nominal Time Segment 2 of 2
 
-    // Configure FIFO for receive
-    C1FIFOCON1 = 0x82;     // Enable FIFO1, Receive mode
-    C1FIFOCON1bits.TXEN = 0;
-    C1FIFOCON1bits.FSIZE = 0x01; // Size = 2 messages
-    C1FIFOCON1bits.FNRB = 0x00;  // FIFO number
+
+
+    // Enable FIFO1, Receive mode
+    C1FIFOCON1Lbits.TXEN = 0; // Recieves message object
+    C1FIFOCON1Tbits.FSIZE = 0x01; // Size = 2 messages
+    C1FIFOCON1Hbits.FRESET = 0;    // Clear reset
+
 
     // Set filter for specific message IDs (e.g., 0x100 for speed, 0x101 for RPM)
-    C1FLTCON0 = 0x03;      // Enable 2 filters
-    C1RXM0SID = 0x7FF;     // Mask: Accept any 11-bit ID (adjust for your needs)
-    C1FLT0SID = 0x100;     // Filter for ID 0x100 (speed)
-    C1FLT1SID = 0x101;     // Filter for ID 0x101 (RPM)
+    C1FLTCON0Lbits.FLTEN0 = 1;      // Enable filter 0
+    C1FLTCON0Hbits.FLTEN1 = 1;      // Enable filter 1
+    //C1FLTCON0Ubits.FLTEN2 = 1;      // Enable filter 2
+    //C1FLTCON0Tbits.FLTEN3 = 1;      // Enable filter 3
+    C1MASK0Lbits.MSID = 0x7FF;     // Mask: Accept any 11-bit ID (currently all 1s to accept any message)
+    C1FLTOBJ0 = 0x100;     // Filter for ID 0x100 (speed)
+    C1FLTOBJ1 = 0x101;     // Filter for ID 0x101 (RPM)
 
     // Exit Configuration mode, enter Normal mode
-    C1CONbits.REQOP = 0b000; // Normal mode
-    while (C1CONbits.OPMODE != 0b000); // Wait for mode
+    C1CONTbits.REQOP = 0b000; // Normal mode
+    while (C1CONUbits.OPMOD != 0b000); // Wait for mode
 }
 
 void can_process_messages(void) {
