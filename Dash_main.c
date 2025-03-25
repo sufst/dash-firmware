@@ -12,7 +12,7 @@ void main(void) {
     can_init();
 
     lcd_init();  // Assume this initializes the 20x4 LCD
-    seven_seg_init();  // Assume this initializes the 7-segment
+    seg_init();  // Assume this initializes the 7-segment
 
     while (1) {
         can_process_messages();
@@ -21,11 +21,11 @@ void main(void) {
 
         // Display on LCD (e.g., Line 1: Speed, Line 2: RPM)
         lcd_set_cursor(0, 0);
-        lcd_print("Speed: %d kph", data.speed_kph);
+        lcd_write_string("Speed: %d kph", data.speed_kph);
         lcd_set_cursor(1, 0);
-        lcd_print("RPM: %d", data.rpm);
+        lcd_write_string("RPM: %d", data.rpm);
 
         // Display on 7-segment (e.g., speed)
-        seven_seg_display(data.speed_kph);
+        seg_display_digits(data.speed_kph);
     }
 }

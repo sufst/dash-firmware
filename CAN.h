@@ -4,7 +4,16 @@
 #include <xc.h>
 #include <stdint.h>
 
-// CAN Message Structure
+
+// Define the message object structure for RAM
+typedef struct {
+    uint32_t id_word;    // Word 0: ID field (SID[10:0] in bits 31:21)
+    uint32_t ctrl_word;  // Word 1: Control field (DLC[3:0] in bits 19:16)
+    uint8_t data[8];     // Words 2-3: Data bytes (8 bytes for CAN 2.0)
+} CAN_RxMessage_t;
+
+
+// Simplified CAN Message Structure
 typedef struct {
     uint32_t id;        // 11-bit or 29-bit identifier
     uint8_t dlc;        // Data Length Code (0-8)

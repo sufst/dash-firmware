@@ -17,14 +17,24 @@ void can_init(void) {
     RB4PPS = 0x19;         // RB4 -> CANTX
 
     // Initialize CAN module
-    C1CON = 0x00;          // Reset CAN module
-    C1CONbits.REQOP = 0b100; // Configuration mode
-    while (C1CONbits.OPMODE != 0b100); // Wait for mode
+    C1CONTbits.REQOP = 0b100; // Configuration mode
+    while (C1CONUbits.OPMOD != 0b100); // Wait for mode
+
+    C1CONUbits.TXQEN = 0;   //These should be all the correct config bits for C1CON
+    C1CONUbits.STEF = 0;
+    C1CONHbits.ON = 1;
+    C1CONHbits.WFT = 0;
+    C1CONHbits.WAKFIL = 0;
+    C1CONLbits.CLKSEL0 = 0;
+    C1CONLbits.PXEDIS = 1;
+    C1CONLbits.ISOCRCEN = 0;
+    C1CONLbits.DNCNT = 0;
+
 
     // Configure bit rate (e.g., 500 kbps with 64 MHz clock)
     // Fcan = Fosc / (2 * (BRP + 1) * (SJW + 1) * (SEG1 + SEG2 + 3))
     // BRP = 7, SJW = 0, SEG1 = 6, SEG2 = 7 for 500 kbps
-    C1CFG1 = 0x83;         // BRP = 7, SJW = 0
+    C1NBTCFGL = 0x83;         // BRP = 7, SJW = 0
     C1CFG2 = 0xA4;         // SEG1 = 6, SEG2 = 7, SAM = 1
 
     // Configure FIFO for receive
@@ -45,37 +55,44 @@ void can_init(void) {
 }
 
 void can_process_messages(void) {
-    if (C1FIFOCON1bits.FNRM == 0) { // Check if FIFO has messages
+    if (!C1FIFOSTA1Lbits.TFNRFNIF) { // Check if FIFO is not empty
         return; // No messages to process
     }
 
-    // Read the received message
     CAN_Message_t msg;
-    msg.id = (C1RXF1SID & 0x7FF);    // 11-bit ID
-    msg.dlc = C1RXF1DLC & 0x0F;      // Data length
+    // Get the RAM address of the next message in FIFO1
+    uint32_t msg_addr = ((uint32_t)C1FIFOUA1T << 24) | ((uint32_t)C1FIFOUA1U << 16) |
+                        ((uint32_t)C1FIFOUA1H << 8) | C1FIFOUA1L;
+
+    // Cast the address to a pointer to the message object
+    CAN_RxMessage_t *rx_msg = (CAN_RxMessage_t *)msg_addr;
+
+    // Extract SID (bits 31:21 of id_word)
+    msg.id = (rx_msg->id_word >> 21) & 0x7FF;
+
+    // Extract DLC (bits 19:16 of ctrl_word)
+    msg.dlc = (rx_msg->ctrl_word >> 16) & 0x0F;
+
+    // Copy data bytes
     for (uint8_t i = 0; i < msg.dlc; i++) {
-        msg.data[i] = C1RXF1B[i];    // Read data bytes
+        msg.data[i] = rx_msg->data[i];
     }
 
-    // Parse specific messages
+    // Process the message
     switch (msg.id) {
-        case 0x100: // Speed message
+        case 0x100:
             if (msg.dlc >= 2) {
-                dashboard_data.speed_kph = (msg.data[0] << 8) | msg.data[1]; // 16-bit speed
+                dashboard_data.speed_kph = (msg.data[0] << 8) | msg.data[1];
             }
             break;
-        case 0x101: // RPM message
+        case 0x101:
             if (msg.dlc >= 2) {
-                dashboard_data.rpm = (msg.data[0] << 8) | msg.data[1]; // 16-bit RPM
+                dashboard_data.rpm = (msg.data[0] << 8) | msg.data[1];
             }
-            break;
-        // Add cases for other messages (e.g., temperature)
-        default:
             break;
     }
 
-    // Clear FIFO flag (manual polling, no interrupt)
-    C1FIFOCON1bits.UINC = 1; // Increment FIFO pointer
+    C1FIFOCON1Hbits.UINC = 1; // Increment FIFO tail to process next message
 }
 
 void can_get_dashboard_data(DashboardData_t *data) {
