@@ -1,9 +1,6 @@
 #ifndef CAN_H
 #define CAN_H
 
-#include <xc.h>
-#include <stdint.h>
-
 
 // Define the message object structure for RAM
 typedef struct {

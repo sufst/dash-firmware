@@ -2,9 +2,6 @@
 #ifndef LCD_H
 #define LCD_H
 
-#include "i2c.h"
-#include <stdint.h>
-
 // LCD Command Codes
 #define LCD_CLEAR           0x01
 #define LCD_HOME            0x02

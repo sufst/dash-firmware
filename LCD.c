@@ -1,4 +1,5 @@
 // lcd.c
+#include "config.h"
 #include "lcd.h"
 
 static void lcd_delay_ms(uint16_t ms) {
@@ -10,6 +11,7 @@ static void lcd_delay_ms(uint16_t ms) {
 static void lcd_send_nibble(uint8_t data) {
     uint8_t data_high = (data << 4);  // No backlight bit, P3 is always high
     
+    i2c_wait();
     i2c_start();
     i2c_send_byte((LCD_ADDRESS << 1) | 0);
     i2c_send_byte(data_high | LCD_EN);
@@ -22,6 +24,7 @@ static void lcd_send_byte(uint8_t data, uint8_t rs) {       // rs 1 for data reg
     uint8_t data_high = (data & 0xF0) | (rs ? LCD_RS : 0);
     uint8_t data_low = ((data << 4) & 0xF0) | (rs ? LCD_RS : 0);
     
+    i2c_wait();
     i2c_start();
     i2c_send_byte((LCD_ADDRESS << 1) | 0);
     i2c_send_byte(data_high | LCD_EN);

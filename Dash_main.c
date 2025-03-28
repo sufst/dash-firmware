@@ -1,11 +1,8 @@
-#include <xc.h>
+#include "config.h"
 #include "i2c.h"
 #include "can.h"
-#include <stdlib.h>
-
-#include <pic18f47q84.h>
-
-#define _XTAL_FREQ 4000000
+#include "LCD.h"
+#include "Seg.h"
 
 void main(void) {
     OSCCON1 = 0x60;  // HFINTOSC, no divider

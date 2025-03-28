@@ -1,9 +1,9 @@
 // main.c
+#include "config.h"
 #include "i2c.h"
 #include "lcd.h"
 #include "seg.h"
 
-#include <pic18f47q84.h>
 
 #define _XTAL_FREQ 4000000
 

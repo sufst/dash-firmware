@@ -1,4 +1,5 @@
 // seg.c
+#include "config.h"
 #include "seg.h"
 
 // Lookup table for 7-segment patterns (0-9, common cathode)

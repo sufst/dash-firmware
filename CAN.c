@@ -1,7 +1,5 @@
+#include "config.h"
 #include "can.h"
-#include "i2c.h"  // For eventual I2C transmission
-
-#include <pic18f47q84.h>
 
 // Global variable to store parsed data
 static DashboardData_t dashboard_data = {0};

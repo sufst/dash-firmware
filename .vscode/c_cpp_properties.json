@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:/Program Files/Microchip/xc8/v3.00/pic/include/**",
-                "C:/Program Files/Microchip/xc8/v3.00/pic/include"
+                "C:/Program Files/Microchip/xc8/v3.00/pic/include",
+                "C:/Program Files/Microchip/xc8/v3.00/pic/include/proc"
             ],
             "defines": [
                 "_DEBUG",
