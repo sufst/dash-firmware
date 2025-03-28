@@ -1,6 +1,7 @@
 // seg.c
 #include "config.h"
 #include "seg.h"
+#include "i2c.h"
 
 // Lookup table for 7-segment patterns (0-9, common cathode)
 static const uint8_t seg_patterns[] = {

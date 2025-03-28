@@ -2,7 +2,7 @@
 #ifndef LCD_H
 #define LCD_H
 
-// LCD Command Codes
+// LCD Command Codes -- possibly need to verify these
 #define LCD_CLEAR           0x01
 #define LCD_HOME            0x02
 #define LCD_DEC_CURSOR      0x04

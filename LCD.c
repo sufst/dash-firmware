@@ -1,6 +1,7 @@
 // lcd.c
 #include "config.h"
 #include "lcd.h"
+#include "i2c.h"
 
 static void lcd_delay_ms(uint16_t ms) {
     while (ms--) {
