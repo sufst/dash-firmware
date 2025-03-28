@@ -83,14 +83,14 @@ void can_process_messages(void) {
 
     // Process the message
     switch (msg.id) {
-        case 0x100:
-            if (msg.dlc >= 2) {
-                dashboard_data.speed_kph = (msg.data[0] << 8) | msg.data[1];
+        case 0x201: // BMS state of charge (8-bit)
+            if (msg.dlc >= 1) {
+                dashboard_data.bms_soc = msg.data[0];
             }
             break;
-        case 0x101:
-            if (msg.dlc >= 2) {
-                dashboard_data.rpm = (msg.data[0] << 8) | msg.data[1];
+        case 0x202: // BMS Average Temperature ()
+            if (msg.dlc >= 1) {
+                dashboard_data.bms_temp = msg.data[0];
             }
             break;
     }

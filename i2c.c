@@ -2,18 +2,6 @@
 #include "config.h"
 #include "i2c.h"
 
-/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-
-need to change baud rate and clock configuration
-
-need to fix errors for registers - verify actual names
-
-need to double check init protocol
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
 
 // Initialize I2C1 module
 void i2c_init(void) {

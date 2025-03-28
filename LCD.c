@@ -84,6 +84,15 @@ void lcd_write_string(const char *str) {
     }
 }
 
+void lcd_print(const char *str, ...) {
+    char buffer[16];
+    va_list args;
+    va_start(args, str);
+    vsprintf(buffer, str, args);
+    va_end(args);
+    lcd_write_string(buffer);
+}
+
 void lcd_shift_cursor_left(void) {
     lcd_send_byte(LCD_SHIFT_CURSOR_LEFT, 0);  // RS = 0 for command
 }

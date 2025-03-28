@@ -34,6 +34,7 @@ void lcd_home(void);
 void lcd_set_cursor(uint8_t row, uint8_t col);
 void lcd_write_char(char c);
 void lcd_write_string(const char *str);
+void lcd_print(const char *str, ...);
 void lcd_shift_cursor_left(void);
 void lcd_shift_cursor_right(void);
 void lcd_shift_display_left(void);
