@@ -32,6 +32,7 @@
 // Function prototypes
 void lcd_init(void);
 void lcd_clear(void);
+void lcd_clear_row(uint8_t row);
 void lcd_home(void);
 void lcd_set_cursor(uint8_t row, uint8_t col);
 void lcd_write_char(char c);

@@ -13,7 +13,7 @@ INC_DIR = include
 BUILD_DIR = build
 
 # Source Files
-SOURCES = $(SRC_DIR)/main.c $(SRC_DIR)/CAN.c $(SRC_DIR)/i2c.c $(SRC_DIR)/LCD.c $(SRC_DIR)/Seg.c #$(SRC_DIR)/animation.c
+SOURCES = $(SRC_DIR)/main.c $(SRC_DIR)/CAN.c $(SRC_DIR)/i2c.c $(SRC_DIR)/LCD.c $(SRC_DIR)/Seg.c $(SRC_DIR)/animation.c
 
 # Output file
 OUTPUT = $(BUILD_DIR)/$(PROJECT).hex

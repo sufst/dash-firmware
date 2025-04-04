@@ -77,11 +77,6 @@ void seg_display_dp(uint8_t position, uint8_t state) {
     }
 }
 
-void seg_animation() {
-
-    
-}
-
 void seg_clear(void) {
     for (uint8_t i = 0; i < 4; i++) {
         display_buffer[i] = 0x00;

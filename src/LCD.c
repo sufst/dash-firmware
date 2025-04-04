@@ -63,6 +63,11 @@ void lcd_clear(void) {
     lcd_delay_ms(2);
 }
 
+void lcd_clear_row(uint8_t row) {
+     lcd_set_cursor(row, 0);
+     lcd_print("                ");
+}
+
 void lcd_home(void) {
     lcd_send_byte(LCD_HOME, 0);  // RS = 0 for command
     lcd_delay_ms(2);
