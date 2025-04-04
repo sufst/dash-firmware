@@ -1,5 +1,5 @@
 #include "config.h"
-#include "can.h"
+#include "CAN.h"
 
 // Global variable to store parsed data
 static DashboardData_t dashboard_data = {0};

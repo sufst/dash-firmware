@@ -1,6 +1,6 @@
 // lcd.c
 #include "config.h"
-#include "lcd.h"
+#include "LCD.h"
 #include "i2c.h"
 
 static void lcd_delay_ms(uint16_t ms) {
@@ -10,7 +10,7 @@ static void lcd_delay_ms(uint16_t ms) {
 }
 
 static void lcd_send_nibble(uint8_t data) {
-    uint8_t data_high = (data << 4);  // No backlight bit, P3 is always high
+    uint8_t data_high = (uint8_t)(data << 4);  // No backlight bit, P3 is always high
     
     i2c_wait();
     i2c_start();
@@ -85,7 +85,7 @@ void lcd_write_string(const char *str) {
 }
 
 void lcd_print(const char *str, ...) {
-    char buffer[16];
+    char buffer[17];
     va_list args;
     va_start(args, str);
     vsprintf(buffer, str, args);

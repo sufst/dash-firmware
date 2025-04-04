@@ -2,6 +2,8 @@
 #ifndef SEG_H
 #define SEG_H
 
+#include <stdint.h>
+
 // Define 7-segment display patterns (common cathode, adjust for common anode if needed)
 #define SEG_A 0x01
 #define SEG_B 0x02

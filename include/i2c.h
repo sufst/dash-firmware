@@ -2,6 +2,8 @@
 #ifndef I2C_H
 #define I2C_H
 
+#include <stdint.h>
+
 // Function prototype
 void i2c_init(void);
 void i2c_send_byte(uint8_t data);

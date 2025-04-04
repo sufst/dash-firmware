@@ -2,7 +2,7 @@
 #include "config.h"
 #include "i2c.h"
 #include "lcd.h"
-#include "seg.h"
+#include "Seg.h"
 
 
 #define _XTAL_FREQ 4000000

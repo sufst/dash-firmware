@@ -5,6 +5,7 @@
 #include <xc.h>        // PIC-specific definitions
 #include <stdint.h>    // Standard integer types (e.g., uint8_t)
 #include <stdarg.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <pic18f47q84.h>
 

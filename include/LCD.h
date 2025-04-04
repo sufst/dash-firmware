@@ -2,6 +2,8 @@
 #ifndef LCD_H
 #define LCD_H
 
+#include <stdint.h>
+
 // LCD Command Codes -- possibly need to verify these
 #define LCD_CLEAR           0x01
 #define LCD_HOME            0x02

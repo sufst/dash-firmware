@@ -1,6 +1,6 @@
 // seg.c
 #include "config.h"
-#include "seg.h"
+#include "Seg.h"
 #include "i2c.h"
 
 // Lookup table for 7-segment patterns (0-9, common cathode)
@@ -75,6 +75,11 @@ void seg_display_dp(uint8_t position, uint8_t state) {
         }
         seg_write_display();
     }
+}
+
+void seg_animation() {
+
+    
 }
 
 void seg_clear(void) {
