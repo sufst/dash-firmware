@@ -3,7 +3,6 @@
 #include "config.h"
 #include "animation.h"
 #include "Seg.h"
-#include "Seg.c"
 
 // Structure to define a step in the spinning animation (digit and segment)
 typedef struct {

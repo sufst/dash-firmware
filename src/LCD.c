@@ -45,12 +45,12 @@ static void lcd_send_byte(uint8_t data, uint8_t rs) {       // rs 1 for data reg
 
 void lcd_init(void) {
     lcd_delay_ms(50);
-    lcd_send_nibble(0x03);  // Initialization sequence uses nibbles
+    lcd_send_nibble(0x3);  // Initialization sequence uses nibbles
     lcd_delay_ms(5);
-    lcd_send_nibble(0x03);
+    lcd_send_nibble(0x3);
     __delay_us(150);
-    lcd_send_nibble(0x03);
-    lcd_send_nibble(0x02);
+    lcd_send_nibble(0x3);
+    lcd_send_nibble(0x2);
     
     lcd_send_byte(LCD_FUNCTION_SET_2LINE, 0);  // RS = 0 for command
     lcd_send_byte(LCD_DISP_ON_CURSOR_OFF, 0);  // RS = 0 for command

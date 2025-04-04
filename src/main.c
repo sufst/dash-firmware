@@ -1,3 +1,4 @@
+// main.c
 #include "LCD.h"
 #include "Seg.h"
 #include "CAN.h"
