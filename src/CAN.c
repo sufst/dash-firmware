@@ -83,11 +83,23 @@ void can_process_messages(void) {
 
     // Process the message
     switch (msg.id) {
-        case 0x201: // BMS state of charge (8-bit)
-            if (msg.dlc >= 1) {
-                dashboard_data.bms_soc = msg.data[0];
-            }
-            break;
+        case 0x201: // BMS Signals
+            if (msg.dlc >= 5) {
+            // Extract BMS_SOC (8 bits)
+            dashboard_data.bms_soc = msg.data[0];
+
+            // Extract BMS_Pack_Current (16 bits, Motorola)
+            uint16_t raw_current = (msg.data[1] << 8) | msg.data[2];
+            dashboard_data.pack_current = raw_current * 0.1f;
+
+            // Extract BMS_Pack_Inst_Voltage (16 bits, Motorola)
+            uint16_t raw_voltage = (msg.data[3] << 8) | msg.data[4];
+            dashboard_data.pack_voltage = raw_voltage * 0.1f;
+
+            // Calculate instantaneous power
+            dashboard_data.instant_power = dashboard_data.pack_current * dashboard_data.pack_voltage;
+    }
+    break;
         case 0x202: // BMS Average Temperature ()
             if (msg.dlc >= 1) {
                 dashboard_data.bms_temp = msg.data[0];

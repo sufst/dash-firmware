@@ -23,9 +23,14 @@ typedef struct {
     uint8_t bms_temp;      // Engine RPM
     uint8_t placeholder;   // Temperature in °C
     uint8_t R2D;           // Ready to drive VCU signal - 1 or 0
-    uint8_t TSON;          
+    uint8_t TSON;  
+    float pack_current;     // in Amps
+    float pack_voltage;     // in Volts
+    float instant_power;    // in Watts
     // Add other parameters as needed
 } DashboardData_t;
+
+
 
 // Function Prototypes
 void can_init(void);
