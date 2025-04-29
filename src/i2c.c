@@ -15,8 +15,9 @@ void i2c_init(void) {
     I2C1CON0bits.MODE = 0b100; // Host mode, 7-bit address
     
     
-    I2C1CLK = 0x02;   // Clock selection (HFINTOSC - 4MHz)
-    I2C1BAUD = 9;     //Set baud rate for 100kHz @ 4MHz Fosc (Fosc/(4 * BaudRate)) - 1 = (4MHz/(4 * 100kHz)) - 1
+    I2C1CLK = 0x00;   // Use FOSC (20 MHz external clock)
+    I2C1BAUD = 1;     // For 2 MHz I2C clock
+                      // Set baud rate = (Fosc/(4 * BaudRate)) - 1
     
     // Enable I2C1
     I2C1CON0bits.EN = 1;

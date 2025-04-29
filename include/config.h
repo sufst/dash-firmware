@@ -11,7 +11,7 @@
 
 
 
-#define _XTAL_FREQ 4000000  // Clock frequency for delay functions
+#define _XTAL_FREQ 20000000  // Clock frequency for delay functions
 #define LCD_ADDRESS 0x20    // Example I2C address for LCD
 #define SEG_ADDRESS 0x70    // Example I2C address for 7-segment display
 

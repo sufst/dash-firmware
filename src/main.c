@@ -17,8 +17,9 @@ DisplayState_t display_state = STATE_STARTUP;
 
 
 void main(void) {
-  OSCCON1 = 0x60; // HFINTOSC, no divider
-  OSCFRQ = 0x02;  // 4 MHz
+  #pragma config FEXTOSC = ECH     // External Clock, High Gain Mode
+  #pragma config RSTOSC = EXT1X    // Use external clock directly
+                                   // Use 20MHz for the clock 
 
   i2c_init();
   can_init();

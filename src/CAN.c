@@ -1,6 +1,8 @@
 #include "config.h"
 #include "CAN.h"
 
+#define _XTAL_FREQ 20000000UL  // 20 MHz system clock
+
 // Global variable to store parsed data
 static DashboardData_t dashboard_data = {0};
 
@@ -29,11 +31,11 @@ void can_init(void) {
     C1CONLbits.DNCNT = 0;
 
 
-    //Configuring the bitrate of the CAN module
-    C1NBTCFGTbits.BRP = 0; // Nominal Baud Rate Prescaler of 0
-    C1NBTCFGUbits.TSEG1 = 5; //Nominal Time Segment 1 of 5
-    C1NBTCFGHbits.TSEG2 = 2; //Nominal Time Segment 2 of 2
-    C1NBTCFGLbits.SJW = 1; //Nominal Time Segment 2 of 2
+    C1NBTCFGTbits.BRP  = 0;     // Baud Rate Prescaler = 0
+    C1NBTCFGUbits.TSEG1 = 31;   // Time Segment 1 = 31 TQ
+    C1NBTCFGHbits.TSEG2 = 8;    // Time Segment 2 = 8 TQ
+    C1NBTCFGLbits.SJW   = 1;    // Synchronization Jump Width = 1 TQ (can stay)
+
 
 
 
