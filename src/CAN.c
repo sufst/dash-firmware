@@ -103,6 +103,13 @@ void can_process_messages(void) {
                 dashboard_data.bms_internal_temp = (msg.data[3]);                    // Startbit 24, length 8
             }
             break;
+
+        case 0x101: // VCU Control State
+            if (msg.dlc >= 8) {
+                // little-endian, Intel format extraction
+                dashboard_data.VCU_CTRL_State = (msg.data[2]); // Startbit 16, length 8
+            }
+            break;
     }
 
     C1FIFOCON1Hbits.UINC = 1; // Increment FIFO tail to process next message
