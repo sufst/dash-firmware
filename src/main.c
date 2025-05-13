@@ -24,7 +24,7 @@ void main(void) {
   can_init();
   lcd_init(); 
   seg_init();
-  timer0_init(); 
+  button_init();
 
   lcd_set_cursor(0, 6);  //Startup screen
   lcd_print("SUFST");

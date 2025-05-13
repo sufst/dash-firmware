@@ -31,9 +31,9 @@ void can_init(void) {
 
     //Configuring the bitrate of the CAN module
     C1NBTCFGTbits.BRP = 0; // Nominal Baud Rate Prescaler of 0
-    C1NBTCFGUbits.TSEG1 = 5; //Nominal Time Segment 1 of 5
-    C1NBTCFGHbits.TSEG2 = 2; //Nominal Time Segment 2 of 2
-    C1NBTCFGLbits.SJW = 1; //Nominal Time Segment 2 of 2
+    C1NBTCFGUbits.TSEG1 = 30; //Nominal Time Segment 1 of 30
+    C1NBTCFGHbits.TSEG2 = 7; //Nominal Time Segment 2 of 7
+    C1NBTCFGLbits.SJW = 7; //match TSEG2 for stability
 
 
 
@@ -44,13 +44,13 @@ void can_init(void) {
 
 
     // Set filter for specific message IDs (e.g., 0x100 for speed, 0x101 for RPM)
-    C1FLTCON0Lbits.FLTEN0 = 1;      // Enable filter 0
-    C1FLTCON0Hbits.FLTEN1 = 1;      // Enable filter 1
-    //C1FLTCON0Ubits.FLTEN2 = 1;      // Enable filter 2
-    //C1FLTCON0Tbits.FLTEN3 = 1;      // Enable filter 3
+
     C1MASK0Lbits.MSID = 0x7FF;     // Mask: Accept any 11-bit ID (currently all 1s to accept any message)
-    C1FLTOBJ0 = 0x100;     // Filter for ID 0x100 (speed)
-    C1FLTOBJ1 = 0x101;     // Filter for ID 0x101 (RPM)
+
+    C1FLTOBJ0 = 0x201;     // Filter for ID 0x100 (speed)
+    C1FLTCON0Lbits.FLTEN0 = 1;      // Enable filter 0
+    C1FLTOBJ1 = 0x202;     // Filter for ID 0x101 (RPM)
+    C1FLTCON0Hbits.FLTEN1 = 1;      // Enable filter 1
 
     // Exit Configuration mode, enter Normal mode
     C1CONTbits.REQOP = 0b000; // Normal mode
@@ -64,8 +64,10 @@ void can_process_messages(void) {
 
     CAN_Message_t msg;
     // Get the RAM address of the next message in FIFO1
-    uint32_t msg_addr = ((uint32_t)C1FIFOUA1T << 24) | ((uint32_t)C1FIFOUA1U << 16) |
-                        ((uint32_t)C1FIFOUA1H << 8) | C1FIFOUA1L;
+    uint32_t msg_addr = ((uint32_t)C1FIFOUA1T << 24) |
+                        ((uint32_t)C1FIFOUA1U << 16) |
+                        ((uint32_t)C1FIFOUA1H << 8) |
+                        C1FIFOUA1L;
 
     // Cast the address to a pointer to the message object
     CAN_RxMessage_t *rx_msg = (CAN_RxMessage_t *)msg_addr;
@@ -83,14 +85,22 @@ void can_process_messages(void) {
 
     // Process the message
     switch (msg.id) {
-        case 0x201: // BMS state of charge (8-bit)
-            if (msg.dlc >= 1) {
-                dashboard_data.bms_soc = msg.data[0];
+        case 0x201: // BMS Current, Voltage and SOC
+            if (msg.dlc >= 8) {
+                // Big-endian, motorola format extraction
+                dashboard_data.BMS_pack_current  = (msg.data[0] << 8) | msg.data[1]; // Startbit 8, length 16
+                dashboard_data.BMS_inst_volt     = (msg.data[2] << 8) | msg.data[3]; // Startbit 24, length 16
+                dashboard_data.bms_soc           = (msg.data[4]);                    // Startbit 32, length 8
             }
             break;
-        case 0x202: // BMS Average Temperature ()
-            if (msg.dlc >= 1) {
-                dashboard_data.bms_temp = msg.data[0];
+        
+        case 0x202: // BMS Temperatures
+            if (msg.dlc >= 8) {
+                // Big-endian, motorola format extraction
+                dashboard_data.bms_high_temp     = (msg.data[0]);                    // Startbit 0, length 8
+                dashboard_data.bms_low_temp      = (msg.data[1]);                    // Startbit 8, length 8
+                dashboard_data.bms_avg_temp      = (msg.data[2]);                    // Startbit 16, length 8
+                dashboard_data.bms_internal_temp = (msg.data[3]);                    // Startbit 24, length 8
             }
             break;
     }

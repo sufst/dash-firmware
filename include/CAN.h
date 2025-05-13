@@ -19,11 +19,21 @@ typedef struct {
 
 // Parsed Data Structure (for dashboard)
 typedef struct {
-    uint8_t bms_soc;       // Speed in km/h
-    uint8_t bms_temp;      // Engine RPM
-    uint8_t placeholder;   // Temperature in °C
-    uint8_t R2D;           // Ready to drive VCU signal - 1 or 0
-    uint8_t TSON;          
+    //msg_id 0x201
+    uint16_t BMS_pack_current; //factor 0.1
+    uint16_t BMS_inst_volt;    //factor 0.1
+    uint8_t bms_soc;           //factor 0.5
+    //msg_id 0x202
+    uint8_t bms_high_temp;     
+    uint8_t bms_low_temp;
+    uint8_t bms_avg_temp;
+    uint8_t bms_internal_temp;
+    //msg_id 0x101
+    uint8_t VCU_CTRL_State;
+    
+    uint8_t Power;
+    uint8_t power_saving_mode;
+    uint8_t PDM_battery_voltage;
     // Add other parameters as needed
 } DashboardData_t;
 

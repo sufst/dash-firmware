@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "C:/Program Files/Microchip/xc8/v3.00/pic/include/**",
                 "C:/Program Files/Microchip/xc8/v3.00/pic/include",
-                "C:/Program Files/Microchip/xc8/v3.00/pic/include/proc"
+                "C:/Program Files/Microchip/xc8/v3.00/pic/include/proc",
+                "${workspaceFolder}/include"
             ],
             "defines": [
                 "_DEBUG",
