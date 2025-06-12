@@ -8,70 +8,35 @@ This repository contains the firmware that is run on the PIC18F47Q84 to display 
 ![screenshot](https://github.com/user-attachments/assets/59248495-54ed-4f21-b953-4582fcb83004)
 
 
-LCD Shows startup screen, then prompts the driver to press TSON and R2D buttons, before then showing critical system information.
+LCD Shows startup screen, then prompts the driver to press TSON and R2D buttons. The LCD also shows the current VCU state and errors, and when the car is in the driving state, it will display critical system information such as temperature and power.
 
 The dual 7-segment displays display the BMS State of Charge.
 
-Some features of the dashboard including buttons and LEDs (warning and informational) are controlled via the VCU not the PIC microcontroller on the dash.
+Some features of the dashboard including buttons and LEDs (warning and informational) are controlled via the VCU/TSAL not the PIC microcontroller on the dash.
 
-This firmware has been written in VSCode rather than using the MPLAB X IDE.
+This firmware was written in MPLAB X IDE, with MCC code generation to handle implementation of I2C and CAN.
 
-# 📝 How to Build
+# 📝 How to Build and Program
 
-This project uses a Makefile in order to streamline the compilation process.
+In MPLAB X IDE:
 
 ```sh
-# Open a terminal (Command Prompt or PowerShell for Windows, Terminal for macOS or Linux)
-
-# Ensure Git is installed
-# Visit https://git-scm.com to download and install console Git if not already installed
-
-# Clone this repository
-git clone https://github.com/sufst/dash-firmware.git
-
-# Navigate to the project directory
-cd dash-firmware
-
-# use Make to link and compile all the source files at once
-Make all
+# Open the project folder
+# Navigate to Production and click Build (shortcut F11)
+# Open MPLAB X IPE and connect the PICKIT4 programmer
+# Connect the ICSP Pins
+# Load the hex file
+# Cick Program
+# Unplug the MCLR pin (Hold on Reset mode default)
+# Power cycle the board to ensure correct operation from boot
 ```
 
+# ⚙️ Versions
 
-## Source Files
+The DESIGNSHOW firmware has limited functionality and only shows a splashscreen text on the LCD
 
-### main.c 
-The main file is where the various top-level functions defined in the other source files are called.
-First, the system is initialised, a boot screen shows and then the main while(1) loop is entered.
-  - CAN messages get recieved
-  - Messages are shown whilst the VCU waits for TSON and R2D button presses
-  - Information is shown on the LCD and 7-Segment displays
+The COMP firmware has all functionality and is the firmware that should be loaded onto the PIC before competition.
 
-### i2c.c
-The i2c file contains low-level functions to enable and utilise i2c communication between the PIC and peripheral devices used to control the displays (PCF8574 and HT16K33).
-It includes functions to:
-  - send a start bit
-  - send a stop bit
-  - send bytes of data
-  - wait until the bus is free
-
-### CAN.c
-The CAN file contains functions to recieve messages from the can tranciever and parse the messages that are important.
-  - The can_init() function sets the Tx and Rx pins, sets configuration bits, chooses the baud rate prescaler and sets up message ID masks and filters.
-  - The can_process_messages() function checks if there is a message address available in the FIFO register. If so, it gets the data stored at that address in the PIC's ram, and separates the msg ID, dlc, and data. Then, if the msg ID corresponds with the ID of a wanted message, the data saved.
-  - The can_get_dashboard_data() passes a pointer to the data so that the main program can access it when called on.
-
-### LCD.c
-The LCD file contains high-level functions that can be called on in main.c, for example lcd_print or lcd_set_cursor. These either send commands or data over i2c to the PCF8574 GPIO expander.
-Since the LCD connects to the PCF8574 with 4 wires, it must recieve data in 4 bit nibbles. Bits are sent to either the command or data registers to control what is displayed on the screen. This is handled with low-level functions lcd_send_nibble() and lcd_send_byte().
-
-### Seg.c
-The Seg file contains functions to display a two digit number to the dual 7-Segment displays. High-level function seg_write_display() takes a 2 digit number, separates the tens and units digits and buffers them to be sent to the HT16K33 over i2c. It is also possible to control the decimal point.
-
-## Header Files
-The header files only differ slightly and contain function prototypes for functions in the above source files.
-The config.h file however has includes for common libraries and PIC specific libraries.
-It also defines constants that may be subject to change such as the clock frequency and i2c addresses.
-  - (note: if the clock frequency is changed, baud rates for i2c and CAN must be reconfigured}
 
 
 # 🧑‍🎓Resources
@@ -93,5 +58,6 @@ https://www.electronicsforu.com/technology-trends/learn-electronics/16x2-lcd-pin
   - [Dashboard PCB](https://github.com/sufst/pcb/tree/new-dash/dash)
   - [VCU](https://github.com/sufst/vcu)
   - [CAN Bus Definitions](https://github.com/sufst/can-defs)
+  - [TSAL-Latching](https://github.com/sufst/pcb/tsal-latching-integrated)
 
 
