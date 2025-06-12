@@ -18,6 +18,9 @@ This firmware was written in MPLAB X IDE, with MCC code generation to handle imp
 
 # 📝 How to Build and Program
 
+![image](https://github.com/user-attachments/assets/4f20bd78-ee8d-4ce8-a729-4a18cc97245f)
+
+
 In MPLAB X IDE:
 
 ```sh
