@@ -8,7 +8,12 @@ This repository contains the firmware that is run on the PIC18F47Q84 to display 
 ![screenshot](https://github.com/user-attachments/assets/59248495-54ed-4f21-b953-4582fcb83004)
 
 
+<<<<<<< Updated upstream
 LCD Shows startup screen, then prompts the driver to press TSON and R2D buttons. The LCD also shows the current VCU state and errors, and when the car is in the driving state, it will display critical system information such as temperature and power.
+=======
+LCD Shows startup screen, then prompts the driver to press TSON and R2D buttons, before then showing critical system information including:
+  - BMS_Average_Temperature (msg ID 0x202)
+>>>>>>> Stashed changes
 
 The dual 7-segment displays display the BMS State of Charge.
 
