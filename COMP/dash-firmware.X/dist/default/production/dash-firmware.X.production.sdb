@@ -156,7 +156,7 @@ CAN_FD_FORMAT 1
 TXQ 0
 ]
 "33 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X/main.h
-[e E23586 . `uc
+[e E23584 . `uc
 STATE_STARTUP 0
 STATE_TS_BUTTON_WAIT 1
 STATE_WAIT_NEG_AIR 2
@@ -172,7 +172,7 @@ STATE_APPS_SCS_FAULT 11
 STATE_APPS_BPS_FAULT 12
 ]
 "35
-[e E23601 . `uc
+[e E23599 . `uc
 NORMAL 0
 TEMPS 1
 POWER 2
@@ -184,15 +184,15 @@ I2C1_BUSY 1
 I2C1_FAIL 2
 ]
 "14 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\CAN_handler.c
-[e E23433 . `uc
+[e E23431 . `uc
 CAN_FRAME_STD 0
 CAN_FRAME_EXT 1
 ]
-[e E23437 . `uc
+[e E23435 . `uc
 CAN_FRAME_DATA 0
 CAN_FRAME_RTR 1
 ]
-[e E23470 . `uc
+[e E23468 . `uc
 DLC_0 0
 DLC_1 1
 DLC_2 2
@@ -210,23 +210,13 @@ DLC_32 13
 DLC_48 14
 DLC_64 15
 ]
-[e E23441 . `uc
+[e E23439 . `uc
 CAN_2_0_FORMAT 0
 CAN_FD_FORMAT 1
 ]
-[e E23429 . `uc
+[e E23427 . `uc
 CAN_NON_BRS_MODE 0
 CAN_BRS_MODE 1
-]
-"114
-[e E23445 . `uc
-CAN_TX_MSG_REQUEST_SUCCESS 0
-CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
-CAN_TX_MSG_REQUEST_BRS_ERROR 2
-CAN_TX_MSG_REQUEST_FIFO_FULL 3
-]
-[e E23488 . `uc
-TXQ 0
 ]
 "24 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\7seg.c
 [e E23246 . `uc
@@ -392,8 +382,6 @@ I2C1_FAIL 2
 "99
 [v _GetDashboardData GetDashboardData `(v  1 e 1 0 ]
 [v i2_GetDashboardData GetDashboardData `(v  1 e 1 0 ]
-"103
-[v _SendReverseRequest SendReverseRequest `(a  1 e 1 0 ]
 "6 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\LCD.c
 [v _I2C1_SetBuffer_4bitmode I2C1_SetBuffer_4bitmode `(v  1 e 1 0 ]
 "21
@@ -426,9 +414,9 @@ I2C1_FAIL 2
 [v _display_tson_state display_tson_state `(v  1 e 1 0 ]
 "334
 [v _ButtonPressHandler ButtonPressHandler `(v  1 e 1 0 ]
-"372
+"365
 [v _ButtonHoldTimer ButtonHoldTimer `(v  1 e 1 0 ]
-"379
+"372
 [v _RealTimeClockHandler RealTimeClockHandler `(v  1 e 1 0 ]
 "114 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
 [v _CAN1_RX_FIFO_ResetInfo CAN1_RX_FIFO_ResetInfo `(v  1 e 1 0 ]
@@ -446,7 +434,6 @@ I2C1_FAIL 2
 [v _CAN1_OperationModeSet CAN1_OperationModeSet `(E23128  1 e 1 0 ]
 "245
 [v _CAN1_OperationModeGet CAN1_OperationModeGet `(E23118  1 e 1 0 ]
-[v i2_CAN1_OperationModeGet CAN1_OperationModeGet `(E23118  1 e 1 0 ]
 "250
 [v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
 "255
@@ -465,16 +452,10 @@ I2C1_FAIL 2
 [v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
 "427
 [v _ValidateTransmission ValidateTransmission `(E23112  1 s 1 ValidateTransmission ]
-"456
-[v _CAN1_Transmit CAN1_Transmit `(E23112  1 e 1 0 ]
-"490
-[v _CAN1_IsBusOff CAN1_IsBusOff `(a  1 e 1 0 ]
 "495
 [v _CAN1_IsRxErrorPassive CAN1_IsRxErrorPassive `(a  1 e 1 0 ]
 "510
 [v _CAN1_IsTxErrorPassive CAN1_IsTxErrorPassive `(a  1 e 1 0 ]
-"520
-[v _CAN1_IsTxErrorActive CAN1_IsTxErrorActive `(a  1 e 1 0 ]
 "34 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/drivers/i2c_simple_master.c
 [v _wr1RegCompleteHandler wr1RegCompleteHandler `(E363  1 s 1 wr1RegCompleteHandler ]
 "81
@@ -706,9 +687,9 @@ I2C1_FAIL 2
 "41
 [v _power_get_bar power_get_bar `(*.39Cuc  1 e 3 0 ]
 "33 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X/main.h
-[v _display_state display_state `E23586  1 e 1 0 ]
+[v _display_state display_state `E23584  1 e 1 0 ]
 "35
-[v _current_state current_state `VEE23601  1 e 1 0 ]
+[v _current_state current_state `VEE23599  1 e 1 0 ]
 "5 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\7seg.c
 [v _seg_patterns seg_patterns `C[10]uc  1 s 10 seg_patterns ]
 "18
@@ -1393,7 +1374,7 @@ I2C1_FAIL 2
 "41639
 [v _T3CON T3CON `VEuc  1 e 1 @810 ]
 "41681
-[s S3181 . 1 `uc 1 TMR3ON 1 0 :1:0 
+[s S3157 . 1 `uc 1 TMR3ON 1 0 :1:0 
 `uc 1 T3RD16 1 0 :1:1 
 `uc 1 NOT_T3SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -1402,22 +1383,22 @@ I2C1_FAIL 2
 ]
 "41681
 "41681
-[s S3194 . 1 `uc 1 . 1 0 :1:0 
+[s S3170 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RD163 1 0 :1:1 
 ]
 "41681
-[s S3197 . 1 `uc 1 . 1 0 :2:0 
+[s S3173 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nT3SYNC 1 0 :1:2 
 ]
 "41681
-[u S3200 . 1 `S2206 1 . 1 0 `S3181 1 . 1 0 `S2219 1 . 1 0 `S3194 1 . 1 0 `S3197 1 . 1 0 ]
+[u S3176 . 1 `S2206 1 . 1 0 `S3157 1 . 1 0 `S2219 1 . 1 0 `S3170 1 . 1 0 `S3173 1 . 1 0 ]
 "41681
 "41681
-[v _T3CONbits T3CONbits `VES3200  1 e 1 @810 ]
+[v _T3CONbits T3CONbits `VES3176  1 e 1 @810 ]
 "41861
 [v _T3GCON T3GCON `VEuc  1 e 1 @811 ]
 "41915
-[s S3240 . 1 `uc 1 . 1 0 :2:0 
+[s S3216 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T3GVAL 1 0 :1:2 
 `uc 1 T3GGO 1 0 :1:3 
 `uc 1 T3GSPM 1 0 :1:4 
@@ -1427,24 +1408,24 @@ I2C1_FAIL 2
 ]
 "41915
 "41915
-[s S3251 . 1 `uc 1 . 1 0 :3:0 
+[s S3227 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_T3DONE 1 0 :1:3 
 ]
 "41915
 "41915
 "41915
-[s S3260 . 1 `uc 1 . 1 0 :3:0 
+[s S3236 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T3GGO_NOT_DONE 1 0 :1:3 
 ]
 "41915
-[s S3263 . 1 `uc 1 . 1 0 :3:0 
+[s S3239 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T3GGO_nDONE 1 0 :1:3 
 ]
 "41915
-[u S3266 . 1 `S2263 1 . 1 0 `S3240 1 . 1 0 `S2279 1 . 1 0 `S3251 1 . 1 0 `S2285 1 . 1 0 `S2288 1 . 1 0 `S3260 1 . 1 0 `S3263 1 . 1 0 ]
+[u S3242 . 1 `S2263 1 . 1 0 `S3216 1 . 1 0 `S2279 1 . 1 0 `S3227 1 . 1 0 `S2285 1 . 1 0 `S2288 1 . 1 0 `S3236 1 . 1 0 `S3239 1 . 1 0 ]
 "41915
 "41915
-[v _T3GCONbits T3GCONbits `VES3266  1 e 1 @811 ]
+[v _T3GCONbits T3GCONbits `VES3242  1 e 1 @811 ]
 "42147
 [v _T3GATE T3GATE `VEuc  1 e 1 @812 ]
 "42313
@@ -1569,8 +1550,6 @@ I2C1_FAIL 2
 [v _nrMsg nrMsg `uc  1 e 1 0 ]
 "13
 [v _tx_buff tx_buff `[1]uc  1 s 1 tx_buff ]
-"14
-[v _tx_msg tx_msg `S1443  1 s 7 tx_msg ]
 [s S2528 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
 "76 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
 [v _data data `S2528  1 e 10 0 ]
@@ -1643,7 +1622,7 @@ I2C1_FAIL 2
 [v _vcu_number vcu_number `(v  1 e 1 0 ]
 {
 [s S2528 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
-[v vcu_number@data data `*.39S2528  1 p 2 177 ]
+[v vcu_number@data data `*.39S2528  1 p 2 167 ]
 "65
 } 0
 "12 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\animation.c
@@ -1708,14 +1687,14 @@ I2C1_FAIL 2
 "279 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
 [v _display_tson_state display_tson_state `(v  1 e 1 0 ]
 {
-[v display_tson_state@current_state current_state `E23601  1 p 1 wreg ]
-[v display_tson_state@current_state current_state `E23601  1 p 1 wreg ]
+[v display_tson_state@current_state current_state `E23599  1 p 1 wreg ]
+[v display_tson_state@current_state current_state `E23599  1 p 1 wreg ]
 [s S2528 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
-[v display_tson_state@data data `*.39S2528  1 p 2 177 ]
+[v display_tson_state@data data `*.39S2528  1 p 2 167 ]
 "281
-[v display_tson_state@last_state last_state `E23601  1 s 1 last_state ]
+[v display_tson_state@last_state last_state `E23599  1 s 1 last_state ]
 "284
-[v display_tson_state@current_state current_state `E23601  1 p 1 181 ]
+[v display_tson_state@current_state current_state `E23599  1 p 1 171 ]
 "332
 } 0
 "26 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\power.c
@@ -1809,7 +1788,7 @@ I2C1_FAIL 2
 {
 [v LCD_clear_row@row row `uc  1 p 1 wreg ]
 [v LCD_clear_row@row row `uc  1 p 1 wreg ]
-[v LCD_clear_row@row row `uc  1 p 1 177 ]
+[v LCD_clear_row@row row `uc  1 p 1 167 ]
 "81
 } 0
 "88
@@ -1828,20 +1807,20 @@ I2C1_FAIL 2
 [v _LCD_print LCD_print `(v  1 e 1 0 ]
 {
 "105
-[v LCD_print@buffer buffer `[17]uc  1 a 17 0 ]
+[v LCD_print@buffer buffer `[17]uc  1 a 17 10 ]
 "106
-[v LCD_print@args args `[1]*.39v  1 a 2 17 ]
+[v LCD_print@args args `[1]*.39v  1 a 2 27 ]
 "104
-[v LCD_print@str str `*.32Cuc  1 p 2 167 ]
+[v LCD_print@str str `*.32Cuc  1 p 2 0 ]
 "111
 } 0
 "8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\vsprintf.c
 [v _vsprintf vsprintf `(i  1 e 2 0 ]
 {
-[u S3806 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
+[u S3782 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
 "11
-[s S3809 _IO_FILE 11 `S3806 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v vsprintf@f f `S3809  1 a 11 156 ]
+[s S3785 _IO_FILE 11 `S3782 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v vsprintf@f f `S3785  1 a 11 156 ]
 "10
 [v vsprintf@cnt cnt `i  1 a 2 154 ]
 "8
@@ -2003,9 +1982,9 @@ I2C1_FAIL 2
 [v _ProcessCANMessages ProcessCANMessages `(v  1 e 1 0 ]
 {
 "78
-[v ProcessCANMessages@i_3019 i `uc  1 a 1 164 ]
+[v ProcessCANMessages@i_3004 i `uc  1 a 1 164 ]
 "58
-[v ProcessCANMessages@i_3017 i `uc  1 a 1 163 ]
+[v ProcessCANMessages@i_3002 i `uc  1 a 1 163 ]
 "40
 [v ProcessCANMessages@i i `uc  1 a 1 162 ]
 "97
@@ -2024,9 +2003,9 @@ I2C1_FAIL 2
 {
 "1820
 [v vfprintf@cfmt cfmt `*.32uc  1 a 2 144 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "1817
-[v vfprintf@fp fp `*.39S3827  1 p 2 138 ]
+[v vfprintf@fp fp `*.39S3803  1 p 2 138 ]
 [v vfprintf@fmt fmt `*.32Cuc  1 p 2 140 ]
 [v vfprintf@ap ap `*.39*.39v  1 p 2 142 ]
 "1840
@@ -2034,17 +2013,17 @@ I2C1_FAIL 2
 "1177
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
-[u S3881 . 8 `o 1 sint 8 0 `uo 1 uint 8 0 `d 1 f 4 0 ]
+[u S3857 . 8 `o 1 sint 8 0 `uo 1 uint 8 0 `d 1 f 4 0 ]
 "1188
-[v vfpfcnvrt@convarg convarg `S3881  1 a 8 128 ]
+[v vfpfcnvrt@convarg convarg `S3857  1 a 8 128 ]
 "1179
 [v vfpfcnvrt@cp cp `*.32uc  1 a 2 136 ]
 [v vfpfcnvrt@c c `uc  1 a 1 127 ]
 "1180
 [v vfpfcnvrt@done done `a  1 a 1 126 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "1177
-[v vfpfcnvrt@fp fp `*.39S3827  1 p 2 106 ]
+[v vfpfcnvrt@fp fp `*.39S3803  1 p 2 106 ]
 [v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 108 ]
 [v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 110 ]
 "1814
@@ -2063,9 +2042,9 @@ I2C1_FAIL 2
 [v xtoa@d_nonzero d_nonzero `a  1 a 1 51 ]
 "1061
 [v xtoa@a a `uc  1 a 1 46 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "1052
-[v xtoa@fp fp `*.39S3827  1 p 2 27 ]
+[v xtoa@fp fp `*.39S3803  1 p 2 27 ]
 [v xtoa@d d `uo  1 p 8 29 ]
 [v xtoa@x x `uc  1 p 1 37 ]
 "1153
@@ -2078,9 +2057,9 @@ I2C1_FAIL 2
 [v utoa@w w `i  1 a 2 47 ]
 "1005
 [v utoa@p p `i  1 a 2 45 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "1001
-[v utoa@fp fp `*.39S3827  1 p 2 27 ]
+[v utoa@fp fp `*.39S3803  1 p 2 27 ]
 [v utoa@d d `uo  1 p 8 29 ]
 "1047
 } 0
@@ -2117,9 +2096,9 @@ I2C1_FAIL 2
 [v stoa@w w `i  1 a 2 19 ]
 "945
 [v stoa@p p `i  1 a 2 17 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "942
-[v stoa@fp fp `*.39S3827  1 p 2 11 ]
+[v stoa@fp fp `*.39S3803  1 p 2 11 ]
 [v stoa@s s `*.39uc  1 p 2 13 ]
 "997
 } 0
@@ -2145,24 +2124,24 @@ I2C1_FAIL 2
 [v otoa@p p `i  1 a 2 45 ]
 "875
 [v otoa@t t `uc  1 a 1 47 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "872
-[v otoa@fp fp `*.39S3827  1 p 2 27 ]
+[v otoa@fp fp `*.39S3803  1 p 2 27 ]
 [v otoa@d d `uo  1 p 8 29 ]
 "938
 } 0
 "587
 [v _efgtoa efgtoa `(i  1 s 2 efgtoa ]
 {
-[u S3867 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
+[u S3843 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
 "592
-[v efgtoa@u u `S3867  1 a 4 100 ]
-[v efgtoa@g g `S3867  1 a 4 92 ]
+[v efgtoa@u u `S3843  1 a 4 100 ]
+[v efgtoa@g g `S3843  1 a 4 92 ]
 "591
 [v efgtoa@l l `d  1 a 4 87 ]
 [v efgtoa@h h `d  1 a 4 83 ]
 "592
-[v efgtoa@ou ou `S3867  1 a 4 77 ]
+[v efgtoa@ou ou `S3843  1 a 4 77 ]
 "590
 [v efgtoa@n n `i  1 a 2 104 ]
 [v efgtoa@i i `i  1 a 2 98 ]
@@ -2179,9 +2158,9 @@ I2C1_FAIL 2
 [v efgtoa@nmode nmode `uc  1 a 1 75 ]
 [v efgtoa@pp pp `uc  1 a 1 66 ]
 [v efgtoa@esign esign `uc  1 a 1 63 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "587
-[v efgtoa@fp fp `*.39S3827  1 p 2 45 ]
+[v efgtoa@fp fp `*.39S3803  1 p 2 45 ]
 [v efgtoa@f f `d  1 p 4 47 ]
 [v efgtoa@c c `uc  1 p 1 51 ]
 "868
@@ -2202,9 +2181,9 @@ I2C1_FAIL 2
 [v dtoa@p p `i  1 a 2 47 ]
 "515
 [v dtoa@s s `uc  1 a 1 51 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "513
-[v dtoa@fp fp `*.39S3827  1 p 2 27 ]
+[v dtoa@fp fp `*.39S3803  1 p 2 27 ]
 [v dtoa@d d `o  1 p 8 29 ]
 "583
 } 0
@@ -2244,9 +2223,9 @@ I2C1_FAIL 2
 "478
 [v ctoa@w w `i  1 a 2 17 ]
 [v ctoa@l l `i  1 a 2 15 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "476
-[v ctoa@fp fp `*.39S3827  1 p 2 11 ]
+[v ctoa@fp fp `*.39S3803  1 p 2 11 ]
 [v ctoa@c c `uc  1 p 1 13 ]
 "509
 } 0
@@ -2273,9 +2252,9 @@ I2C1_FAIL 2
 [v atoa@sign sign `uc  1 a 1 92 ]
 [v atoa@pp pp `uc  1 a 1 73 ]
 [v atoa@esign esign `uc  1 a 1 66 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "231
-[v atoa@fp fp `*.39S3827  1 p 2 45 ]
+[v atoa@fp fp `*.39S3803  1 p 2 45 ]
 [v atoa@f f `d  1 p 4 47 ]
 [v atoa@c c `uc  1 p 1 51 ]
 "472
@@ -2295,9 +2274,9 @@ I2C1_FAIL 2
 {
 "195
 [v pad@i i `i  1 a 2 25 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "193
-[v pad@fp fp `*.39S3827  1 p 2 18 ]
+[v pad@fp fp `*.39S3803  1 p 2 18 ]
 [v pad@buf buf `*.39uc  1 p 2 20 ]
 [v pad@p p `i  1 p 2 22 ]
 "226
@@ -2320,18 +2299,18 @@ I2C1_FAIL 2
 [v fputs@c c `uc  1 a 1 15 ]
 "8
 [v fputs@s s `*.39Cuc  1 p 2 11 ]
-[u S3806 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
-[s S3809 _IO_FILE 11 `S3806 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputs@fp fp `*.39S3809  1 p 2 13 ]
+[u S3782 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
+[s S3785 _IO_FILE 11 `S3782 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.39S3785  1 p 2 13 ]
 "19
 } 0
 "8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 2 ]
-[u S3806 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
-[s S3809 _IO_FILE 11 `S3806 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputc@fp fp `*.39S3809  1 p 2 4 ]
+[u S3782 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
+[s S3785 _IO_FILE 11 `S3782 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S3785  1 p 2 4 ]
 "24
 } 0
 "184 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/uart1.c
@@ -2354,9 +2333,9 @@ I2C1_FAIL 2
 "3 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\floorf.c
 [v _floorf floorf `(f  1 e 4 0 ]
 {
-[u S4049 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S4025 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v floorf@u u `S4049  1 a 4 41 ]
+[v floorf@u u `S4025  1 a 4 41 ]
 "7
 [v floorf@m m `ul  1 a 4 35 ]
 "6
@@ -2364,21 +2343,21 @@ I2C1_FAIL 2
 "3
 [v floorf@x x `f  1 p 4 25 ]
 "4
-[v floorf@F521 F521 `S4049  1 s 4 F521 ]
+[v floorf@F521 F521 `S4025  1 s 4 F521 ]
 "27
 } 0
 "4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S4049 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S4025 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v ___fpclassifyf@u u `S4049  1 a 4 10 ]
+[v ___fpclassifyf@u u `S4025  1 a 4 10 ]
 "7
 [v ___fpclassifyf@e e `i  1 a 2 8 ]
 "4
 [v ___fpclassifyf@x x `f  1 p 4 0 ]
 "5
-[v ___fpclassifyf@F465 F465 `S4049  1 s 4 F465 ]
+[v ___fpclassifyf@F465 F465 `S4025  1 s 4 F465 ]
 "11
 } 0
 "43 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
@@ -2423,17 +2402,17 @@ I2C1_FAIL 2
 "8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S3658 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S3634 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S3663 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S3666 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3658 1 fAsBytes 4 0 `S3663 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S3666  1 a 4 19 ]
+[s S3639 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S3642 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3634 1 fAsBytes 4 0 `S3639 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S3642  1 a 4 19 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 14 ]
-[s S3734 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S3710 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S3737 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3734 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S3737  1 a 2 23 ]
+[u S3713 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3710 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S3713  1 a 2 23 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 18 ]
 "11
@@ -2633,9 +2612,9 @@ I2C1_FAIL 2
 [v _LCD_create_custom_char LCD_create_custom_char `(v  1 e 1 0 ]
 {
 "198
-[v LCD_create_custom_char@i_2905 i `i  1 a 2 51 ]
+[v LCD_create_custom_char@i_2900 i `i  1 a 2 51 ]
 "192
-[v LCD_create_custom_char@i_2904 i `i  1 a 2 49 ]
+[v LCD_create_custom_char@i_2899 i `i  1 a 2 49 ]
 "186
 [v LCD_create_custom_char@i i `i  1 a 2 47 ]
 "174
@@ -3083,10 +3062,10 @@ I2C1_FAIL 2
 {
 "183
 } 0
-"372 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
+"365 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
 [v _ButtonHoldTimer ButtonHoldTimer `(v  1 e 1 0 ]
 {
-"376
+"369
 } 0
 "189 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/tmr3.c
 [v _TMR3_DefaultInterruptHandler TMR3_DefaultInterruptHandler `(v  1 e 1 0 ]
@@ -3111,15 +3090,15 @@ I2C1_FAIL 2
 {
 "190
 } 0
-"379 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
+"372 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
 [v _RealTimeClockHandler RealTimeClockHandler `(v  1 e 1 0 ]
 {
 [s S2528 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
-"382
+"375
 [v RealTimeClockHandler@data data `S2528  1 a 10 20 ]
-"379
-[v RealTimeClockHandler@F23661 F23661 `S2528  1 s 10 F23661 ]
-"395
+"372
+[v RealTimeClockHandler@F23659 F23659 `S2528  1 s 10 F23659 ]
+"388
 } 0
 "196 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/tmr1.c
 [v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
@@ -3185,34 +3164,12 @@ I2C1_FAIL 2
 "334 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
 [v _ButtonPressHandler ButtonPressHandler `(v  1 e 1 0 ]
 {
-"370
+"363
 } 0
 "185 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/pin_manager.c
 [v _IOCAF0_DefaultInterruptHandler IOCAF0_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "188
-} 0
-"105 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/tmr3.c
-[v _TMR3_StopTimer TMR3_StopTimer `(v  1 e 1 0 ]
-{
-"109
-} 0
-"99
-[v _TMR3_StartTimer TMR3_StartTimer `(v  1 e 1 0 ]
-{
-"103
-} 0
-"103 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\CAN_handler.c
-[v _SendReverseRequest SendReverseRequest `(a  1 e 1 0 ]
-{
-[v SendReverseRequest@reverse reverse `uc  1 p 1 wreg ]
-"114
-[v SendReverseRequest@status status `E23445  1 a 1 88 ]
-"103
-[v SendReverseRequest@reverse reverse `uc  1 p 1 wreg ]
-"105
-[v SendReverseRequest@reverse reverse `uc  1 p 1 87 ]
-"123
 } 0
 "5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\printf.c
 [v i2_printf printf `(i  1 e 2 0 ]
@@ -3228,9 +3185,9 @@ I2C1_FAIL 2
 {
 "1820
 [v i2vfprintf@cfmt cfmt `*.32uc  1 a 2 83 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "1817
-[v i2vfprintf@fp fp `*.39S3827  1 p 2 57 ]
+[v i2vfprintf@fp fp `*.39S3803  1 p 2 57 ]
 [v i2vfprintf@fmt fmt `*.32Cuc  1 p 2 59 ]
 [v i2vfprintf@ap ap `*.39*.39v  1 p 2 61 ]
 "1840
@@ -3238,17 +3195,17 @@ I2C1_FAIL 2
 "1177
 [v i2_vfpfcnvrt vfpfcnvrt `(i  1 s 2 i2_vfpfcnvrt ]
 {
-[u S3881 . 8 `o 1 sint 8 0 `uo 1 uint 8 0 `d 1 f 4 0 ]
+[u S3857 . 8 `o 1 sint 8 0 `uo 1 uint 8 0 `d 1 f 4 0 ]
 "1188
-[v i2vfpfcnvrt@convarg convarg `S3881  1 a 8 73 ]
+[v i2vfpfcnvrt@convarg convarg `S3857  1 a 8 73 ]
 "1179
 [v i2vfpfcnvrt@cp cp `*.32uc  1 a 2 81 ]
 [v i2vfpfcnvrt@c c `uc  1 a 1 72 ]
 "1180
 [v i2vfpfcnvrt@done done `a  1 a 1 71 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "1177
-[v i2vfpfcnvrt@fp fp `*.39S3827  1 p 2 51 ]
+[v i2vfpfcnvrt@fp fp `*.39S3803  1 p 2 51 ]
 [v i2vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 53 ]
 [v i2vfpfcnvrt@ap ap `*.39*.39v  1 p 2 55 ]
 "1814
@@ -3267,9 +3224,9 @@ I2C1_FAIL 2
 [v i2xtoa@d_nonzero d_nonzero `a  1 a 1 51 ]
 "1061
 [v i2xtoa@a a `uc  1 a 1 46 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "1052
-[v i2xtoa@fp fp `*.39S3827  1 p 2 27 ]
+[v i2xtoa@fp fp `*.39S3803  1 p 2 27 ]
 [v i2xtoa@d d `uo  1 p 8 29 ]
 [v i2xtoa@x x `uc  1 p 1 37 ]
 "1153
@@ -3282,9 +3239,9 @@ I2C1_FAIL 2
 [v i2utoa@w w `i  1 a 2 47 ]
 "1005
 [v i2utoa@p p `i  1 a 2 45 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "1001
-[v i2utoa@fp fp `*.39S3827  1 p 2 27 ]
+[v i2utoa@fp fp `*.39S3803  1 p 2 27 ]
 [v i2utoa@d d `uo  1 p 8 29 ]
 "1047
 } 0
@@ -3321,9 +3278,9 @@ I2C1_FAIL 2
 [v i2stoa@w w `i  1 a 2 19 ]
 "945
 [v i2stoa@p p `i  1 a 2 17 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "942
-[v i2stoa@fp fp `*.39S3827  1 p 2 11 ]
+[v i2stoa@fp fp `*.39S3803  1 p 2 11 ]
 [v i2stoa@s s `*.39uc  1 p 2 13 ]
 "997
 } 0
@@ -3349,24 +3306,24 @@ I2C1_FAIL 2
 [v i2otoa@p p `i  1 a 2 45 ]
 "875
 [v i2otoa@t t `uc  1 a 1 47 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "872
-[v i2otoa@fp fp `*.39S3827  1 p 2 27 ]
+[v i2otoa@fp fp `*.39S3803  1 p 2 27 ]
 [v i2otoa@d d `uo  1 p 8 29 ]
 "938
 } 0
 "587
 [v i2_efgtoa efgtoa `(i  1 s 2 i2_efgtoa ]
 {
-[u S3867 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
+[u S3843 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
 "592
-[v i2efgtoa@u u `S3867  1 a 4 45 ]
-[v i2efgtoa@g g `S3867  1 a 4 37 ]
+[v i2efgtoa@u u `S3843  1 a 4 45 ]
+[v i2efgtoa@g g `S3843  1 a 4 37 ]
 "591
 [v i2efgtoa@l l `d  1 a 4 32 ]
 [v i2efgtoa@h h `d  1 a 4 28 ]
 "592
-[v i2efgtoa@ou ou `S3867  1 a 4 22 ]
+[v i2efgtoa@ou ou `S3843  1 a 4 22 ]
 "590
 [v i2efgtoa@n n `i  1 a 2 49 ]
 [v i2efgtoa@i i `i  1 a 2 43 ]
@@ -3383,9 +3340,9 @@ I2C1_FAIL 2
 [v i2efgtoa@nmode nmode `uc  1 a 1 20 ]
 [v i2efgtoa@pp pp `uc  1 a 1 11 ]
 [v i2efgtoa@esign esign `uc  1 a 1 8 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "587
-[v i2efgtoa@fp fp `*.39S3827  1 p 2 45 ]
+[v i2efgtoa@fp fp `*.39S3803  1 p 2 45 ]
 [v i2efgtoa@f f `d  1 p 4 47 ]
 [v i2efgtoa@c c `uc  1 p 1 51 ]
 "868
@@ -3406,9 +3363,9 @@ I2C1_FAIL 2
 [v i2dtoa@p p `i  1 a 2 47 ]
 "515
 [v i2dtoa@s s `uc  1 a 1 51 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "513
-[v i2dtoa@fp fp `*.39S3827  1 p 2 27 ]
+[v i2dtoa@fp fp `*.39S3803  1 p 2 27 ]
 [v i2dtoa@d d `o  1 p 8 29 ]
 "583
 } 0
@@ -3448,9 +3405,9 @@ I2C1_FAIL 2
 "478
 [v i2ctoa@w w `i  1 a 2 17 ]
 [v i2ctoa@l l `i  1 a 2 15 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "476
-[v i2ctoa@fp fp `*.39S3827  1 p 2 11 ]
+[v i2ctoa@fp fp `*.39S3803  1 p 2 11 ]
 [v i2ctoa@c c `uc  1 p 1 13 ]
 "509
 } 0
@@ -3477,9 +3434,9 @@ I2C1_FAIL 2
 [v i2atoa@sign sign `uc  1 a 1 38 ]
 [v i2atoa@pp pp `uc  1 a 1 19 ]
 [v i2atoa@esign esign `uc  1 a 1 12 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "231
-[v i2atoa@fp fp `*.39S3827  1 p 2 45 ]
+[v i2atoa@fp fp `*.39S3803  1 p 2 45 ]
 [v i2atoa@f f `d  1 p 4 47 ]
 [v i2atoa@c c `uc  1 p 1 51 ]
 "472
@@ -3499,9 +3456,9 @@ I2C1_FAIL 2
 {
 "195
 [v i2pad@i i `i  1 a 2 25 ]
-[s S3827 _IO_FILE 0 ]
+[s S3803 _IO_FILE 0 ]
 "193
-[v i2pad@fp fp `*.39S3827  1 p 2 18 ]
+[v i2pad@fp fp `*.39S3803  1 p 2 18 ]
 [v i2pad@buf buf `*.39uc  1 p 2 20 ]
 [v i2pad@p p `i  1 p 2 22 ]
 "226
@@ -3524,18 +3481,18 @@ I2C1_FAIL 2
 [v i2fputs@c c `uc  1 a 1 15 ]
 "8
 [v i2fputs@s s `*.39Cuc  1 p 2 11 ]
-[u S3806 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
-[s S3809 _IO_FILE 11 `S3806 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v i2fputs@fp fp `*.39S3809  1 p 2 13 ]
+[u S3782 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
+[s S3785 _IO_FILE 11 `S3782 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v i2fputs@fp fp `*.39S3785  1 p 2 13 ]
 "19
 } 0
 "8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputc.c
 [v i2_fputc fputc `(i  1 e 2 0 ]
 {
 [v i2fputc@c c `i  1 p 2 2 ]
-[u S3806 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
-[s S3809 _IO_FILE 11 `S3806 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v i2fputc@fp fp `*.39S3809  1 p 2 4 ]
+[u S3782 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
+[s S3785 _IO_FILE 11 `S3782 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v i2fputc@fp fp `*.39S3785  1 p 2 4 ]
 "24
 } 0
 "184 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/uart1.c
@@ -3555,12 +3512,27 @@ I2C1_FAIL 2
 [v i2UART1_Write@txData txData `uc  1 p 1 0 ]
 "177
 } 0
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\memcpy.c
+[v i2_memcpy memcpy `(*.39v  1 e 3 0 ]
+{
+"8
+[v i2memcpy@s s `*.39Cuc  1 a 2 9 ]
+"7
+[v i2memcpy@d d `*.39uc  1 a 2 7 ]
+"9
+[v i2memcpy@tmp tmp `uc  1 a 1 6 ]
+"4
+[v i2memcpy@d1 d1 `*.39v  1 p 2 0 ]
+[v i2memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
+[v i2memcpy@n n `ui  1 p 2 4 ]
+"18
+} 0
 "3 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\floorf.c
 [v i2_floorf floorf `(f  1 e 4 0 ]
 {
-[u S4049 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S4025 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v i2floorf@u u `S4049  1 a 4 41 ]
+[v i2floorf@u u `S4025  1 a 4 41 ]
 "7
 [v i2floorf@m m `ul  1 a 4 35 ]
 "6
@@ -3572,9 +3544,9 @@ I2C1_FAIL 2
 "4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__fpclassifyf.c
 [v i2___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S4049 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S4025 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v i2___fpclassifyf@u u `S4049  1 a 4 10 ]
+[v i2___fpclassifyf@u u `S4025  1 a 4 10 ]
 "7
 [v i2___fpclassifyf@e e `i  1 a 2 8 ]
 "4
@@ -3623,17 +3595,17 @@ I2C1_FAIL 2
 "8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
 [v i2___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S3658 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S3634 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S3663 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S3666 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3658 1 fAsBytes 4 0 `S3663 1 fAsWords 4 0 ]
-[v i2___flmul@prod prod `S3666  1 a 4 19 ]
+[s S3639 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S3642 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3634 1 fAsBytes 4 0 `S3639 1 fAsWords 4 0 ]
+[v i2___flmul@prod prod `S3642  1 a 4 19 ]
 "12
 [v i2___flmul@grs grs `ul  1 a 4 14 ]
-[s S3734 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S3710 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S3737 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3734 1 nAsBytes 2 0 ]
-[v i2___flmul@temp temp `S3737  1 a 2 23 ]
+[u S3713 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3710 1 nAsBytes 2 0 ]
+[v i2___flmul@temp temp `S3713  1 a 2 23 ]
 "10
 [v i2___flmul@bexp bexp `uc  1 a 1 18 ]
 "11
@@ -3703,122 +3675,13 @@ I2C1_FAIL 2
 [v i2___awdiv@divisor divisor `i  1 p 2 2 ]
 "41
 } 0
-"456 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
-[v _CAN1_Transmit CAN1_Transmit `(E23112  1 e 1 0 ]
+"105 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/tmr3.c
+[v _TMR3_StopTimer TMR3_StopTimer `(v  1 e 1 0 ]
 {
-[v CAN1_Transmit@fifoChannel fifoChannel `CE23155  1 p 1 wreg ]
-"465
-[v CAN1_Transmit@txFifoObj txFifoObj `*.39uc  1 a 2 24 ]
-"458
-[v CAN1_Transmit@status status `E23112  1 a 1 26 ]
-"456
-[v CAN1_Transmit@fifoChannel fifoChannel `CE23155  1 p 1 wreg ]
-[s S1434 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-[u S1440 . 1 `uc 1 msgfields 1 0 `S1434 1 . 1 0 ]
-[s S1443 . 7 `ul 1 msgId 4 0 `S1440 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v CAN1_Transmit@txCanMsg txCanMsg `*.39S1443  1 p 2 22 ]
-"458
-[v CAN1_Transmit@fifoChannel fifoChannel `CE23155  1 p 1 27 ]
-"476
+"109
 } 0
-"376
-[v _isTxChannel isTxChannel `(a  1 s 1 isTxChannel ]
+"99
+[v _TMR3_StartTimer TMR3_StartTimer `(v  1 e 1 0 ]
 {
-[v isTxChannel@channel channel `uc  1 p 1 wreg ]
-[v isTxChannel@channel channel `uc  1 p 1 wreg ]
-"378
-[v isTxChannel@channel channel `uc  1 p 1 1 ]
-"379
-} 0
-"386
-[v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
-{
-"388
-[v WriteMessageToFifo@msgId msgId `ul  1 a 4 18 ]
-"389
-[v WriteMessageToFifo@status status `uc  1 a 1 17 ]
-"386
-[v WriteMessageToFifo@txFifoObj txFifoObj `*.39uc  1 p 2 11 ]
-[s S1434 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-[u S1440 . 1 `uc 1 msgfields 1 0 `S1434 1 . 1 0 ]
-[s S1443 . 7 `ul 1 msgId 4 0 `S1440 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v WriteMessageToFifo@txCanMsg txCanMsg `*.39S1443  1 p 2 13 ]
-"425
-} 0
-"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\memcpy.c
-[v i2_memcpy memcpy `(*.39v  1 e 3 0 ]
-{
-"8
-[v i2memcpy@s s `*.39Cuc  1 a 2 9 ]
-"7
-[v i2memcpy@d d `*.39uc  1 a 2 7 ]
-"9
-[v i2memcpy@tmp tmp `uc  1 a 1 6 ]
-"4
-[v i2memcpy@d1 d1 `*.39v  1 p 2 0 ]
-[v i2memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
-[v i2memcpy@n n `ui  1 p 2 4 ]
-"18
-} 0
-"427 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
-[v _ValidateTransmission ValidateTransmission `(E23112  1 s 1 ValidateTransmission ]
-{
-[v ValidateTransmission@validChannel validChannel `uc  1 p 1 wreg ]
-[s S1434 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-"430
-[u S1440 . 1 `uc 1 msgfields 1 0 `S1434 1 . 1 0 ]
-[v ValidateTransmission@field field `S1440  1 a 1 8 ]
-"429
-[v ValidateTransmission@txMsgStatus txMsgStatus `E23112  1 a 1 7 ]
-"427
-[v ValidateTransmission@validChannel validChannel `uc  1 p 1 wreg ]
-[s S1443 . 7 `ul 1 msgId 4 0 `S1440 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v ValidateTransmission@txCanMsg txCanMsg `*.39S1443  1 p 2 1 ]
-"429
-[v ValidateTransmission@validChannel validChannel `uc  1 p 1 6 ]
-"454
-} 0
-"245
-[v i2_CAN1_OperationModeGet CAN1_OperationModeGet `(E23118  1 e 1 0 ]
-{
-"248
-} 0
-"381
-[v _GetTxFifoStatus GetTxFifoStatus `(E23133  1 s 1 GetTxFifoStatus ]
-{
-[v GetTxFifoStatus@validChannel validChannel `uc  1 p 1 wreg ]
-[v GetTxFifoStatus@validChannel validChannel `uc  1 p 1 wreg ]
-"383
-[v GetTxFifoStatus@validChannel validChannel `uc  1 p 1 0 ]
-"384
-} 0
-"520
-[v _CAN1_IsTxErrorActive CAN1_IsTxErrorActive `(a  1 e 1 0 ]
-{
-"523
-} 0
-"510
-[v _CAN1_IsTxErrorPassive CAN1_IsTxErrorPassive `(a  1 e 1 0 ]
-{
-"513
-} 0
-"490
-[v _CAN1_IsBusOff CAN1_IsBusOff `(a  1 e 1 0 ]
-{
-"493
+"103
 } 0

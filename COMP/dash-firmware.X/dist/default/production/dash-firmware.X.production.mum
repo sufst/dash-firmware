@@ -1,7 +1,7 @@
 
 18F47Q84 Memory Summary:
-    Program space        used  E420h ( 58400) of 20000h bytes   ( 44.6%)
-    Data space           used   36Ch (   876) of  3200h bytes   (  6.8%)
+    Program space        used  DF04h ( 57092) of 20000h bytes   ( 43.6%)
+    Data space           used   368h (   872) of  3200h bytes   (  6.8%)
     Configuration bits   used     Fh (    15) of    12h words   ( 83.3%)
     EEPROM space         used     0h (     0) of   400h bytes   (  0.0%)
     ID Location space    used     0h (     0) of    40h bytes   (  0.0%)
