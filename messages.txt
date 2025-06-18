@@ -1,2 +1,0 @@
-BMS_Average_Temperature - ID 0x202
-BMS_PACK_SOC - ID 0x201

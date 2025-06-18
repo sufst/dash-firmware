@@ -1,0 +1,1012 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47Q84 ]
+[d frameptr 1249 ]
+"34 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/drivers/i2c_simple_master.c
+[e E363 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+"53
+[e E358 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"67 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/examples/i2c1_master_example.c
+[e E358 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"68
+[e E363 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+"159 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/i2c1_master.c
+[e E23307 . `uc
+I2C1_IDLE 0
+I2C1_SEND_ADR_READ 1
+I2C1_SEND_ADR_WRITE 2
+I2C1_TX 3
+I2C1_RX 4
+I2C1_TX_EMPTY 5
+I2C1_RX_EMPTY 6
+I2C1_SEND_RESTART_READ 7
+I2C1_SEND_RESTART_WRITE 8
+I2C1_SEND_RESTART 9
+I2C1_SEND_STOP 10
+I2C1_RX_ACK 11
+I2C1_TX_ACK 12
+I2C1_RX_NACK_STOP 13
+I2C1_RX_NACK_RESTART 14
+I2C1_RESET 15
+I2C1_ADDRESS_NACK 16
+I2C1_BUS_COLLISION 17
+I2C1_BUS_ERROR 18
+]
+"181
+[e E363 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+[e E358 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"222
+[e E23328 . `uc
+I2C1_DATA_COMPLETE 0
+I2C1_WRITE_COLLISION 1
+I2C1_ADDR_NACK 2
+I2C1_DATA_NACK 3
+I2C1_TIMEOUT 4
+I2C1_NULL 5
+]
+"30 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\LCD.c
+[e E23237 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\vsprintf.c
+[v _vsprintf vsprintf `(i  1 e 2 0 ]
+"6 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\LCD.c
+[v _I2C1_SetBuffer_4bitmode I2C1_SetBuffer_4bitmode `(v  1 e 1 0 ]
+"21
+[v _LCD_send_nibble_cmd LCD_send_nibble_cmd `(v  1 e 1 0 ]
+"41
+[v _LCD_send_byte LCD_send_byte `(v  1 e 1 0 ]
+"54
+[v _LCD_init LCD_init `(v  1 e 1 0 ]
+"71
+[v _LCD_clear LCD_clear `(v  1 e 1 0 ]
+"86
+[v _LCD_set_cursor LCD_set_cursor `(v  1 e 1 0 ]
+"96
+[v _LCD_write_string LCD_write_string `(v  1 e 1 0 ]
+"102
+[v _LCD_print LCD_print `(v  1 e 1 0 ]
+"52 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"34 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/drivers/i2c_simple_master.c
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E363  1 s 1 wr1RegCompleteHandler ]
+"81
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E363  1 s 1 rd1RegCompleteHandler ]
+"119
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E363  1 s 1 rd2RegCompleteHandler ]
+"151
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E363  1 s 1 wr2RegCompleteHandler ]
+"185
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E363  1 s 1 rdBlkRegCompleteHandler ]
+"142 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/examples/i2c1_master_example.c
+[v _rd1RegCompleteHandler@i2c1_master_example$F145 rd1RegCompleteHandler `(E363  1 s 1 rd1RegCompleteHandler ]
+"149
+[v _rd2RegCompleteHandler@i2c1_master_example$F156 rd2RegCompleteHandler `(E363  1 s 1 rd2RegCompleteHandler ]
+"156
+[v _wr1RegCompleteHandler@i2c1_master_example$F162 wr1RegCompleteHandler `(E363  1 s 1 wr1RegCompleteHandler ]
+"163
+[v _wr2RegCompleteHandler@i2c1_master_example$F168 wr2RegCompleteHandler `(E363  1 s 1 wr2RegCompleteHandler ]
+"170
+[v _rdBlkRegCompleteHandler@i2c1_master_example$F179 rdBlkRegCompleteHandler `(E363  1 s 1 rdBlkRegCompleteHandler ]
+"183 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/i2c1_master.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+"207
+[v _I2C1_Open I2C1_Open `(E358  1 e 1 0 ]
+"240
+[v _I2C1_Close I2C1_Close `(E358  1 e 1 0 ]
+"255
+[v _I2C1_MasterOperation I2C1_MasterOperation `(E358  1 e 1 0 ]
+"279
+[v _I2C1_MasterRead I2C1_MasterRead `(E358  1 e 1 0 ]
+"284
+[v _I2C1_MasterWrite I2C1_MasterWrite `(E358  1 e 1 0 ]
+"296
+[v _I2C1_SetBuffer I2C1_SetBuffer `(v  1 e 1 0 ]
+"306
+[v _I2C1_SetDataCompleteCallback I2C1_SetDataCompleteCallback `(v  1 e 1 0 ]
+"316
+[v _I2C1_SetAddressNackCallback I2C1_SetAddressNackCallback `(v  1 e 1 0 ]
+"331
+[v _I2C1_SetCallback I2C1_SetCallback `(v  1 s 1 I2C1_SetCallback ]
+"345
+[v _I2C1_Poller I2C1_Poller `(v  1 s 1 I2C1_Poller ]
+"354
+[v _I2C1_MasterFsm I2C1_MasterFsm `T(v  1 s 1 I2C1_MasterFsm ]
+"365
+[v _I2C1_ClearInterruptFlags I2C1_ClearInterruptFlags `T(v  1 s 1 I2C1_ClearInterruptFlags ]
+"381
+[v _I2C1_DO_IDLE I2C1_DO_IDLE `(E23307  1 s 1 I2C1_DO_IDLE ]
+"388
+[v _I2C1_DO_SEND_ADR_READ I2C1_DO_SEND_ADR_READ `(E23307  1 s 1 I2C1_DO_SEND_ADR_READ ]
+"399
+[v _I2C1_DO_SEND_ADR_WRITE I2C1_DO_SEND_ADR_WRITE `(E23307  1 s 1 I2C1_DO_SEND_ADR_WRITE ]
+"406
+[v _I2C1_DO_TX I2C1_DO_TX `(E23307  1 s 1 I2C1_DO_TX ]
+"439
+[v _I2C1_DO_RX I2C1_DO_RX `(E23307  1 s 1 I2C1_DO_RX ]
+"463
+[v _I2C1_DO_TX_EMPTY I2C1_DO_TX_EMPTY `(E23307  1 s 1 I2C1_DO_TX_EMPTY ]
+"482
+[v _I2C1_DO_RX_EMPTY I2C1_DO_RX_EMPTY `(E23307  1 s 1 I2C1_DO_RX_EMPTY ]
+"507
+[v _I2C1_DO_SEND_RESTART_READ I2C1_DO_SEND_RESTART_READ `(E23307  1 s 1 I2C1_DO_SEND_RESTART_READ ]
+"513
+[v _I2C1_DO_SEND_RESTART_WRITE I2C1_DO_SEND_RESTART_WRITE `(E23307  1 s 1 I2C1_DO_SEND_RESTART_WRITE ]
+"519
+[v _I2C1_DO_SEND_RESTART I2C1_DO_SEND_RESTART `(E23307  1 s 1 I2C1_DO_SEND_RESTART ]
+"524
+[v _I2C1_DO_SEND_STOP I2C1_DO_SEND_STOP `(E23307  1 s 1 I2C1_DO_SEND_STOP ]
+"535
+[v _I2C1_DO_RX_ACK I2C1_DO_RX_ACK `(E23307  1 s 1 I2C1_DO_RX_ACK ]
+"541
+[v _I2C1_DO_TX_ACK I2C1_DO_TX_ACK `(E23307  1 s 1 I2C1_DO_TX_ACK ]
+"547
+[v _I2C1_DO_RX_NACK_STOP I2C1_DO_RX_NACK_STOP `(E23307  1 s 1 I2C1_DO_RX_NACK_STOP ]
+"554
+[v _I2C1_DO_RX_NACK_RESTART I2C1_DO_RX_NACK_RESTART `(E23307  1 s 1 I2C1_DO_RX_NACK_RESTART ]
+"560
+[v _I2C1_DO_RESET I2C1_DO_RESET `(E23307  1 s 1 I2C1_DO_RESET ]
+"567
+[v _I2C1_DO_ADDRESS_NACK I2C1_DO_ADDRESS_NACK `(E23307  1 s 1 I2C1_DO_ADDRESS_NACK ]
+"582
+[v _I2C1_DO_BUS_COLLISION I2C1_DO_BUS_COLLISION `(E23307  1 s 1 I2C1_DO_BUS_COLLISION ]
+"598
+[v _I2C1_DO_BUS_ERROR I2C1_DO_BUS_ERROR `(E23307  1 s 1 I2C1_DO_BUS_ERROR ]
+"612
+[v _I2C1_CallbackReturnStop I2C1_CallbackReturnStop `(E363  1 e 1 0 ]
+"617
+[v _I2C1_CallbackReturnReset I2C1_CallbackReturnReset `(E363  1 e 1 0 ]
+"635
+[v _I2C1_MasterOpen I2C1_MasterOpen `T(a  1 s 1 I2C1_MasterOpen ]
+"657
+[v _I2C1_MasterClose I2C1_MasterClose `T(v  1 s 1 I2C1_MasterClose ]
+"667
+[v _I2C1_MasterGetRxData I2C1_MasterGetRxData `T(uc  1 s 1 I2C1_MasterGetRxData ]
+"672
+[v _I2C1_MasterSendTxData I2C1_MasterSendTxData `T(v  1 s 1 I2C1_MasterSendTxData ]
+"677
+[v _I2C1_MasterGetCounter I2C1_MasterGetCounter `T(uc  1 s 1 I2C1_MasterGetCounter ]
+"682
+[v _I2C1_MasterSetCounter I2C1_MasterSetCounter `T(v  1 s 1 I2C1_MasterSetCounter ]
+"688
+[v _I2C1_MasterResetBus I2C1_MasterResetBus `T(v  1 s 1 I2C1_MasterResetBus ]
+"698
+[v _I2C1_MasterEnableRestart I2C1_MasterEnableRestart `T(v  1 s 1 I2C1_MasterEnableRestart ]
+"704
+[v _I2C1_MasterDisableRestart I2C1_MasterDisableRestart `T(v  1 s 1 I2C1_MasterDisableRestart ]
+"710
+[v _I2C1_MasterStop I2C1_MasterStop `T(v  1 s 1 I2C1_MasterStop ]
+"716
+[v _I2C1_MasterIsNack I2C1_MasterIsNack `T(a  1 s 1 I2C1_MasterIsNack ]
+"721
+[v _I2C1_MasterSendAck I2C1_MasterSendAck `T(v  1 s 1 I2C1_MasterSendAck ]
+"726
+[v _I2C1_MasterSendNack I2C1_MasterSendNack `T(v  1 s 1 I2C1_MasterSendNack ]
+"731
+[v _I2C1_MasterClearBusCollision I2C1_MasterClearBusCollision `T(v  1 s 1 I2C1_MasterClearBusCollision ]
+"738
+[v _I2C1_MasterIsRxBufFull I2C1_MasterIsRxBufFull `T(a  1 s 1 I2C1_MasterIsRxBufFull ]
+"743
+[v _I2C1_MasterIsTxBufEmpty I2C1_MasterIsTxBufEmpty `T(a  1 s 1 I2C1_MasterIsTxBufEmpty ]
+"748
+[v _I2C1_MasterIsStopFlagSet I2C1_MasterIsStopFlagSet `T(a  1 s 1 I2C1_MasterIsStopFlagSet ]
+"753
+[v _I2C1_MasterIsCountFlagSet I2C1_MasterIsCountFlagSet `T(a  1 s 1 I2C1_MasterIsCountFlagSet ]
+"758
+[v _I2C1_MasterIsNackFlagSet I2C1_MasterIsNackFlagSet `T(a  1 s 1 I2C1_MasterIsNackFlagSet ]
+"763
+[v _I2C1_MasterClearStopFlag I2C1_MasterClearStopFlag `T(v  1 s 1 I2C1_MasterClearStopFlag ]
+"768
+[v _I2C1_MasterClearCountFlag I2C1_MasterClearCountFlag `T(v  1 s 1 I2C1_MasterClearCountFlag ]
+"773
+[v _I2C1_MasterClearNackFlag I2C1_MasterClearNackFlag `T(v  1 s 1 I2C1_MasterClearNackFlag ]
+"778
+[v _I2C1_MasterEnableIrq I2C1_MasterEnableIrq `T(v  1 s 1 I2C1_MasterEnableIrq ]
+"795
+[v _I2C1_MasterDisableIrq I2C1_MasterDisableIrq `T(v  1 s 1 I2C1_MasterDisableIrq ]
+"811
+[v _I2C1_MasterClearIrq I2C1_MasterClearIrq `T(v  1 s 1 I2C1_MasterClearIrq ]
+"816
+[v _I2C1_MasterWaitForEvent I2C1_MasterWaitForEvent `T(v  1 s 1 I2C1_MasterWaitForEvent ]
+"50 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"58
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"72
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"1338 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc/pic18f47q84.h
+[v _PMD0 PMD0 `VEuc  1 e 1 @96 ]
+"1404
+[v _PMD1 PMD1 `VEuc  1 e 1 @97 ]
+"1466
+[v _PMD2 PMD2 `VEuc  1 e 1 @98 ]
+"1513
+[v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
+"1564
+[v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
+"1620
+[v _PMD5 PMD5 `VEuc  1 e 1 @101 ]
+"1677
+[v _PMD6 PMD6 `VEuc  1 e 1 @102 ]
+"1739
+[v _PMD7 PMD7 `VEuc  1 e 1 @103 ]
+"1801
+[v _PMD8 PMD8 `VEuc  1 e 1 @104 ]
+[s S749 . 1 `uc 1 I2C1RXIE 1 0 :1:0 
+`uc 1 I2C1TXIE 1 0 :1:1 
+`uc 1 I2C1IE 1 0 :1:2 
+`uc 1 I2C1EIE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CLC3IE 1 0 :1:5 
+`uc 1 PWM3PIE 1 0 :1:6 
+`uc 1 PWM3IE 1 0 :1:7 
+]
+"2049
+[u S758 . 1 `S749 1 . 1 0 ]
+[v _PIE7bits PIE7bits `VES758  1 e 1 @1189 ]
+[s S810 . 1 `uc 1 I2C1RXIF 1 0 :1:0 
+`uc 1 I2C1TXIF 1 0 :1:1 
+`uc 1 I2C1IF 1 0 :1:2 
+`uc 1 I2C1EIF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CLC3IF 1 0 :1:5 
+`uc 1 PWM3PIF 1 0 :1:6 
+`uc 1 PWM3IF 1 0 :1:7 
+]
+"3034
+[u S819 . 1 `S810 1 . 1 0 ]
+[v _PIR7bits PIR7bits `VES819  1 e 1 @1205 ]
+"3560
+[v _LATA LATA `VEuc  1 e 1 @1214 ]
+"3622
+[v _LATB LATB `VEuc  1 e 1 @1215 ]
+"3684
+[v _LATC LATC `VEuc  1 e 1 @1216 ]
+"3746
+[v _LATD LATD `VEuc  1 e 1 @1217 ]
+"3808
+[v _LATE LATE `VEuc  1 e 1 @1218 ]
+"3840
+[v _TRISA TRISA `VEuc  1 e 1 @1222 ]
+"3902
+[v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+"3964
+[v _TRISC TRISC `VEuc  1 e 1 @1224 ]
+"4026
+[v _TRISD TRISD `VEuc  1 e 1 @1225 ]
+"4088
+[v _TRISE TRISE `VEuc  1 e 1 @1226 ]
+"5335
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5475
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @175 ]
+"5515
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @176 ]
+"5573
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"5775
+[v _OSCEN OSCEN `VEuc  1 e 1 @179 ]
+"24715
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @532 ]
+"24765
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @533 ]
+"29326
+[v _I2C1SDAPPS I2C1SDAPPS `VEuc  1 e 1 @624 ]
+"29392
+[v _I2C1SCLPPS I2C1SCLPPS `VEuc  1 e 1 @625 ]
+"30682
+[v _I2C1RXB I2C1RXB `VEuc  1 e 1 @650 ]
+"30702
+[v _I2C1TXB I2C1TXB `VEuc  1 e 1 @651 ]
+"30722
+[v _I2C1CNTL I2C1CNTL `VEuc  1 e 1 @652 ]
+"30792
+[v _I2C1CNTH I2C1CNTH `VEuc  1 e 1 @653 ]
+"30984
+[v _I2C1CON0 I2C1CON0 `VEuc  1 e 1 @660 ]
+[s S599 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 MDR 1 0 :1:3 
+`uc 1 CSTR 1 0 :1:4 
+`uc 1 S 1 0 :1:5 
+`uc 1 RSEN 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"31006
+[s S606 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 I2CEN 1 0 :1:7 
+]
+[u S612 . 1 `S599 1 . 1 0 `S606 1 . 1 0 ]
+[v _I2C1CON0bits I2C1CON0bits `VES612  1 e 1 @660 ]
+"31061
+[v _I2C1CON1 I2C1CON1 `VEuc  1 e 1 @661 ]
+[s S652 . 1 `uc 1 CSD 1 0 :1:0 
+`uc 1 TXU 1 0 :1:1 
+`uc 1 RXO 1 0 :1:2 
+`uc 1 P 1 0 :1:3 
+`uc 1 ACKT 1 0 :1:4 
+`uc 1 ACKSTAT 1 0 :1:5 
+`uc 1 ACKDT 1 0 :1:6 
+`uc 1 ACKCNT 1 0 :1:7 
+]
+"31078
+[u S661 . 1 `S652 1 . 1 0 ]
+[v _I2C1CON1bits I2C1CON1bits `VES661  1 e 1 @661 ]
+"31123
+[v _I2C1CON2 I2C1CON2 `VEuc  1 e 1 @662 ]
+"31199
+[v _I2C1ERR I2C1ERR `VEuc  1 e 1 @663 ]
+[s S673 . 1 `uc 1 NACKIE 1 0 :1:0 
+`uc 1 BCLIE 1 0 :1:1 
+`uc 1 BTOIE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 NACKIF 1 0 :1:4 
+`uc 1 BCLIF 1 0 :1:5 
+`uc 1 BTOIF 1 0 :1:6 
+]
+"31224
+[s S681 . 1 `uc 1 NACK1IE 1 0 :1:0 
+`uc 1 BCL1IE 1 0 :1:1 
+`uc 1 BTO1IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 NACK1IF 1 0 :1:4 
+`uc 1 BCL1IF 1 0 :1:5 
+`uc 1 BTO1IF 1 0 :1:6 
+]
+[u S689 . 1 `S673 1 . 1 0 `S681 1 . 1 0 ]
+[v _I2C1ERRbits I2C1ERRbits `VES689  1 e 1 @663 ]
+[s S629 . 1 `uc 1 RXBF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 CLRBF 1 0 :1:2 
+`uc 1 RXRE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 TXBE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 TXWE 1 0 :1:7 
+]
+"31396
+[u S638 . 1 `S629 1 . 1 0 ]
+[v _I2C1STAT1bits I2C1STAT1bits `VES638  1 e 1 @665 ]
+"31426
+[v _I2C1PIR I2C1PIR `VEuc  1 e 1 @666 ]
+[s S709 . 1 `uc 1 SCIF 1 0 :1:0 
+`uc 1 RSCIF 1 0 :1:1 
+`uc 1 PCIF 1 0 :1:2 
+`uc 1 ADRIF 1 0 :1:3 
+`uc 1 WRIF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKTIF 1 0 :1:6 
+`uc 1 CNTIF 1 0 :1:7 
+]
+"31453
+[s S718 . 1 `uc 1 SC1IF 1 0 :1:0 
+`uc 1 RSC1IF 1 0 :1:1 
+`uc 1 PC1IF 1 0 :1:2 
+`uc 1 ADR1IF 1 0 :1:3 
+`uc 1 WR1IF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKT1IF 1 0 :1:6 
+`uc 1 CNT1IF 1 0 :1:7 
+]
+[u S727 . 1 `S709 1 . 1 0 `S718 1 . 1 0 ]
+[v _I2C1PIRbits I2C1PIRbits `VES727  1 e 1 @666 ]
+"31528
+[v _I2C1PIE I2C1PIE `VEuc  1 e 1 @667 ]
+[s S770 . 1 `uc 1 SCIE 1 0 :1:0 
+`uc 1 RSCIE 1 0 :1:1 
+`uc 1 PCIE 1 0 :1:2 
+`uc 1 ADRIE 1 0 :1:3 
+`uc 1 WRIE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKTIE 1 0 :1:6 
+`uc 1 CNTIE 1 0 :1:7 
+]
+"31555
+[s S779 . 1 `uc 1 SC1IE 1 0 :1:0 
+`uc 1 RSC1IE 1 0 :1:1 
+`uc 1 PC1IE 1 0 :1:2 
+`uc 1 ADR1IE 1 0 :1:3 
+`uc 1 WR1IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKT1IE 1 0 :1:6 
+`uc 1 CNT1IE 1 0 :1:7 
+]
+[u S788 . 1 `S770 1 . 1 0 `S779 1 . 1 0 ]
+[v _I2C1PIEbits I2C1PIEbits `VES788  1 e 1 @667 ]
+"31700
+[v _I2C1BAUD I2C1BAUD `VEuc  1 e 1 @669 ]
+"31720
+[v _I2C1CLK I2C1CLK `VEuc  1 e 1 @670 ]
+"59759
+[v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
+"59821
+[v _WPUA WPUA `VEuc  1 e 1 @1025 ]
+"59883
+[v _ODCONA ODCONA `VEuc  1 e 1 @1026 ]
+"59945
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @1027 ]
+"60007
+[v _INLVLA INLVLA `VEuc  1 e 1 @1028 ]
+"60255
+[v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
+"60317
+[v _WPUB WPUB `VEuc  1 e 1 @1033 ]
+"60379
+[v _ODCONB ODCONB `VEuc  1 e 1 @1034 ]
+"60441
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @1035 ]
+"60503
+[v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
+"60751
+[v _ANSELC ANSELC `VEuc  1 e 1 @1040 ]
+"60813
+[v _WPUC WPUC `VEuc  1 e 1 @1041 ]
+"60875
+[v _ODCONC ODCONC `VEuc  1 e 1 @1042 ]
+"60937
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @1043 ]
+"60999
+[v _INLVLC INLVLC `VEuc  1 e 1 @1044 ]
+"61247
+[v _ANSELD ANSELD `VEuc  1 e 1 @1048 ]
+"61309
+[v _WPUD WPUD `VEuc  1 e 1 @1049 ]
+"61371
+[v _ODCOND ODCOND `VEuc  1 e 1 @1050 ]
+"61433
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @1051 ]
+"61495
+[v _INLVLD INLVLD `VEuc  1 e 1 @1052 ]
+"61557
+[v _ANSELE ANSELE `VEuc  1 e 1 @1056 ]
+"61589
+[v _WPUE WPUE `VEuc  1 e 1 @1057 ]
+"61627
+[v _ODCONE ODCONE `VEuc  1 e 1 @1058 ]
+"61659
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @1059 ]
+"61691
+[v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
+"159 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/i2c1_master.c
+[v _i2c1_fsmStateTable i2c1_fsmStateTable `C[19]*.38(E23307  1 e 57 0 ]
+[s S383 . 42 `[6]*.38(E363 1 callbackTable 18 0 `[6]*.39v 1 callbackPayload 12 18 `us 1 time_out 2 30 `us 1 time_out_value 2 32 `uc 1 address 1 34 `*.39uc 1 data_ptr 2 35 `ui 1 data_length 2 37 `E23307 1 state 1 39 `E358 1 error 1 40 `uc 1 addressNackCheck 1 41 :2:0 
+`uc 1 busy 1 41 :1:2 
+`uc 1 inUse 1 41 :1:3 
+`uc 1 bufferFree 1 41 :1:4 
+]
+"181
+[v _I2C1_Status I2C1_Status `S383  1 e 42 0 ]
+"52 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"70
+} 0
+"50 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"72
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"55 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"131
+} 0
+"58 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"183 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/i2c1_master.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+{
+"205
+} 0
+"96 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\LCD.c
+[v _LCD_write_string LCD_write_string `(v  1 e 1 0 ]
+{
+[v LCD_write_string@str str `*.34Cuc  1 p 2 24 ]
+"100
+} 0
+"86
+[v _LCD_set_cursor LCD_set_cursor `(v  1 e 1 0 ]
+{
+[v LCD_set_cursor@row row `uc  1 p 1 wreg ]
+"87
+[v LCD_set_cursor@address address `uc  1 a 1 28 ]
+"86
+[v LCD_set_cursor@row row `uc  1 p 1 wreg ]
+[v LCD_set_cursor@col col `uc  1 p 1 24 ]
+[v LCD_set_cursor@row row `uc  1 p 1 25 ]
+"90
+} 0
+"54
+[v _LCD_init LCD_init `(v  1 e 1 0 ]
+{
+"69
+} 0
+"21
+[v _LCD_send_nibble_cmd LCD_send_nibble_cmd `(v  1 e 1 0 ]
+{
+[v LCD_send_nibble_cmd@data_high data_high `uc  1 p 1 wreg ]
+"23
+[v LCD_send_nibble_cmd@buffer buffer `[2]uc  1 a 2 22 ]
+"21
+[v LCD_send_nibble_cmd@data_high data_high `uc  1 p 1 wreg ]
+"26
+[v LCD_send_nibble_cmd@data_high data_high `uc  1 p 1 24 ]
+"39
+} 0
+"71
+[v _LCD_clear LCD_clear `(v  1 e 1 0 ]
+{
+"74
+} 0
+"41
+[v _LCD_send_byte LCD_send_byte `(v  1 e 1 0 ]
+{
+[v LCD_send_byte@data data `uc  1 p 1 wreg ]
+[v LCD_send_byte@data data `uc  1 p 1 wreg ]
+[v LCD_send_byte@rs rs `uc  1 p 1 22 ]
+"43
+[v LCD_send_byte@data data `uc  1 p 1 23 ]
+"53
+} 0
+"6
+[v _I2C1_SetBuffer_4bitmode I2C1_SetBuffer_4bitmode `(v  1 e 1 0 ]
+{
+[v I2C1_SetBuffer_4bitmode@data data `uc  1 p 1 wreg ]
+"7
+[v I2C1_SetBuffer_4bitmode@buffer buffer `[4]uc  1 a 4 6 ]
+"9
+[v I2C1_SetBuffer_4bitmode@data_low data_low `uc  1 a 1 12 ]
+"8
+[v I2C1_SetBuffer_4bitmode@data_high data_high `uc  1 a 1 11 ]
+"6
+[v I2C1_SetBuffer_4bitmode@data data `uc  1 p 1 wreg ]
+[v I2C1_SetBuffer_4bitmode@rs rs `uc  1 p 1 4 ]
+"8
+[v I2C1_SetBuffer_4bitmode@data data `uc  1 p 1 10 ]
+"19
+} 0
+"207 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/i2c1_master.c
+[v _I2C1_Open I2C1_Open `(E358  1 e 1 0 ]
+{
+[v I2C1_Open@address address `uc  1 p 1 wreg ]
+"209
+[v I2C1_Open@returnValue returnValue `E358  1 a 1 1 ]
+"207
+[v I2C1_Open@address address `uc  1 p 1 wreg ]
+"209
+[v I2C1_Open@address address `uc  1 p 1 0 ]
+"238
+} 0
+"635
+[v _I2C1_MasterOpen I2C1_MasterOpen `T(a  1 s 1 I2C1_MasterOpen ]
+{
+"655
+} 0
+"284
+[v _I2C1_MasterWrite I2C1_MasterWrite `(E358  1 e 1 0 ]
+{
+"287
+} 0
+"255
+[v _I2C1_MasterOperation I2C1_MasterOperation `(E358  1 e 1 0 ]
+{
+[v I2C1_MasterOperation@read read `a  1 p 1 wreg ]
+"257
+[v I2C1_MasterOperation@returnValue returnValue `E358  1 a 1 21 ]
+"255
+[v I2C1_MasterOperation@read read `a  1 p 1 wreg ]
+"257
+[v I2C1_MasterOperation@read read `a  1 p 1 20 ]
+"277
+} 0
+"345
+[v _I2C1_Poller I2C1_Poller `(v  1 s 1 I2C1_Poller ]
+{
+"352
+} 0
+"816
+[v _I2C1_MasterWaitForEvent I2C1_MasterWaitForEvent `T(v  1 s 1 I2C1_MasterWaitForEvent ]
+{
+"841
+} 0
+"354
+[v _I2C1_MasterFsm I2C1_MasterFsm `T(v  1 s 1 I2C1_MasterFsm ]
+{
+"363
+} 0
+"598
+[v _I2C1_DO_BUS_ERROR I2C1_DO_BUS_ERROR `(E23307  1 s 1 I2C1_DO_BUS_ERROR ]
+{
+"604
+} 0
+"582
+[v _I2C1_DO_BUS_COLLISION I2C1_DO_BUS_COLLISION `(E23307  1 s 1 I2C1_DO_BUS_COLLISION ]
+{
+"596
+} 0
+"567
+[v _I2C1_DO_ADDRESS_NACK I2C1_DO_ADDRESS_NACK `(E23307  1 s 1 I2C1_DO_ADDRESS_NACK ]
+{
+"580
+} 0
+"560
+[v _I2C1_DO_RESET I2C1_DO_RESET `(E23307  1 s 1 I2C1_DO_RESET ]
+{
+"566
+} 0
+"554
+[v _I2C1_DO_RX_NACK_RESTART I2C1_DO_RX_NACK_RESTART `(E23307  1 s 1 I2C1_DO_RX_NACK_RESTART ]
+{
+"558
+} 0
+"547
+[v _I2C1_DO_RX_NACK_STOP I2C1_DO_RX_NACK_STOP `(E23307  1 s 1 I2C1_DO_RX_NACK_STOP ]
+{
+"552
+} 0
+"535
+[v _I2C1_DO_RX_ACK I2C1_DO_RX_ACK `(E23307  1 s 1 I2C1_DO_RX_ACK ]
+{
+"539
+} 0
+"524
+[v _I2C1_DO_SEND_STOP I2C1_DO_SEND_STOP `(E23307  1 s 1 I2C1_DO_SEND_STOP ]
+{
+"533
+} 0
+"519
+[v _I2C1_DO_SEND_RESTART I2C1_DO_SEND_RESTART `(E23307  1 s 1 I2C1_DO_SEND_RESTART ]
+{
+"522
+} 0
+"513
+[v _I2C1_DO_SEND_RESTART_WRITE I2C1_DO_SEND_RESTART_WRITE `(E23307  1 s 1 I2C1_DO_SEND_RESTART_WRITE ]
+{
+"516
+} 0
+"507
+[v _I2C1_DO_SEND_RESTART_READ I2C1_DO_SEND_RESTART_READ `(E23307  1 s 1 I2C1_DO_SEND_RESTART_READ ]
+{
+"511
+} 0
+"482
+[v _I2C1_DO_RX_EMPTY I2C1_DO_RX_EMPTY `(E23307  1 s 1 I2C1_DO_RX_EMPTY ]
+{
+"505
+} 0
+"463
+[v _I2C1_DO_TX_EMPTY I2C1_DO_TX_EMPTY `(E23307  1 s 1 I2C1_DO_TX_EMPTY ]
+{
+"480
+} 0
+"439
+[v _I2C1_DO_RX I2C1_DO_RX `(E23307  1 s 1 I2C1_DO_RX ]
+{
+"457
+[v I2C1_DO_RX@retFsmState retFsmState `E23307  1 a 1 17 ]
+"461
+} 0
+"406
+[v _I2C1_DO_TX I2C1_DO_TX `(E23307  1 s 1 I2C1_DO_TX ]
+{
+"429
+[v I2C1_DO_TX@retFsmState retFsmState `E23307  1 a 1 18 ]
+"428
+[v I2C1_DO_TX@dataTx dataTx `uc  1 a 1 17 ]
+"437
+} 0
+"399
+[v _I2C1_DO_SEND_ADR_WRITE I2C1_DO_SEND_ADR_WRITE `(E23307  1 s 1 I2C1_DO_SEND_ADR_WRITE ]
+{
+"404
+} 0
+"388
+[v _I2C1_DO_SEND_ADR_READ I2C1_DO_SEND_ADR_READ `(E23307  1 s 1 I2C1_DO_SEND_ADR_READ ]
+{
+"397
+} 0
+"381
+[v _I2C1_DO_IDLE I2C1_DO_IDLE `(E23307  1 s 1 I2C1_DO_IDLE ]
+{
+"386
+} 0
+"541
+[v _I2C1_DO_TX_ACK I2C1_DO_TX_ACK `(E23307  1 s 1 I2C1_DO_TX_ACK ]
+{
+"545
+} 0
+"743
+[v _I2C1_MasterIsTxBufEmpty I2C1_MasterIsTxBufEmpty `T(a  1 s 1 I2C1_MasterIsTxBufEmpty ]
+{
+"746
+} 0
+"716
+[v _I2C1_MasterIsNack I2C1_MasterIsNack `T(a  1 s 1 I2C1_MasterIsNack ]
+{
+"719
+} 0
+"677
+[v _I2C1_MasterGetCounter I2C1_MasterGetCounter `T(uc  1 s 1 I2C1_MasterGetCounter ]
+{
+"680
+} 0
+"710
+[v _I2C1_MasterStop I2C1_MasterStop `T(v  1 s 1 I2C1_MasterStop ]
+{
+"714
+} 0
+"726
+[v _I2C1_MasterSendNack I2C1_MasterSendNack `T(v  1 s 1 I2C1_MasterSendNack ]
+{
+"729
+} 0
+"721
+[v _I2C1_MasterSendAck I2C1_MasterSendAck `T(v  1 s 1 I2C1_MasterSendAck ]
+{
+"724
+} 0
+"738
+[v _I2C1_MasterIsRxBufFull I2C1_MasterIsRxBufFull `T(a  1 s 1 I2C1_MasterIsRxBufFull ]
+{
+"741
+} 0
+"667
+[v _I2C1_MasterGetRxData I2C1_MasterGetRxData `T(uc  1 s 1 I2C1_MasterGetRxData ]
+{
+"670
+} 0
+"672
+[v _I2C1_MasterSendTxData I2C1_MasterSendTxData `T(v  1 s 1 I2C1_MasterSendTxData ]
+{
+[v I2C1_MasterSendTxData@data data `uc  1 p 1 wreg ]
+[v I2C1_MasterSendTxData@data data `uc  1 p 1 wreg ]
+"674
+[v I2C1_MasterSendTxData@data data `uc  1 p 1 0 ]
+"675
+} 0
+"682
+[v _I2C1_MasterSetCounter I2C1_MasterSetCounter `T(v  1 s 1 I2C1_MasterSetCounter ]
+{
+[v I2C1_MasterSetCounter@counter counter `uc  1 p 1 wreg ]
+[v I2C1_MasterSetCounter@counter counter `uc  1 p 1 wreg ]
+"684
+[v I2C1_MasterSetCounter@counter counter `uc  1 p 1 0 ]
+"686
+} 0
+"698
+[v _I2C1_MasterEnableRestart I2C1_MasterEnableRestart `T(v  1 s 1 I2C1_MasterEnableRestart ]
+{
+"702
+} 0
+"704
+[v _I2C1_MasterDisableRestart I2C1_MasterDisableRestart `T(v  1 s 1 I2C1_MasterDisableRestart ]
+{
+"708
+} 0
+"688
+[v _I2C1_MasterResetBus I2C1_MasterResetBus `T(v  1 s 1 I2C1_MasterResetBus ]
+{
+"696
+} 0
+"617
+[v _I2C1_CallbackReturnReset I2C1_CallbackReturnReset `(E363  1 e 1 0 ]
+{
+[v I2C1_CallbackReturnReset@funPtr funPtr `*.39v  1 p 2 11 ]
+"620
+} 0
+"612
+[v _I2C1_CallbackReturnStop I2C1_CallbackReturnStop `(E363  1 e 1 0 ]
+{
+"615
+} 0
+"170 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/examples/i2c1_master_example.c
+[v _rdBlkRegCompleteHandler@i2c1_master_example$F179 rdBlkRegCompleteHandler `(E363  1 s 1 rdBlkRegCompleteHandler ]
+{
+[v rdBlkRegCompleteHandler@i2c1_master_example$F179@ptr ptr `*.39v  1 p 2 11 ]
+"175
+} 0
+"156
+[v _wr1RegCompleteHandler@i2c1_master_example$F162 wr1RegCompleteHandler `(E363  1 s 1 wr1RegCompleteHandler ]
+{
+[v wr1RegCompleteHandler@i2c1_master_example$F162@ptr ptr `*.39v  1 p 2 11 ]
+"161
+} 0
+"149
+[v _rd2RegCompleteHandler@i2c1_master_example$F156 rd2RegCompleteHandler `(E363  1 s 1 rd2RegCompleteHandler ]
+{
+[v rd2RegCompleteHandler@i2c1_master_example$F156@ptr ptr `*.39v  1 p 2 11 ]
+"154
+} 0
+"142
+[v _rd1RegCompleteHandler@i2c1_master_example$F145 rd1RegCompleteHandler `(E363  1 s 1 rd1RegCompleteHandler ]
+{
+[v rd1RegCompleteHandler@i2c1_master_example$F145@ptr ptr `*.39v  1 p 2 11 ]
+"147
+} 0
+"185 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/drivers/i2c_simple_master.c
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E363  1 s 1 rdBlkRegCompleteHandler ]
+{
+[v rdBlkRegCompleteHandler@p p `*.39v  1 p 2 11 ]
+"190
+} 0
+"151
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E363  1 s 1 wr2RegCompleteHandler ]
+{
+[v wr2RegCompleteHandler@p p `*.39v  1 p 2 11 ]
+"156
+} 0
+"119
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E363  1 s 1 rd2RegCompleteHandler ]
+{
+[v rd2RegCompleteHandler@p p `*.39v  1 p 2 11 ]
+"124
+} 0
+"81
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E363  1 s 1 rd1RegCompleteHandler ]
+{
+[v rd1RegCompleteHandler@p p `*.39v  1 p 2 11 ]
+"86
+} 0
+"34
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E363  1 s 1 wr1RegCompleteHandler ]
+{
+[v wr1RegCompleteHandler@p p `*.39v  1 p 2 11 ]
+"39
+} 0
+"163 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/examples/i2c1_master_example.c
+[v _wr2RegCompleteHandler@i2c1_master_example$F168 wr2RegCompleteHandler `(E363  1 s 1 wr2RegCompleteHandler ]
+{
+[v wr2RegCompleteHandler@i2c1_master_example$F168@ptr ptr `*.39v  1 p 2 11 ]
+"168
+} 0
+"306 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\DESIGNSHOW\dash-test.X\mcc_generated_files/i2c1_master.c
+[v _I2C1_SetDataCompleteCallback I2C1_SetDataCompleteCallback `(v  1 e 1 0 ]
+{
+[v I2C1_SetDataCompleteCallback@cb cb `*.38(E363  1 p 3 6 ]
+[v I2C1_SetDataCompleteCallback@ptr ptr `*.39v  1 p 2 9 ]
+"309
+} 0
+"331
+[v _I2C1_SetCallback I2C1_SetCallback `(v  1 s 1 I2C1_SetCallback ]
+{
+[v I2C1_SetCallback@idx idx `E23328  1 p 1 wreg ]
+[v I2C1_SetCallback@idx idx `E23328  1 p 1 wreg ]
+[v I2C1_SetCallback@cb cb `*.38(E363  1 p 3 0 ]
+[v I2C1_SetCallback@ptr ptr `*.39v  1 p 2 3 ]
+"333
+[v I2C1_SetCallback@idx idx `E23328  1 p 1 5 ]
+"343
+} 0
+"296
+[v _I2C1_SetBuffer I2C1_SetBuffer `(v  1 e 1 0 ]
+{
+[v I2C1_SetBuffer@buffer buffer `*.39v  1 p 2 0 ]
+[v I2C1_SetBuffer@bufferSize bufferSize `ui  1 p 2 2 ]
+"304
+} 0
+"365
+[v _I2C1_ClearInterruptFlags I2C1_ClearInterruptFlags `T(v  1 s 1 I2C1_ClearInterruptFlags ]
+{
+"379
+} 0
+"748
+[v _I2C1_MasterIsStopFlagSet I2C1_MasterIsStopFlagSet `T(a  1 s 1 I2C1_MasterIsStopFlagSet ]
+{
+"751
+} 0
+"758
+[v _I2C1_MasterIsNackFlagSet I2C1_MasterIsNackFlagSet `T(a  1 s 1 I2C1_MasterIsNackFlagSet ]
+{
+"761
+} 0
+"753
+[v _I2C1_MasterIsCountFlagSet I2C1_MasterIsCountFlagSet `T(a  1 s 1 I2C1_MasterIsCountFlagSet ]
+{
+"756
+} 0
+"763
+[v _I2C1_MasterClearStopFlag I2C1_MasterClearStopFlag `T(v  1 s 1 I2C1_MasterClearStopFlag ]
+{
+"766
+} 0
+"773
+[v _I2C1_MasterClearNackFlag I2C1_MasterClearNackFlag `T(v  1 s 1 I2C1_MasterClearNackFlag ]
+{
+"776
+} 0
+"768
+[v _I2C1_MasterClearCountFlag I2C1_MasterClearCountFlag `T(v  1 s 1 I2C1_MasterClearCountFlag ]
+{
+"771
+} 0
+"240
+[v _I2C1_Close I2C1_Close `(E358  1 e 1 0 ]
+{
+"242
+[v I2C1_Close@returnValue returnValue `E358  1 a 1 0 ]
+"253
+} 0
+"795
+[v _I2C1_MasterDisableIrq I2C1_MasterDisableIrq `T(v  1 s 1 I2C1_MasterDisableIrq ]
+{
+"809
+} 0
+"657
+[v _I2C1_MasterClose I2C1_MasterClose `T(v  1 s 1 I2C1_MasterClose ]
+{
+"665
+} 0
+"811
+[v _I2C1_MasterClearIrq I2C1_MasterClearIrq `T(v  1 s 1 I2C1_MasterClearIrq ]
+{
+"814
+} 0
