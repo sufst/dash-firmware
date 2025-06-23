@@ -75,11 +75,11 @@ I2C1_DATA_NACK 3
 I2C1_TIMEOUT 4
 I2C1_NULL 5
 ]
-"105 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
-[e E23201 . `uc
+"101 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
+[e E23155 . `uc
 FIFO1 1
 ]
-"193
+"185
 [e E23128 . `uc
 CAN_OP_MODE_REQUEST_SUCCESS 0
 CAN_OP_MODE_REQUEST_FAIL 1
@@ -95,68 +95,29 @@ CAN_EXTERNAL_LOOPBACK_MODE 5
 CAN_NORMAL_2_0_MODE 6
 CAN_RESTRICTED_OPERATION_MODE 7
 ]
-"255
-[e E23196 . `uc
+"246
+[e E23191 . `uc
 CAN_RX_MSG_NOT_AVAILABLE 0
 CAN_RX_MSG_AVAILABLE 1
 CAN_RX_MSG_OVERFLOW 8
 ]
-"271
+"262
 [e E23100 . `uc
 CAN_FRAME_STD 0
 CAN_FRAME_EXT 1
 ]
-"272
+"263
 [e E23104 . `uc
 CAN_FRAME_DATA 0
 CAN_FRAME_RTR 1
 ]
-"273
+"264
 [e E23096 . `uc
 CAN_NON_BRS_MODE 0
 CAN_BRS_MODE 1
 ]
-"381
-[e E23133 . `uc
-CAN_TX_FIFO_FULL 0
-CAN_TX_FIFO_AVAILABLE 1
-]
-"427
-[e E23112 . `uc
-CAN_TX_MSG_REQUEST_SUCCESS 0
-CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
-CAN_TX_MSG_REQUEST_BRS_ERROR 2
-CAN_TX_MSG_REQUEST_FIFO_FULL 3
-]
-"438
-[e E23137 . `uc
-DLC_0 0
-DLC_1 1
-DLC_2 2
-DLC_3 3
-DLC_4 4
-DLC_5 5
-DLC_6 6
-DLC_7 7
-DLC_8 8
-DLC_12 9
-DLC_16 10
-DLC_20 11
-DLC_24 12
-DLC_32 13
-DLC_48 14
-DLC_64 15
-]
-[e E23108 . `uc
-CAN_2_0_FORMAT 0
-CAN_FD_FORMAT 1
-]
-"456
-[e E23155 . `uc
-TXQ 0
-]
 "33 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X/main.h
-[e E23584 . `uc
+[e E23579 . `uc
 STATE_STARTUP 0
 STATE_TS_BUTTON_WAIT 1
 STATE_WAIT_NEG_AIR 2
@@ -172,7 +133,7 @@ STATE_APPS_SCS_FAULT 11
 STATE_APPS_BPS_FAULT 12
 ]
 "35
-[e E23599 . `uc
+[e E23594 . `uc
 NORMAL 0
 TEMPS 1
 POWER 2
@@ -182,41 +143,6 @@ POWER 2
 I2C1_NOERR 0
 I2C1_BUSY 1
 I2C1_FAIL 2
-]
-"14 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\CAN_handler.c
-[e E23431 . `uc
-CAN_FRAME_STD 0
-CAN_FRAME_EXT 1
-]
-[e E23435 . `uc
-CAN_FRAME_DATA 0
-CAN_FRAME_RTR 1
-]
-[e E23468 . `uc
-DLC_0 0
-DLC_1 1
-DLC_2 2
-DLC_3 3
-DLC_4 4
-DLC_5 5
-DLC_6 6
-DLC_7 7
-DLC_8 8
-DLC_12 9
-DLC_16 10
-DLC_20 11
-DLC_24 12
-DLC_32 13
-DLC_48 14
-DLC_64 15
-]
-[e E23439 . `uc
-CAN_2_0_FORMAT 0
-CAN_FD_FORMAT 1
-]
-[e E23427 . `uc
-CAN_NON_BRS_MODE 0
-CAN_BRS_MODE 1
 ]
 "24 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\7seg.c
 [e E23246 . `uc
@@ -377,9 +303,9 @@ I2C1_FAIL 2
 [v ___omul __omul `(uo  1 e 8 0 ]
 "8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\vsprintf.c
 [v _vsprintf vsprintf `(i  1 e 2 0 ]
-"28 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\CAN_handler.c
-[v _ProcessCANMessages ProcessCANMessages `(v  1 e 1 0 ]
-"99
+"14 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\CAN_handler.c
+[v _ProcessCANMessage ProcessCANMessage `(v  1 e 1 0 ]
+"83
 [v _GetDashboardData GetDashboardData `(v  1 e 1 0 ]
 [v i2_GetDashboardData GetDashboardData `(v  1 e 1 0 ]
 "6 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\LCD.c
@@ -410,52 +336,48 @@ I2C1_FAIL 2
 [v _vcu_number vcu_number `(v  1 e 1 0 ]
 "85
 [v _main main `(v  1 e 1 0 ]
-"279
+"280
 [v _display_tson_state display_tson_state `(v  1 e 1 0 ]
-"334
+"335
 [v _ButtonPressHandler ButtonPressHandler `(v  1 e 1 0 ]
-"365
+"366
 [v _ButtonHoldTimer ButtonHoldTimer `(v  1 e 1 0 ]
-"372
+"373
 [v _RealTimeClockHandler RealTimeClockHandler `(v  1 e 1 0 ]
-"114 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
+"111 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
+[v _DefaultFIFO1NotEmptyHandler DefaultFIFO1NotEmptyHandler `(v  1 s 1 DefaultFIFO1NotEmptyHandler ]
+"115
 [v _CAN1_RX_FIFO_ResetInfo CAN1_RX_FIFO_ResetInfo `(v  1 e 1 0 ]
-"124
+"125
 [v _CAN1_RX_FIFO_Configuration CAN1_RX_FIFO_Configuration `(v  1 s 1 CAN1_RX_FIFO_Configuration ]
-"140
+"147
 [v _CAN1_RX_FIFO_FilterMaskConfiguration CAN1_RX_FIFO_FilterMaskConfiguration `(v  1 s 1 CAN1_RX_FIFO_FilterMaskConfiguration ]
-"155
-[v _CAN1_TX_FIFO_Configuration CAN1_TX_FIFO_Configuration `(v  1 s 1 CAN1_TX_FIFO_Configuration ]
-"171
+"163
 [v _CAN1_BitRateConfiguration CAN1_BitRateConfiguration `(v  1 s 1 CAN1_BitRateConfiguration ]
-"188
+"180
 [v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
-"216
+"207
 [v _CAN1_OperationModeSet CAN1_OperationModeSet `(E23128  1 e 1 0 ]
-"245
+"236
 [v _CAN1_OperationModeGet CAN1_OperationModeGet `(E23118  1 e 1 0 ]
-"250
+"241
 [v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
-"255
-[v _GetRxFifoStatus GetRxFifoStatus `(E23196  1 s 1 GetRxFifoStatus ]
-"260
+"246
+[v _GetRxFifoStatus GetRxFifoStatus `(E23191  1 s 1 GetRxFifoStatus ]
+"251
 [v _ReadMessageFromFifo ReadMessageFromFifo `(v  1 s 1 ReadMessageFromFifo ]
-"294
+"285
+[v _Receive Receive `(a  1 s 1 Receive ]
+"317
 [v _CAN1_Receive CAN1_Receive `(a  1 e 1 0 ]
-"333
-[v _CAN1_ReceivedMessageCountGet CAN1_ReceivedMessageCountGet `(uc  1 e 1 0 ]
-"376
-[v _isTxChannel isTxChannel `(a  1 s 1 isTxChannel ]
-"381
-[v _GetTxFifoStatus GetTxFifoStatus `(E23133  1 s 1 GetTxFifoStatus ]
-"386
-[v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
-"427
-[v _ValidateTransmission ValidateTransmission `(E23112  1 s 1 ValidateTransmission ]
-"495
+"401
 [v _CAN1_IsRxErrorPassive CAN1_IsRxErrorPassive `(a  1 e 1 0 ]
-"510
+"416
 [v _CAN1_IsTxErrorPassive CAN1_IsTxErrorPassive `(a  1 e 1 0 ]
+"440
+[v _CAN1_SetFIFO1NotEmptyHandler CAN1_SetFIFO1NotEmptyHandler `(v  1 e 1 0 ]
+"446
+[v _CAN1_RXI_ISR CAN1_RXI_ISR `(v  1 e 1 0 ]
 "34 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/drivers/i2c_simple_master.c
 [v _wr1RegCompleteHandler wr1RegCompleteHandler `(E363  1 s 1 wr1RegCompleteHandler ]
 "81
@@ -687,9 +609,9 @@ I2C1_FAIL 2
 "41
 [v _power_get_bar power_get_bar `(*.39Cuc  1 e 3 0 ]
 "33 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X/main.h
-[v _display_state display_state `E23584  1 e 1 0 ]
+[v _display_state display_state `E23579  1 e 1 0 ]
 "35
-[v _current_state current_state `VEE23599  1 e 1 0 ]
+[v _current_state current_state `VEE23594  1 e 1 0 ]
 "5 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\7seg.c
 [v _seg_patterns seg_patterns `C[10]uc  1 s 10 seg_patterns ]
 "18
@@ -734,7 +656,7 @@ I2C1_FAIL 2
 [v _PMD7 PMD7 `VEuc  1 e 1 @103 ]
 "1801
 [v _PMD8 PMD8 `VEuc  1 e 1 @104 ]
-[s S1981 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
+[s S1995 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
 `uc 1 SPI1TXIE 1 0 :1:1 
 `uc 1 SPI1IE 1 0 :1:2 
 `uc 1 TMR2IE 1 0 :1:3 
@@ -743,9 +665,21 @@ I2C1_FAIL 2
 `uc 1 CCP1IE 1 0 :1:6 
 `uc 1 TMR0IE 1 0 :1:7 
 ]
-[u S1990 . 1 `S1981 1 . 1 0 ]
-[v _PIE3bits PIE3bits `VES1990  1 e 1 @1185 ]
-[s S2027 . 1 `uc 1 SPI2RXIE 1 0 :1:0 
+[u S2004 . 1 `S1995 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES2004  1 e 1 @1185 ]
+[s S1326 . 1 `uc 1 U1RXIE 1 0 :1:0 
+`uc 1 U1TXIE 1 0 :1:1 
+`uc 1 U1EIE 1 0 :1:2 
+`uc 1 U1IE 1 0 :1:3 
+`uc 1 CANRXIE 1 0 :1:4 
+`uc 1 CANTXIE 1 0 :1:5 
+`uc 1 PWM1PIE 1 0 :1:6 
+`uc 1 PWM1IE 1 0 :1:7 
+]
+"1863
+[u S1335 . 1 `S1326 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES1335  1 e 1 @1186 ]
+[s S2041 . 1 `uc 1 SPI2RXIE 1 0 :1:0 
 `uc 1 SPI2TXIE 1 0 :1:1 
 `uc 1 SPI2IE 1 0 :1:2 
 `uc 1 TU16BIE 1 0 :1:3 
@@ -755,8 +689,8 @@ I2C1_FAIL 2
 `uc 1 PWM2IE 1 0 :1:7 
 ]
 "1925
-[u S2036 . 1 `S2027 1 . 1 0 ]
-[v _PIE5bits PIE5bits `VES2036  1 e 1 @1187 ]
+[u S2050 . 1 `S2041 1 . 1 0 ]
+[v _PIE5bits PIE5bits `VES2050  1 e 1 @1187 ]
 [s S896 . 1 `uc 1 I2C1RXIE 1 0 :1:0 
 `uc 1 I2C1TXIE 1 0 :1:1 
 `uc 1 I2C1IE 1 0 :1:2 
@@ -769,7 +703,7 @@ I2C1_FAIL 2
 "2049
 [u S905 . 1 `S896 1 . 1 0 ]
 [v _PIE7bits PIE7bits `VES905  1 e 1 @1189 ]
-[s S2089 . 1 `uc 1 SWIF 1 0 :1:0 
+[s S2128 . 1 `uc 1 SWIF 1 0 :1:0 
 `uc 1 HLVDIF 1 0 :1:1 
 `uc 1 OSFIF 1 0 :1:2 
 `uc 1 CSWIF 1 0 :1:3 
@@ -779,9 +713,9 @@ I2C1_FAIL 2
 `uc 1 IOCIF 1 0 :1:7 
 ]
 "2592
-[u S2098 . 1 `S2089 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES2098  1 e 1 @1198 ]
-[s S2002 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+[u S2137 . 1 `S2128 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES2137  1 e 1 @1198 ]
+[s S2016 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
 `uc 1 SPI1TXIF 1 0 :1:1 
 `uc 1 SPI1IF 1 0 :1:2 
 `uc 1 TMR2IF 1 0 :1:3 
@@ -791,9 +725,9 @@ I2C1_FAIL 2
 `uc 1 TMR0IF 1 0 :1:7 
 ]
 "2786
-[u S2011 . 1 `S2002 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES2011  1 e 1 @1201 ]
-[s S1775 . 1 `uc 1 U1RXIF 1 0 :1:0 
+[u S2025 . 1 `S2016 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES2025  1 e 1 @1201 ]
+[s S1305 . 1 `uc 1 U1RXIF 1 0 :1:0 
 `uc 1 U1TXIF 1 0 :1:1 
 `uc 1 U1EIF 1 0 :1:2 
 `uc 1 U1IF 1 0 :1:3 
@@ -803,9 +737,9 @@ I2C1_FAIL 2
 `uc 1 PWM1IF 1 0 :1:7 
 ]
 "2848
-[u S1784 . 1 `S1775 1 . 1 0 ]
-[v _PIR4bits PIR4bits `VES1784  1 e 1 @1202 ]
-[s S2048 . 1 `uc 1 SPI2RXIF 1 0 :1:0 
+[u S1314 . 1 `S1305 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES1314  1 e 1 @1202 ]
+[s S2062 . 1 `uc 1 SPI2RXIF 1 0 :1:0 
 `uc 1 SPI2TXIF 1 0 :1:1 
 `uc 1 SPI2IF 1 0 :1:2 
 `uc 1 TU16BIF 1 0 :1:3 
@@ -815,8 +749,8 @@ I2C1_FAIL 2
 `uc 1 PWM2IF 1 0 :1:7 
 ]
 "2910
-[u S2057 . 1 `S2048 1 . 1 0 ]
-[v _PIR5bits PIR5bits `VES2057  1 e 1 @1203 ]
+[u S2071 . 1 `S2062 1 . 1 0 ]
+[v _PIR5bits PIR5bits `VES2071  1 e 1 @1203 ]
 [s S957 . 1 `uc 1 I2C1RXIF 1 0 :1:0 
 `uc 1 I2C1TXIF 1 0 :1:1 
 `uc 1 I2C1IF 1 0 :1:2 
@@ -849,7 +783,7 @@ I2C1_FAIL 2
 [v _TRISD TRISD `VEuc  1 e 1 @1225 ]
 "4088
 [v _TRISE TRISE `VEuc  1 e 1 @1226 ]
-[s S2680 . 1 `uc 1 RA0 1 0 :1:0 
+[s S2940 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -859,9 +793,9 @@ I2C1_FAIL 2
 `uc 1 RA7 1 0 :1:7 
 ]
 "4137
-[u S2689 . 1 `S2680 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES2689  1 e 1 @1230 ]
-[s S1955 . 1 `uc 1 INT0EDG 1 0 :1:0 
+[u S2949 . 1 `S2940 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES2949  1 e 1 @1230 ]
+[s S1969 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -870,11 +804,11 @@ I2C1_FAIL 2
 `uc 1 GIE 1 0 :1:7 
 ]
 "4426
-[s S1963 . 1 `uc 1 . 1 0 :7:0 
+[s S1977 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S1966 . 1 `S1955 1 . 1 0 `S1963 1 . 1 0 ]
-[v _INTCON0bits INTCON0bits `VES1966  1 e 1 @1238 ]
+[u S1980 . 1 `S1969 1 . 1 0 `S1977 1 . 1 0 ]
+[v _INTCON0bits INTCON0bits `VES1980  1 e 1 @1238 ]
 "5335
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
 "5475
@@ -889,7 +823,7 @@ I2C1_FAIL 2
 [v _C1CONL C1CONL `VEuc  1 e 1 @256 ]
 "9013
 [v _C1CONH C1CONH `VEuc  1 e 1 @257 ]
-[s S1299 . 1 `uc 1 WAKFIL 1 0 :1:0 
+[s S1360 . 1 `uc 1 WAKFIL 1 0 :1:0 
 `uc 1 WFT 1 0 :2:1 
 `uc 1 BUSY 1 0 :1:3 
 `uc 1 BRSDIS 1 0 :1:4 
@@ -898,15 +832,15 @@ I2C1_FAIL 2
 `uc 1 ON 1 0 :1:7 
 ]
 "9034
-[s S1307 . 1 `uc 1 . 1 0 :1:0 
+[s S1368 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 WFT0 1 0 :1:1 
 `uc 1 WFT1 1 0 :1:2 
 ]
-[u S1311 . 1 `S1299 1 . 1 0 `S1307 1 . 1 0 ]
-[v _C1CONHbits C1CONHbits `VES1311  1 e 1 @257 ]
+[u S1372 . 1 `S1360 1 . 1 0 `S1368 1 . 1 0 ]
+[v _C1CONHbits C1CONHbits `VES1372  1 e 1 @257 ]
 "9084
 [v _C1CONU C1CONU `VEuc  1 e 1 @258 ]
-[s S1402 . 1 `uc 1 RTXAT 1 0 :1:0 
+[s S1463 . 1 `uc 1 RTXAT 1 0 :1:0 
 `uc 1 ESIGM 1 0 :1:1 
 `uc 1 SERR2LOM 1 0 :1:2 
 `uc 1 STEF 1 0 :1:3 
@@ -914,19 +848,19 @@ I2C1_FAIL 2
 `uc 1 OPMOD 1 0 :3:5 
 ]
 "9105
-[s S1409 . 1 `uc 1 . 1 0 :5:0 
+[s S1470 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 OPMOD0 1 0 :1:5 
 `uc 1 OPMOD1 1 0 :1:6 
 `uc 1 OPMOD2 1 0 :1:7 
 ]
-[u S1414 . 1 `S1402 1 . 1 0 `S1409 1 . 1 0 ]
-[v _C1CONUbits C1CONUbits `VES1414  1 e 1 @258 ]
-[s S1353 . 1 `uc 1 REQOP 1 0 :3:0 
+[u S1475 . 1 `S1463 1 . 1 0 `S1470 1 . 1 0 ]
+[v _C1CONUbits C1CONUbits `VES1475  1 e 1 @258 ]
+[s S1414 . 1 `uc 1 REQOP 1 0 :3:0 
 `uc 1 ABAT 1 0 :1:3 
 `uc 1 TXBWS 1 0 :4:4 
 ]
 "9177
-[s S1357 . 1 `uc 1 REQOP0 1 0 :1:0 
+[s S1418 . 1 `uc 1 REQOP0 1 0 :1:0 
 `uc 1 REQOP1 1 0 :1:1 
 `uc 1 REQOP2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -935,8 +869,8 @@ I2C1_FAIL 2
 `uc 1 TXBWS2 1 0 :1:6 
 `uc 1 TXBWS3 1 0 :1:7 
 ]
-[u S1366 . 1 `S1353 1 . 1 0 `S1357 1 . 1 0 ]
-[v _C1CONTbits C1CONTbits `VES1366  1 e 1 @259 ]
+[u S1427 . 1 `S1414 1 . 1 0 `S1418 1 . 1 0 ]
+[v _C1CONTbits C1CONTbits `VES1427  1 e 1 @259 ]
 "9232
 [v _C1NBTCFGL C1NBTCFGL `VEuc  1 e 1 @260 ]
 "9296
@@ -945,7 +879,7 @@ I2C1_FAIL 2
 [v _C1NBTCFGU C1NBTCFGU `VEuc  1 e 1 @262 ]
 "9430
 [v _C1NBTCFGT C1NBTCFGT `VEuc  1 e 1 @263 ]
-[s S1383 . 1 `uc 1 . 1 0 :2:0 
+[s S1444 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TXATIF 1 0 :1:2 
 `uc 1 RXOVIF 1 0 :1:3 
 `uc 1 SERRIF 1 0 :1:4 
@@ -954,9 +888,18 @@ I2C1_FAIL 2
 `uc 1 IVMIF 1 0 :1:7 
 ]
 "10466
-[u S1391 . 1 `S1383 1 . 1 0 ]
-[v _C1INTHbits C1INTHbits `VES1391  1 e 1 @285 ]
-[s S1510 . 1 `uc 1 . 1 0 :2:0 
+[u S1452 . 1 `S1444 1 . 1 0 ]
+[v _C1INTHbits C1INTHbits `VES1452  1 e 1 @285 ]
+[s S1290 . 1 `uc 1 TXIE 1 0 :1:0 
+`uc 1 RXIE 1 0 :1:1 
+`uc 1 TBCIE 1 0 :1:2 
+`uc 1 MODIE 1 0 :1:3 
+`uc 1 TEFIE 1 0 :1:4 
+]
+"10515
+[u S1296 . 1 `S1290 1 . 1 0 ]
+[v _C1INTUbits C1INTUbits `VES1296  1 e 1 @286 ]
+[s S1541 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TXATIE 1 0 :1:2 
 `uc 1 RXOVIE 1 0 :1:3 
 `uc 1 SERRIE 1 0 :1:4 
@@ -965,9 +908,9 @@ I2C1_FAIL 2
 `uc 1 IVMIE 1 0 :1:7 
 ]
 "10561
-[u S1518 . 1 `S1510 1 . 1 0 ]
-[v _C1INTTbits C1INTTbits `VES1518  1 e 1 @287 ]
-[s S1493 . 1 `uc 1 EWARN 1 0 :1:0 
+[u S1549 . 1 `S1541 1 . 1 0 ]
+[v _C1INTTbits C1INTTbits `VES1549  1 e 1 @287 ]
+[s S1524 . 1 `uc 1 EWARN 1 0 :1:0 
 `uc 1 RXWARN 1 0 :1:1 
 `uc 1 TXWARN 1 0 :1:2 
 `uc 1 RXBP 1 0 :1:3 
@@ -975,26 +918,44 @@ I2C1_FAIL 2
 `uc 1 TXBO 1 0 :1:5 
 ]
 "12178
-[u S1500 . 1 `S1493 1 . 1 0 ]
-[v _C1TRECUbits C1TRECUbits `VES1500  1 e 1 @310 ]
+[u S1531 . 1 `S1524 1 . 1 0 ]
+[v _C1TRECUbits C1TRECUbits `VES1531  1 e 1 @310 ]
 "13231
 [v _C1FIFOBA C1FIFOBA `VEul  1 e 4 @332 ]
 "13518
 [v _C1TXQCONL C1TXQCONL `VEuc  1 e 1 @336 ]
-"13559
-[v _C1TXQCONH C1TXQCONH `VEuc  1 e 1 @337 ]
-"13591
-[v _C1TXQCONU C1TXQCONU `VEuc  1 e 1 @338 ]
-"13661
-[v _C1TXQCONT C1TXQCONT `VEuc  1 e 1 @339 ]
 "14149
 [v _C1FIFOCON1L C1FIFOCON1L `VEuc  1 e 1 @348 ]
+[s S3182 . 1 `uc 1 TFNRFNIE 1 0 :1:0 
+`uc 1 TFHRFHIE 1 0 :1:1 
+`uc 1 TFERFFIE 1 0 :1:2 
+`uc 1 RXOVIE 1 0 :1:3 
+`uc 1 TXATIE 1 0 :1:4 
+`uc 1 RXTSEN 1 0 :1:5 
+`uc 1 RTREN 1 0 :1:6 
+`uc 1 TXEN 1 0 :1:7 
+]
+"14166
+[u S3191 . 1 `S3182 1 . 1 0 ]
+[v _C1FIFOCON1Lbits C1FIFOCON1Lbits `VES3191  1 e 1 @348 ]
 "14211
 [v _C1FIFOCON1H C1FIFOCON1H `VEuc  1 e 1 @349 ]
 "14243
 [v _C1FIFOCON1U C1FIFOCON1U `VEuc  1 e 1 @350 ]
 "14313
 [v _C1FIFOCON1T C1FIFOCON1T `VEuc  1 e 1 @351 ]
+[s S1562 . 1 `uc 1 TFNRFNIF 1 0 :1:0 
+`uc 1 TFHRFHIF 1 0 :1:1 
+`uc 1 TFERFFIF 1 0 :1:2 
+`uc 1 RXOVIF 1 0 :1:3 
+`uc 1 TXATIF 1 0 :1:4 
+`uc 1 TXERR 1 0 :1:5 
+`uc 1 TXLARB 1 0 :1:6 
+`uc 1 TXABT 1 0 :1:7 
+]
+"14413
+[u S1571 . 1 `S1562 1 . 1 0 ]
+[v _C1FIFOSTA1Lbits C1FIFOSTA1Lbits `VES1571  1 e 1 @352 ]
 "16149
 [v _C1FLTCON0L C1FLTCON0L `VEuc  1 e 1 @384 ]
 "16864
@@ -1174,31 +1135,31 @@ I2C1_FAIL 2
 [v _U1P3H U1P3H `VEuc  1 e 1 @682 ]
 "32149
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @683 ]
-[s S1796 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S1818 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 ]
 "32182
-[s S1801 . 1 `uc 1 U1MODE 1 0 :4:0 
+[s S1823 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
-[s S1807 . 1 `uc 1 U1MODE0 1 0 :1:0 
+[s S1829 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
 `uc 1 U1MODE3 1 0 :1:3 
 ]
-[s S1812 . 1 `uc 1 MODE 1 0 :4:0 
+[s S1834 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
-[u S1818 . 1 `S1796 1 . 1 0 `S1801 1 . 1 0 `S1807 1 . 1 0 `S1812 1 . 1 0 ]
-[v _U1CON0bits U1CON0bits `VES1818  1 e 1 @683 ]
+[u S1840 . 1 `S1818 1 . 1 0 `S1823 1 . 1 0 `S1829 1 . 1 0 `S1834 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES1840  1 e 1 @683 ]
 "32277
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @684 ]
 "32357
@@ -1213,7 +1174,7 @@ I2C1_FAIL 2
 [v _U1UIR U1UIR `VEuc  1 e 1 @689 ]
 "32732
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @690 ]
-[s S1846 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S1868 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -1223,7 +1184,7 @@ I2C1_FAIL 2
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "32759
-[s S1855 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S1877 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -1232,8 +1193,8 @@ I2C1_FAIL 2
 `uc 1 U1PERIF 1 0 :1:6 
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
-[u S1864 . 1 `S1846 1 . 1 0 `S1855 1 . 1 0 ]
-[v _U1ERRIRbits U1ERRIRbits `VES1864  1 e 1 @690 ]
+[u S1886 . 1 `S1868 1 . 1 0 `S1877 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES1886  1 e 1 @690 ]
 "32844
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @691 ]
 "38967
@@ -1242,37 +1203,37 @@ I2C1_FAIL 2
 [v _TMR0H TMR0H `VEuc  1 e 1 @793 ]
 "39359
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @794 ]
-[s S2427 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S2467 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 MD16 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
 "39393
-[s S2433 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+[s S2473 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T0MD16 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
 "39393
-[s S2439 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S2479 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
 `uc 1 T016BIT 1 0 :1:4 
 ]
 "39393
-[s S2445 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+[s S2485 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
 `uc 1 T0OUTPS1 1 0 :1:1 
 `uc 1 T0OUTPS2 1 0 :1:2 
 `uc 1 T0OUTPS3 1 0 :1:3 
 ]
 "39393
-[u S2450 . 1 `S2427 1 . 1 0 `S2433 1 . 1 0 `S2439 1 . 1 0 `S2445 1 . 1 0 ]
+[u S2490 . 1 `S2467 1 . 1 0 `S2473 1 . 1 0 `S2479 1 . 1 0 `S2485 1 . 1 0 ]
 "39393
 "39393
-[v _T0CON0bits T0CON0bits `VES2450  1 e 1 @794 ]
+[v _T0CON0bits T0CON0bits `VES2490  1 e 1 @794 ]
 "39483
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @795 ]
 "39632
@@ -1281,14 +1242,14 @@ I2C1_FAIL 2
 [v _TMR1H TMR1H `VEuc  1 e 1 @797 ]
 "39872
 [v _T1CON T1CON `VEuc  1 e 1 @798 ]
-[s S2206 . 1 `uc 1 ON 1 0 :1:0 
+[s S2246 . 1 `uc 1 ON 1 0 :1:0 
 `uc 1 RD16 1 0 :1:1 
 `uc 1 NOT_SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 CKPS 1 0 :2:4 
 ]
 "39914
-[s S2212 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S2252 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 T1RD16 1 0 :1:1 
 `uc 1 NOT_T1SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -1296,28 +1257,28 @@ I2C1_FAIL 2
 `uc 1 T1CKPS1 1 0 :1:5 
 ]
 "39914
-[s S2219 . 1 `uc 1 . 1 0 :2:0 
+[s S2259 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nSYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 CKPS0 1 0 :1:4 
 `uc 1 CKPS1 1 0 :1:5 
 ]
 "39914
-[s S2225 . 1 `uc 1 . 1 0 :1:0 
+[s S2265 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RD161 1 0 :1:1 
 ]
 "39914
-[s S2228 . 1 `uc 1 . 1 0 :2:0 
+[s S2268 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nT1SYNC 1 0 :1:2 
 ]
 "39914
-[u S2231 . 1 `S2206 1 . 1 0 `S2212 1 . 1 0 `S2219 1 . 1 0 `S2225 1 . 1 0 `S2228 1 . 1 0 ]
+[u S2271 . 1 `S2246 1 . 1 0 `S2252 1 . 1 0 `S2259 1 . 1 0 `S2265 1 . 1 0 `S2268 1 . 1 0 ]
 "39914
 "39914
-[v _T1CONbits T1CONbits `VES2231  1 e 1 @798 ]
+[v _T1CONbits T1CONbits `VES2271  1 e 1 @798 ]
 "40094
 [v _T1GCON T1GCON `VEuc  1 e 1 @799 ]
-[s S2263 . 1 `uc 1 . 1 0 :2:0 
+[s S2303 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 GVAL 1 0 :1:2 
 `uc 1 GGO 1 0 :1:3 
 `uc 1 GSPM 1 0 :1:4 
@@ -1326,7 +1287,7 @@ I2C1_FAIL 2
 `uc 1 GE 1 0 :1:7 
 ]
 "40148
-[s S2271 . 1 `uc 1 . 1 0 :2:0 
+[s S2311 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T1GVAL 1 0 :1:2 
 `uc 1 T1GGO 1 0 :1:3 
 `uc 1 T1GSPM 1 0 :1:4 
@@ -1335,34 +1296,34 @@ I2C1_FAIL 2
 `uc 1 T1GE 1 0 :1:7 
 ]
 "40148
-[s S2279 . 1 `uc 1 . 1 0 :3:0 
+[s S2319 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_DONE 1 0 :1:3 
 ]
 "40148
-[s S2282 . 1 `uc 1 . 1 0 :3:0 
+[s S2322 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_T1DONE 1 0 :1:3 
 ]
 "40148
-[s S2285 . 1 `uc 1 . 1 0 :3:0 
+[s S2325 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 GGO_NOT_DONE 1 0 :1:3 
 ]
 "40148
-[s S2288 . 1 `uc 1 . 1 0 :3:0 
+[s S2328 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 GGO_nDONE 1 0 :1:3 
 ]
 "40148
-[s S2291 . 1 `uc 1 . 1 0 :3:0 
+[s S2331 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T1GGO_NOT_DONE 1 0 :1:3 
 ]
 "40148
-[s S2294 . 1 `uc 1 . 1 0 :3:0 
+[s S2334 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T1GGO_nDONE 1 0 :1:3 
 ]
 "40148
-[u S2297 . 1 `S2263 1 . 1 0 `S2271 1 . 1 0 `S2279 1 . 1 0 `S2282 1 . 1 0 `S2285 1 . 1 0 `S2288 1 . 1 0 `S2291 1 . 1 0 `S2294 1 . 1 0 ]
+[u S2337 . 1 `S2303 1 . 1 0 `S2311 1 . 1 0 `S2319 1 . 1 0 `S2322 1 . 1 0 `S2325 1 . 1 0 `S2328 1 . 1 0 `S2331 1 . 1 0 `S2334 1 . 1 0 ]
 "40148
 "40148
-[v _T1GCONbits T1GCONbits `VES2297  1 e 1 @799 ]
+[v _T1GCONbits T1GCONbits `VES2337  1 e 1 @799 ]
 "40380
 [v _T1GATE T1GATE `VEuc  1 e 1 @800 ]
 "40546
@@ -1374,7 +1335,7 @@ I2C1_FAIL 2
 "41639
 [v _T3CON T3CON `VEuc  1 e 1 @810 ]
 "41681
-[s S3157 . 1 `uc 1 TMR3ON 1 0 :1:0 
+[s S2597 . 1 `uc 1 TMR3ON 1 0 :1:0 
 `uc 1 T3RD16 1 0 :1:1 
 `uc 1 NOT_T3SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -1383,22 +1344,22 @@ I2C1_FAIL 2
 ]
 "41681
 "41681
-[s S3170 . 1 `uc 1 . 1 0 :1:0 
+[s S2610 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RD163 1 0 :1:1 
 ]
 "41681
-[s S3173 . 1 `uc 1 . 1 0 :2:0 
+[s S2613 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nT3SYNC 1 0 :1:2 
 ]
 "41681
-[u S3176 . 1 `S2206 1 . 1 0 `S3157 1 . 1 0 `S2219 1 . 1 0 `S3170 1 . 1 0 `S3173 1 . 1 0 ]
+[u S2616 . 1 `S2246 1 . 1 0 `S2597 1 . 1 0 `S2259 1 . 1 0 `S2610 1 . 1 0 `S2613 1 . 1 0 ]
 "41681
 "41681
-[v _T3CONbits T3CONbits `VES3176  1 e 1 @810 ]
+[v _T3CONbits T3CONbits `VES2616  1 e 1 @810 ]
 "41861
 [v _T3GCON T3GCON `VEuc  1 e 1 @811 ]
 "41915
-[s S3216 . 1 `uc 1 . 1 0 :2:0 
+[s S2656 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T3GVAL 1 0 :1:2 
 `uc 1 T3GGO 1 0 :1:3 
 `uc 1 T3GSPM 1 0 :1:4 
@@ -1408,24 +1369,24 @@ I2C1_FAIL 2
 ]
 "41915
 "41915
-[s S3227 . 1 `uc 1 . 1 0 :3:0 
+[s S2667 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_T3DONE 1 0 :1:3 
 ]
 "41915
 "41915
 "41915
-[s S3236 . 1 `uc 1 . 1 0 :3:0 
+[s S2676 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T3GGO_NOT_DONE 1 0 :1:3 
 ]
 "41915
-[s S3239 . 1 `uc 1 . 1 0 :3:0 
+[s S2679 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T3GGO_nDONE 1 0 :1:3 
 ]
 "41915
-[u S3242 . 1 `S2263 1 . 1 0 `S3216 1 . 1 0 `S2279 1 . 1 0 `S3227 1 . 1 0 `S2285 1 . 1 0 `S2288 1 . 1 0 `S3236 1 . 1 0 `S3239 1 . 1 0 ]
+[u S2682 . 1 `S2303 1 . 1 0 `S2656 1 . 1 0 `S2319 1 . 1 0 `S2667 1 . 1 0 `S2325 1 . 1 0 `S2328 1 . 1 0 `S2676 1 . 1 0 `S2679 1 . 1 0 ]
 "41915
 "41915
-[v _T3GCONbits T3GCONbits `VES3242  1 e 1 @811 ]
+[v _T3GCONbits T3GCONbits `VES2682  1 e 1 @811 ]
 "42147
 [v _T3GATE T3GATE `VEuc  1 e 1 @812 ]
 "42313
@@ -1531,28 +1492,22 @@ I2C1_FAIL 2
 [v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
 "189
 [v _nout nout `i  1 s 2 nout ]
-[s S2528 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
+[s S2790 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
 "7 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\CAN_handler.c
-[v _dashboard_data dashboard_data `S2528  1 s 10 dashboard_data ]
-[s S1434 . 1 `uc 1 idType 1 0 :1:0 
+[v _dashboard_data dashboard_data `VES2790  1 s 10 dashboard_data ]
+[s S1495 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
 "9
-[u S1440 . 1 `uc 1 msgfields 1 0 `S1434 1 . 1 0 ]
-[s S1443 . 7 `ul 1 msgId 4 0 `S1440 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v _rx_msg rx_msg `S1443  1 e 7 0 ]
-"10
-[v _rx_buff rx_buff `[8]uc  1 e 8 0 ]
-"11
-[v _nrMsg nrMsg `uc  1 e 1 0 ]
-"13
-[v _tx_buff tx_buff `[1]uc  1 s 1 tx_buff ]
-[s S2528 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
+[u S1501 . 1 `uc 1 msgfields 1 0 `S1495 1 . 1 0 ]
+[s S1504 . 7 `ul 1 msgId 4 0 `S1501 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v _rx_msg rx_msg `S1504  1 e 7 0 ]
+[s S2790 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
 "76 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
-[v _data data `S2528  1 e 10 0 ]
+[v _data data `S2790  1 e 10 0 ]
 "78
 [v _R2Duptime_seconds R2Duptime_seconds `VEul  1 e 4 0 ]
 "79
@@ -1561,13 +1516,15 @@ I2C1_FAIL 2
 [v _button_press_active button_press_active `VEuc  1 e 1 0 ]
 "81
 [v _reverse_active reverse_active `VEuc  1 e 1 0 ]
-"103 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
-[v _rxMsgData rxMsgData `[8]uc  1 s 8 rxMsgData ]
-[s S1265 CAN1_RX_FIFO 2 `E23201 1 channel 1 0 `VEuc 1 fifoHead 1 1 ]
-"105
+"99 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
+[v _rxMsgData rxMsgData `VE[8]uc  1 s 8 rxMsgData ]
+[s S1265 CAN1_RX_FIFO 2 `E23155 1 channel 1 0 `VEuc 1 fifoHead 1 1 ]
+"101
 [v _rxFifos rxFifos `VE[1]S1265  1 s 2 rxFifos ]
-"111
+"107
 [v _DLC_BYTES DLC_BYTES `C[9]uc  1 s 9 DLC_BYTES ]
+"109
+[v _CAN1_FIFO1NotEmptyHandler CAN1_FIFO1NotEmptyHandler `*.38(v  1 s 3 CAN1_FIFO1NotEmptyHandler ]
 "159 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/i2c1_master.c
 [v _i2c1_fsmStateTable i2c1_fsmStateTable `C[19]*.38(E23307  1 e 57 0 ]
 [s S530 . 42 `[6]*.38(E363 1 callbackTable 18 0 `[6]*.39v 1 callbackPayload 12 18 `us 1 time_out 2 30 `us 1 time_out_value 2 32 `uc 1 address 1 34 `*.39uc 1 data_ptr 2 35 `ui 1 data_length 2 37 `E23307 1 state 1 39 `E358 1 error 1 40 `uc 1 addressNackCheck 1 41 :2:0 
@@ -1591,14 +1548,14 @@ I2C1_FAIL 2
 [v _timer3ReloadVal timer3ReloadVal `VEus  1 e 2 0 ]
 "58
 [v _TMR3_InterruptHandler TMR3_InterruptHandler `*.38(v  1 e 3 0 ]
-[s S1719 . 1 `uc 1 perr 1 0 :1:0 
+[s S1750 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "53 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/uart1.c
-[u S1724 . 1 `S1719 1 . 1 0 `uc 1 status 1 0 ]
-[v _uart1RxLastError uart1RxLastError `VES1724  1 s 1 uart1RxLastError ]
+[u S1755 . 1 `S1750 1 . 1 0 `uc 1 status 1 0 ]
+[v _uart1RxLastError uart1RxLastError `VES1755  1 s 1 uart1RxLastError ]
 "58
 [v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.38(v  1 e 3 0 ]
 "59
@@ -1616,13 +1573,13 @@ I2C1_FAIL 2
 "85 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"277
+"278
 } 0
 "57
 [v _vcu_number vcu_number `(v  1 e 1 0 ]
 {
-[s S2528 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
-[v vcu_number@data data `*.39S2528  1 p 2 167 ]
+[s S2790 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
+[v vcu_number@data data `*.39S2790  1 p 2 167 ]
 "65
 } 0
 "12 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\animation.c
@@ -1677,6 +1634,15 @@ I2C1_FAIL 2
 [v seg_write_display@tx_buffer tx_buffer `[5]uc  1 a 5 23 ]
 "44
 } 0
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.39v  1 a 2 148 ]
+"5
+[v printf@fmt fmt `*.32Cuc  1 p 2 146 ]
+"13
+} 0
 "11 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\power.c
 [v _power_sample_instant power_sample_instant `(v  1 e 1 0 ]
 {
@@ -1684,18 +1650,18 @@ I2C1_FAIL 2
 [v power_sample_instant@current_da current_da `us  1 p 2 14 ]
 "13
 } 0
-"279 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
+"280 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
 [v _display_tson_state display_tson_state `(v  1 e 1 0 ]
 {
-[v display_tson_state@current_state current_state `E23599  1 p 1 wreg ]
-[v display_tson_state@current_state current_state `E23599  1 p 1 wreg ]
-[s S2528 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
-[v display_tson_state@data data `*.39S2528  1 p 2 167 ]
-"281
-[v display_tson_state@last_state last_state `E23599  1 s 1 last_state ]
-"284
-[v display_tson_state@current_state current_state `E23599  1 p 1 171 ]
-"332
+[v display_tson_state@current_state current_state `E23594  1 p 1 wreg ]
+[v display_tson_state@current_state current_state `E23594  1 p 1 wreg ]
+[s S2790 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
+[v display_tson_state@data data `*.39S2790  1 p 2 167 ]
+"282
+[v display_tson_state@last_state last_state `E23594  1 s 1 last_state ]
+"285
+[v display_tson_state@current_state current_state `E23594  1 p 1 171 ]
+"333
 } 0
 "26 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\power.c
 [v _power_get_instant_kw power_get_instant_kw `(ul  1 e 4 0 ]
@@ -1817,10 +1783,10 @@ I2C1_FAIL 2
 "8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\vsprintf.c
 [v _vsprintf vsprintf `(i  1 e 2 0 ]
 {
-[u S3782 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
+[u S3800 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
 "11
-[s S3785 _IO_FILE 11 `S3782 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v vsprintf@f f `S3785  1 a 11 156 ]
+[s S3803 _IO_FILE 11 `S3800 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v vsprintf@f f `S3803  1 a 11 156 ]
 "10
 [v vsprintf@cnt cnt `i  1 a 2 154 ]
 "8
@@ -1829,11 +1795,522 @@ I2C1_FAIL 2
 [v vsprintf@ap ap `*.39*.39v  1 p 2 150 ]
 "21
 } 0
+"1817 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1820
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 144 ]
+[s S3821 _IO_FILE 0 ]
+"1817
+[v vfprintf@fp fp `*.39S3821  1 p 2 138 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 140 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 142 ]
+"1840
+} 0
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+[u S3875 . 8 `o 1 sint 8 0 `uo 1 uint 8 0 `d 1 f 4 0 ]
+"1188
+[v vfpfcnvrt@convarg convarg `S3875  1 a 8 128 ]
+"1179
+[v vfpfcnvrt@cp cp `*.32uc  1 a 2 136 ]
+[v vfpfcnvrt@c c `uc  1 a 1 127 ]
+"1180
+[v vfpfcnvrt@done done `a  1 a 1 126 ]
+[s S3821 _IO_FILE 0 ]
+"1177
+[v vfpfcnvrt@fp fp `*.39S3821  1 p 2 106 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 108 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 110 ]
+"1814
+} 0
+"1052
+[v _xtoa xtoa `(i  1 s 2 xtoa ]
+{
+"1063
+[v xtoa@i i `i  1 a 2 55 ]
+[v xtoa@w w `i  1 a 2 52 ]
+"1065
+[v xtoa@p p `i  1 a 2 49 ]
+"1059
+[v xtoa@c c `uc  1 a 1 54 ]
+"1070
+[v xtoa@d_nonzero d_nonzero `a  1 a 1 51 ]
+"1061
+[v xtoa@a a `uc  1 a 1 46 ]
+[s S3821 _IO_FILE 0 ]
+"1052
+[v xtoa@fp fp `*.39S3821  1 p 2 27 ]
+[v xtoa@d d `uo  1 p 8 29 ]
+[v xtoa@x x `uc  1 p 1 37 ]
+"1153
+} 0
+"1001
+[v _utoa utoa `(i  1 s 2 utoa ]
+{
+"1003
+[v utoa@i i `i  1 a 2 49 ]
+[v utoa@w w `i  1 a 2 47 ]
+"1005
+[v utoa@p p `i  1 a 2 45 ]
+[s S3821 _IO_FILE 0 ]
+"1001
+[v utoa@fp fp `*.39S3821  1 p 2 27 ]
+[v utoa@d d `uo  1 p 8 29 ]
+"1047
+} 0
+"9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+{
+"12
+[v ___lomod@counter counter `uc  1 a 1 16 ]
+"9
+[v ___lomod@dividend dividend `uo  1 p 8 0 ]
+[v ___lomod@divisor divisor `uo  1 p 8 8 ]
+"27
+} 0
+"9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+{
+"12
+[v ___lodiv@quotient quotient `uo  1 a 8 16 ]
+"13
+[v ___lodiv@counter counter `uc  1 a 1 24 ]
+"9
+[v ___lodiv@dividend dividend `uo  1 p 8 0 ]
+[v ___lodiv@divisor divisor `uo  1 p 8 8 ]
+"32
+} 0
+"942 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+[v _stoa stoa `(i  1 s 2 stoa ]
+{
+"945
+[v stoa@l l `i  1 a 2 23 ]
+"944
+[v stoa@cp cp `*.34uc  1 a 2 21 ]
+"947
+[v stoa@w w `i  1 a 2 19 ]
+"945
+[v stoa@p p `i  1 a 2 17 ]
+[s S3821 _IO_FILE 0 ]
+"942
+[v stoa@fp fp `*.39S3821  1 p 2 11 ]
+[v stoa@s s `*.39uc  1 p 2 13 ]
+"997
+} 0
+"1158
+[v _read_prec_or_width read_prec_or_width `(i  1 s 2 read_prec_or_width ]
+{
+"1164
+[v read_prec_or_width@c c `uc  1 a 1 6 ]
+"1159
+[v read_prec_or_width@n n `i  1 a 2 7 ]
+"1158
+[v read_prec_or_width@fmt fmt `*.39*.32Cuc  1 p 2 0 ]
+[v read_prec_or_width@ap ap `*.39[1]*.39v  1 p 2 2 ]
+"1171
+} 0
+"872
+[v _otoa otoa `(i  1 s 2 otoa ]
+{
+"877
+[v otoa@i i `i  1 a 2 50 ]
+[v otoa@w w `i  1 a 2 48 ]
+"879
+[v otoa@p p `i  1 a 2 45 ]
+"875
+[v otoa@t t `uc  1 a 1 47 ]
+[s S3821 _IO_FILE 0 ]
+"872
+[v otoa@fp fp `*.39S3821  1 p 2 27 ]
+[v otoa@d d `uo  1 p 8 29 ]
+"938
+} 0
+"587
+[v _efgtoa efgtoa `(i  1 s 2 efgtoa ]
+{
+[u S3861 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
+"592
+[v efgtoa@u u `S3861  1 a 4 100 ]
+[v efgtoa@g g `S3861  1 a 4 92 ]
+"591
+[v efgtoa@l l `d  1 a 4 87 ]
+[v efgtoa@h h `d  1 a 4 83 ]
+"592
+[v efgtoa@ou ou `S3861  1 a 4 77 ]
+"590
+[v efgtoa@n n `i  1 a 2 104 ]
+[v efgtoa@i i `i  1 a 2 98 ]
+[v efgtoa@e e `i  1 a 2 96 ]
+[v efgtoa@w w `i  1 a 2 81 ]
+[v efgtoa@p p `i  1 a 2 73 ]
+[v efgtoa@d d `i  1 a 2 71 ]
+[v efgtoa@m m `i  1 a 2 69 ]
+[v efgtoa@ne ne `i  1 a 2 67 ]
+[v efgtoa@t t `i  1 a 2 64 ]
+"589
+[v efgtoa@sign sign `uc  1 a 1 91 ]
+[v efgtoa@mode mode `uc  1 a 1 76 ]
+[v efgtoa@nmode nmode `uc  1 a 1 75 ]
+[v efgtoa@pp pp `uc  1 a 1 66 ]
+[v efgtoa@esign esign `uc  1 a 1 63 ]
+[s S3821 _IO_FILE 0 ]
+"587
+[v efgtoa@fp fp `*.39S3821  1 p 2 45 ]
+[v efgtoa@f f `d  1 p 4 47 ]
+[v efgtoa@c c `uc  1 p 1 51 ]
+"868
+} 0
+"1 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\labs.c
+[v _labs labs `(l  1 e 4 0 ]
+{
+[v labs@a a `l  1 p 4 0 ]
+"4
+} 0
+"513 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+"516
+[v dtoa@i i `i  1 a 2 52 ]
+[v dtoa@w w `i  1 a 2 49 ]
+"518
+[v dtoa@p p `i  1 a 2 47 ]
+"515
+[v dtoa@s s `uc  1 a 1 51 ]
+[s S3821 _IO_FILE 0 ]
+"513
+[v dtoa@fp fp `*.39S3821  1 p 2 27 ]
+[v dtoa@d d `o  1 p 8 29 ]
+"583
+} 0
+"1 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 18 ]
+"4
+} 0
+"9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 17 ]
+[v ___aomod@counter counter `uc  1 a 1 16 ]
+"9
+[v ___aomod@dividend dividend `o  1 p 8 0 ]
+[v ___aomod@divisor divisor `o  1 p 8 8 ]
+"36
+} 0
+"9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 18 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 17 ]
+[v ___aodiv@counter counter `uc  1 a 1 16 ]
+"9
+[v ___aodiv@dividend dividend `o  1 p 8 0 ]
+[v ___aodiv@divisor divisor `o  1 p 8 8 ]
+"43
+} 0
+"476 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+[v _ctoa ctoa `(i  1 s 2 ctoa ]
+{
+"478
+[v ctoa@w w `i  1 a 2 17 ]
+[v ctoa@l l `i  1 a 2 15 ]
+[s S3821 _IO_FILE 0 ]
+"476
+[v ctoa@fp fp `*.39S3821  1 p 2 11 ]
+[v ctoa@c c `uc  1 p 1 13 ]
+"509
+} 0
+"231
+[v _atoa atoa `(i  1 s 2 atoa ]
+{
+"240
+[v atoa@u u `d  1 a 4 95 ]
+[v atoa@g g `d  1 a 4 88 ]
+[v atoa@l l `d  1 a 4 82 ]
+[v atoa@h h `d  1 a 4 78 ]
+[v atoa@ou ou `d  1 a 4 54 ]
+"239
+[v atoa@n n `i  1 a 2 101 ]
+[v atoa@i i `i  1 a 2 99 ]
+[v atoa@d d `i  1 a 2 93 ]
+[v atoa@w w `i  1 a 2 86 ]
+[v atoa@e e `i  1 a 2 76 ]
+[v atoa@t t `i  1 a 2 74 ]
+[v atoa@p p `i  1 a 2 71 ]
+[v atoa@ne ne `i  1 a 2 69 ]
+[v atoa@m m `i  1 a 2 67 ]
+"238
+[v atoa@sign sign `uc  1 a 1 92 ]
+[v atoa@pp pp `uc  1 a 1 73 ]
+[v atoa@esign esign `uc  1 a 1 66 ]
+[s S3821 _IO_FILE 0 ]
+"231
+[v atoa@fp fp `*.39S3821  1 p 2 45 ]
+[v atoa@f f `d  1 p 4 47 ]
+[v atoa@c c `uc  1 p 1 51 ]
+"472
+} 0
+"3 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 3 0 ]
+{
+"5
+[v strcpy@d d `*.39uc  1 a 2 4 ]
+"3
+[v strcpy@dest dest `*.39uc  1 p 2 0 ]
+[v strcpy@src src `*.32Cuc  1 p 2 2 ]
+"8
+} 0
+"193 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+{
+"195
+[v pad@i i `i  1 a 2 25 ]
+[s S3821 _IO_FILE 0 ]
+"193
+[v pad@fp fp `*.39S3821  1 p 2 18 ]
+[v pad@buf buf `*.39uc  1 p 2 20 ]
+[v pad@p p `i  1 p 2 22 ]
+"226
+} 0
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.39Cuc  1 a 2 2 ]
+"5
+[v strlen@s s `*.39Cuc  1 p 2 0 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 16 ]
+"10
+[v fputs@c c `uc  1 a 1 15 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 11 ]
+[u S3800 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
+[s S3803 _IO_FILE 11 `S3800 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.39S3803  1 p 2 13 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 2 ]
+[u S3800 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
+[s S3803 _IO_FILE 11 `S3800 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S3803  1 p 2 4 ]
+"24
+} 0
+"184 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/uart1.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 p 1 wreg ]
+[v putch@txData txData `uc  1 p 1 wreg ]
+"186
+[v putch@txData txData `uc  1 p 1 1 ]
+"187
+} 0
+"170
+[v _UART1_Write UART1_Write `(v  1 e 1 0 ]
+{
+[v UART1_Write@txData txData `uc  1 p 1 wreg ]
+[v UART1_Write@txData txData `uc  1 p 1 wreg ]
+[v UART1_Write@txData txData `uc  1 p 1 0 ]
+"177
+} 0
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 3 0 ]
+{
+"8
+[v memcpy@s s `*.39Cuc  1 a 2 9 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 7 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 6 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 0 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
+[v memcpy@n n `ui  1 p 2 4 ]
+"18
+} 0
+"3 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\floorf.c
+[v _floorf floorf `(f  1 e 4 0 ]
+{
+[u S4043 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"5
+[v floorf@u u `S4043  1 a 4 41 ]
+"7
+[v floorf@m m `ul  1 a 4 35 ]
+"6
+[v floorf@e e `i  1 a 2 39 ]
+"3
+[v floorf@x x `f  1 p 4 25 ]
+"4
+[v floorf@F521 F521 `S4043  1 s 4 F521 ]
+"27
+} 0
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__fpclassifyf.c
+[v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
+{
+[u S4043 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"6
+[v ___fpclassifyf@u u `S4043  1 a 4 10 ]
+"7
+[v ___fpclassifyf@e e `i  1 a 2 8 ]
+"4
+[v ___fpclassifyf@x x `f  1 p 4 0 ]
+"5
+[v ___fpclassifyf@F465 F465 `S4043  1 s 4 F465 ]
+"11
+} 0
+"43 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 9 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 8 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 0 ]
+"70
+} 0
+"245 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@b b `d  1 p 4 25 ]
+[v ___flsub@a a `d  1 p 4 29 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 15 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 14 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 13 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 12 ]
+"10
+[v ___fladd@b b `d  1 p 4 0 ]
+[v ___fladd@a a `d  1 p 4 4 ]
+"237
+} 0
+"15 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+{
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
+"20
+} 0
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S3652 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S3657 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S3660 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3652 1 fAsBytes 4 0 `S3657 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S3660  1 a 4 19 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 14 ]
+[s S3728 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S3731 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3728 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S3731  1 a 2 23 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 18 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 13 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 12 ]
+"8
+[v ___flmul@b b `d  1 p 4 0 ]
+[v ___flmul@a a `d  1 p 4 4 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 25 ]
+[v ___flge@ff2 ff2 `d  1 p 4 29 ]
+"19
+} 0
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+{
+[v ___fleq@ff1 ff1 `d  1 p 4 0 ]
+[v ___fleq@ff2 ff2 `d  1 p 4 4 ]
+"12
+} 0
+"11 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 19 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 12 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 17 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 24 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 23 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 16 ]
+"11
+[v ___fldiv@b b `d  1 p 4 0 ]
+[v ___fldiv@a a `d  1 p 4 4 ]
+"185
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
 "98 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\LCD.c
 [v _LCD_write_string LCD_write_string `(v  1 e 1 0 ]
 {
 [v LCD_write_string@str str `*.34Cuc  1 p 2 23 ]
 "102
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"30
 } 0
 "50 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -1927,669 +2404,57 @@ I2C1_FAIL 2
 {
 "205
 } 0
-"188 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
+"180 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
 [v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
 {
-"214
+"205
 } 0
-"155
-[v _CAN1_TX_FIFO_Configuration CAN1_TX_FIFO_Configuration `(v  1 s 1 CAN1_TX_FIFO_Configuration ]
-{
-"169
-} 0
-"114
+"115
 [v _CAN1_RX_FIFO_ResetInfo CAN1_RX_FIFO_ResetInfo `(v  1 e 1 0 ]
 {
-"116
+"117
 [v CAN1_RX_FIFO_ResetInfo@index index `uc  1 a 1 0 ]
-"122
+"123
 } 0
-"140
+"147
 [v _CAN1_RX_FIFO_FilterMaskConfiguration CAN1_RX_FIFO_FilterMaskConfiguration `(v  1 s 1 CAN1_RX_FIFO_FilterMaskConfiguration ]
 {
-"153
+"160
 } 0
-"124
+"125
 [v _CAN1_RX_FIFO_Configuration CAN1_RX_FIFO_Configuration `(v  1 s 1 CAN1_RX_FIFO_Configuration ]
 {
-"138
+"145
 } 0
-"216
+"440
+[v _CAN1_SetFIFO1NotEmptyHandler CAN1_SetFIFO1NotEmptyHandler `(v  1 e 1 0 ]
+{
+[v CAN1_SetFIFO1NotEmptyHandler@handler handler `*.38(v  1 p 3 0 ]
+"443
+} 0
+"207
 [v _CAN1_OperationModeSet CAN1_OperationModeSet `(E23128  1 e 1 0 ]
 {
 [v CAN1_OperationModeSet@requestMode requestMode `CE23118  1 p 1 wreg ]
-"218
+"209
 [v CAN1_OperationModeSet@status status `E23128  1 a 1 1 ]
-"219
+"210
 [v CAN1_OperationModeSet@opMode opMode `E23118  1 a 1 0 ]
-"216
+"207
 [v CAN1_OperationModeSet@requestMode requestMode `CE23118  1 p 1 wreg ]
-"218
+"209
 [v CAN1_OperationModeSet@requestMode requestMode `CE23118  1 p 1 2 ]
-"243
+"234
 } 0
-"245
+"236
 [v _CAN1_OperationModeGet CAN1_OperationModeGet `(E23118  1 e 1 0 ]
 {
-"248
+"239
 } 0
-"171
+"163
 [v _CAN1_BitRateConfiguration CAN1_BitRateConfiguration `(v  1 s 1 CAN1_BitRateConfiguration ]
 {
-"185
-} 0
-"28 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\CAN_handler.c
-[v _ProcessCANMessages ProcessCANMessages `(v  1 e 1 0 ]
-{
-"78
-[v ProcessCANMessages@i_3004 i `uc  1 a 1 164 ]
-"58
-[v ProcessCANMessages@i_3002 i `uc  1 a 1 163 ]
-"40
-[v ProcessCANMessages@i i `uc  1 a 1 162 ]
-"97
-} 0
-"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\printf.c
-[v _printf printf `(i  1 e 2 0 ]
-{
-"8
-[v printf@ap ap `[1]*.39v  1 a 2 156 ]
-"5
-[v printf@fmt fmt `*.32Cuc  1 p 2 146 ]
-"13
-} 0
-"1817 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-[v _vfprintf vfprintf `(i  1 e 2 0 ]
-{
-"1820
-[v vfprintf@cfmt cfmt `*.32uc  1 a 2 144 ]
-[s S3803 _IO_FILE 0 ]
-"1817
-[v vfprintf@fp fp `*.39S3803  1 p 2 138 ]
-[v vfprintf@fmt fmt `*.32Cuc  1 p 2 140 ]
-[v vfprintf@ap ap `*.39*.39v  1 p 2 142 ]
-"1840
-} 0
-"1177
-[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
-{
-[u S3857 . 8 `o 1 sint 8 0 `uo 1 uint 8 0 `d 1 f 4 0 ]
-"1188
-[v vfpfcnvrt@convarg convarg `S3857  1 a 8 128 ]
-"1179
-[v vfpfcnvrt@cp cp `*.32uc  1 a 2 136 ]
-[v vfpfcnvrt@c c `uc  1 a 1 127 ]
-"1180
-[v vfpfcnvrt@done done `a  1 a 1 126 ]
-[s S3803 _IO_FILE 0 ]
-"1177
-[v vfpfcnvrt@fp fp `*.39S3803  1 p 2 106 ]
-[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 108 ]
-[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 110 ]
-"1814
-} 0
-"1052
-[v _xtoa xtoa `(i  1 s 2 xtoa ]
-{
-"1063
-[v xtoa@i i `i  1 a 2 55 ]
-[v xtoa@w w `i  1 a 2 52 ]
-"1065
-[v xtoa@p p `i  1 a 2 49 ]
-"1059
-[v xtoa@c c `uc  1 a 1 54 ]
-"1070
-[v xtoa@d_nonzero d_nonzero `a  1 a 1 51 ]
-"1061
-[v xtoa@a a `uc  1 a 1 46 ]
-[s S3803 _IO_FILE 0 ]
-"1052
-[v xtoa@fp fp `*.39S3803  1 p 2 27 ]
-[v xtoa@d d `uo  1 p 8 29 ]
-[v xtoa@x x `uc  1 p 1 37 ]
-"1153
-} 0
-"1001
-[v _utoa utoa `(i  1 s 2 utoa ]
-{
-"1003
-[v utoa@i i `i  1 a 2 49 ]
-[v utoa@w w `i  1 a 2 47 ]
-"1005
-[v utoa@p p `i  1 a 2 45 ]
-[s S3803 _IO_FILE 0 ]
-"1001
-[v utoa@fp fp `*.39S3803  1 p 2 27 ]
-[v utoa@d d `uo  1 p 8 29 ]
-"1047
-} 0
-"9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lomod.c
-[v ___lomod __lomod `(uo  1 e 8 0 ]
-{
-"12
-[v ___lomod@counter counter `uc  1 a 1 16 ]
-"9
-[v ___lomod@dividend dividend `uo  1 p 8 0 ]
-[v ___lomod@divisor divisor `uo  1 p 8 8 ]
-"27
-} 0
-"9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lodiv.c
-[v ___lodiv __lodiv `(uo  1 e 8 0 ]
-{
-"12
-[v ___lodiv@quotient quotient `uo  1 a 8 16 ]
-"13
-[v ___lodiv@counter counter `uc  1 a 1 24 ]
-"9
-[v ___lodiv@dividend dividend `uo  1 p 8 0 ]
-[v ___lodiv@divisor divisor `uo  1 p 8 8 ]
-"32
-} 0
-"942 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-[v _stoa stoa `(i  1 s 2 stoa ]
-{
-"945
-[v stoa@l l `i  1 a 2 23 ]
-"944
-[v stoa@cp cp `*.34uc  1 a 2 21 ]
-"947
-[v stoa@w w `i  1 a 2 19 ]
-"945
-[v stoa@p p `i  1 a 2 17 ]
-[s S3803 _IO_FILE 0 ]
-"942
-[v stoa@fp fp `*.39S3803  1 p 2 11 ]
-[v stoa@s s `*.39uc  1 p 2 13 ]
-"997
-} 0
-"1158
-[v _read_prec_or_width read_prec_or_width `(i  1 s 2 read_prec_or_width ]
-{
-"1164
-[v read_prec_or_width@c c `uc  1 a 1 6 ]
-"1159
-[v read_prec_or_width@n n `i  1 a 2 7 ]
-"1158
-[v read_prec_or_width@fmt fmt `*.39*.32Cuc  1 p 2 0 ]
-[v read_prec_or_width@ap ap `*.39[1]*.39v  1 p 2 2 ]
-"1171
-} 0
-"872
-[v _otoa otoa `(i  1 s 2 otoa ]
-{
-"877
-[v otoa@i i `i  1 a 2 50 ]
-[v otoa@w w `i  1 a 2 48 ]
-"879
-[v otoa@p p `i  1 a 2 45 ]
-"875
-[v otoa@t t `uc  1 a 1 47 ]
-[s S3803 _IO_FILE 0 ]
-"872
-[v otoa@fp fp `*.39S3803  1 p 2 27 ]
-[v otoa@d d `uo  1 p 8 29 ]
-"938
-} 0
-"587
-[v _efgtoa efgtoa `(i  1 s 2 efgtoa ]
-{
-[u S3843 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
-"592
-[v efgtoa@u u `S3843  1 a 4 100 ]
-[v efgtoa@g g `S3843  1 a 4 92 ]
-"591
-[v efgtoa@l l `d  1 a 4 87 ]
-[v efgtoa@h h `d  1 a 4 83 ]
-"592
-[v efgtoa@ou ou `S3843  1 a 4 77 ]
-"590
-[v efgtoa@n n `i  1 a 2 104 ]
-[v efgtoa@i i `i  1 a 2 98 ]
-[v efgtoa@e e `i  1 a 2 96 ]
-[v efgtoa@w w `i  1 a 2 81 ]
-[v efgtoa@p p `i  1 a 2 73 ]
-[v efgtoa@d d `i  1 a 2 71 ]
-[v efgtoa@m m `i  1 a 2 69 ]
-[v efgtoa@ne ne `i  1 a 2 67 ]
-[v efgtoa@t t `i  1 a 2 64 ]
-"589
-[v efgtoa@sign sign `uc  1 a 1 91 ]
-[v efgtoa@mode mode `uc  1 a 1 76 ]
-[v efgtoa@nmode nmode `uc  1 a 1 75 ]
-[v efgtoa@pp pp `uc  1 a 1 66 ]
-[v efgtoa@esign esign `uc  1 a 1 63 ]
-[s S3803 _IO_FILE 0 ]
-"587
-[v efgtoa@fp fp `*.39S3803  1 p 2 45 ]
-[v efgtoa@f f `d  1 p 4 47 ]
-[v efgtoa@c c `uc  1 p 1 51 ]
-"868
-} 0
-"1 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\labs.c
-[v _labs labs `(l  1 e 4 0 ]
-{
-[v labs@a a `l  1 p 4 0 ]
-"4
-} 0
-"513 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-[v _dtoa dtoa `(i  1 s 2 dtoa ]
-{
-"516
-[v dtoa@i i `i  1 a 2 52 ]
-[v dtoa@w w `i  1 a 2 49 ]
-"518
-[v dtoa@p p `i  1 a 2 47 ]
-"515
-[v dtoa@s s `uc  1 a 1 51 ]
-[s S3803 _IO_FILE 0 ]
-"513
-[v dtoa@fp fp `*.39S3803  1 p 2 27 ]
-[v dtoa@d d `o  1 p 8 29 ]
-"583
-} 0
-"1 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\abs.c
-[v _abs abs `(i  1 e 2 0 ]
-{
-[v abs@a a `i  1 p 2 18 ]
-"4
-} 0
-"9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\aomod.c
-[v ___aomod __aomod `(o  1 e 8 0 ]
-{
-"12
-[v ___aomod@sign sign `uc  1 a 1 17 ]
-[v ___aomod@counter counter `uc  1 a 1 16 ]
-"9
-[v ___aomod@dividend dividend `o  1 p 8 0 ]
-[v ___aomod@divisor divisor `o  1 p 8 8 ]
-"36
-} 0
-"9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\aodiv.c
-[v ___aodiv __aodiv `(o  1 e 8 0 ]
-{
-"12
-[v ___aodiv@quotient quotient `o  1 a 8 18 ]
-"13
-[v ___aodiv@sign sign `uc  1 a 1 17 ]
-[v ___aodiv@counter counter `uc  1 a 1 16 ]
-"9
-[v ___aodiv@dividend dividend `o  1 p 8 0 ]
-[v ___aodiv@divisor divisor `o  1 p 8 8 ]
-"43
-} 0
-"476 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-[v _ctoa ctoa `(i  1 s 2 ctoa ]
-{
-"478
-[v ctoa@w w `i  1 a 2 17 ]
-[v ctoa@l l `i  1 a 2 15 ]
-[s S3803 _IO_FILE 0 ]
-"476
-[v ctoa@fp fp `*.39S3803  1 p 2 11 ]
-[v ctoa@c c `uc  1 p 1 13 ]
-"509
-} 0
-"231
-[v _atoa atoa `(i  1 s 2 atoa ]
-{
-"240
-[v atoa@u u `d  1 a 4 95 ]
-[v atoa@g g `d  1 a 4 88 ]
-[v atoa@l l `d  1 a 4 82 ]
-[v atoa@h h `d  1 a 4 78 ]
-[v atoa@ou ou `d  1 a 4 54 ]
-"239
-[v atoa@n n `i  1 a 2 101 ]
-[v atoa@i i `i  1 a 2 99 ]
-[v atoa@d d `i  1 a 2 93 ]
-[v atoa@w w `i  1 a 2 86 ]
-[v atoa@e e `i  1 a 2 76 ]
-[v atoa@t t `i  1 a 2 74 ]
-[v atoa@p p `i  1 a 2 71 ]
-[v atoa@ne ne `i  1 a 2 69 ]
-[v atoa@m m `i  1 a 2 67 ]
-"238
-[v atoa@sign sign `uc  1 a 1 92 ]
-[v atoa@pp pp `uc  1 a 1 73 ]
-[v atoa@esign esign `uc  1 a 1 66 ]
-[s S3803 _IO_FILE 0 ]
-"231
-[v atoa@fp fp `*.39S3803  1 p 2 45 ]
-[v atoa@f f `d  1 p 4 47 ]
-[v atoa@c c `uc  1 p 1 51 ]
-"472
-} 0
-"3 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\strcpy.c
-[v _strcpy strcpy `(*.39uc  1 e 3 0 ]
-{
-"5
-[v strcpy@d d `*.39uc  1 a 2 4 ]
-"3
-[v strcpy@dest dest `*.39uc  1 p 2 0 ]
-[v strcpy@src src `*.32Cuc  1 p 2 2 ]
-"8
-} 0
-"193 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-[v _pad pad `(i  1 s 2 pad ]
-{
-"195
-[v pad@i i `i  1 a 2 25 ]
-[s S3803 _IO_FILE 0 ]
-"193
-[v pad@fp fp `*.39S3803  1 p 2 18 ]
-[v pad@buf buf `*.39uc  1 p 2 20 ]
-[v pad@p p `i  1 p 2 22 ]
-"226
-} 0
-"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\strlen.c
-[v _strlen strlen `(ui  1 e 2 0 ]
-{
-"7
-[v strlen@a a `*.39Cuc  1 a 2 2 ]
-"5
-[v strlen@s s `*.39Cuc  1 p 2 0 ]
-"12
-} 0
-"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputs.c
-[v _fputs fputs `(i  1 e 2 0 ]
-{
-"11
-[v fputs@i i `i  1 a 2 16 ]
-"10
-[v fputs@c c `uc  1 a 1 15 ]
-"8
-[v fputs@s s `*.39Cuc  1 p 2 11 ]
-[u S3782 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
-[s S3785 _IO_FILE 11 `S3782 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputs@fp fp `*.39S3785  1 p 2 13 ]
-"19
-} 0
-"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputc.c
-[v _fputc fputc `(i  1 e 2 0 ]
-{
-[v fputc@c c `i  1 p 2 2 ]
-[u S3782 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
-[s S3785 _IO_FILE 11 `S3782 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputc@fp fp `*.39S3785  1 p 2 4 ]
-"24
-} 0
-"184 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/uart1.c
-[v _putch putch `(v  1 e 1 0 ]
-{
-[v putch@txData txData `uc  1 p 1 wreg ]
-[v putch@txData txData `uc  1 p 1 wreg ]
-"186
-[v putch@txData txData `uc  1 p 1 1 ]
-"187
-} 0
-"170
-[v _UART1_Write UART1_Write `(v  1 e 1 0 ]
-{
-[v UART1_Write@txData txData `uc  1 p 1 wreg ]
-[v UART1_Write@txData txData `uc  1 p 1 wreg ]
-[v UART1_Write@txData txData `uc  1 p 1 0 ]
 "177
-} 0
-"3 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\floorf.c
-[v _floorf floorf `(f  1 e 4 0 ]
-{
-[u S4025 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
-"5
-[v floorf@u u `S4025  1 a 4 41 ]
-"7
-[v floorf@m m `ul  1 a 4 35 ]
-"6
-[v floorf@e e `i  1 a 2 39 ]
-"3
-[v floorf@x x `f  1 p 4 25 ]
-"4
-[v floorf@F521 F521 `S4025  1 s 4 F521 ]
-"27
-} 0
-"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__fpclassifyf.c
-[v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
-{
-[u S4025 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
-"6
-[v ___fpclassifyf@u u `S4025  1 a 4 10 ]
-"7
-[v ___fpclassifyf@e e `i  1 a 2 8 ]
-"4
-[v ___fpclassifyf@x x `f  1 p 4 0 ]
-"5
-[v ___fpclassifyf@F465 F465 `S4025  1 s 4 F465 ]
-"11
-} 0
-"43 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
-[v ___fltol __fltol `(l  1 e 4 0 ]
-{
-"45
-[v ___fltol@exp1 exp1 `uc  1 a 1 9 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 8 ]
-"43
-[v ___fltol@f1 f1 `d  1 p 4 0 ]
-"70
-} 0
-"245 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
-[v ___flsub __flsub `(d  1 e 4 0 ]
-{
-[v ___flsub@b b `d  1 p 4 25 ]
-[v ___flsub@a a `d  1 p 4 29 ]
-"250
-} 0
-"10
-[v ___fladd __fladd `(d  1 e 4 0 ]
-{
-"17
-[v ___fladd@grs grs `uc  1 a 1 15 ]
-"15
-[v ___fladd@bexp bexp `uc  1 a 1 14 ]
-"16
-[v ___fladd@aexp aexp `uc  1 a 1 13 ]
-"13
-[v ___fladd@signs signs `uc  1 a 1 12 ]
-"10
-[v ___fladd@b b `d  1 p 4 0 ]
-[v ___fladd@a a `d  1 p 4 4 ]
-"237
-} 0
-"15 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flneg.c
-[v ___flneg __flneg `(d  1 e 4 0 ]
-{
-[v ___flneg@f1 f1 `d  1 p 4 0 ]
-"20
-} 0
-"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
-[v ___flmul __flmul `(d  1 e 4 0 ]
-{
-[s S3634 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
-"13
-[s S3639 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S3642 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3634 1 fAsBytes 4 0 `S3639 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S3642  1 a 4 19 ]
-"12
-[v ___flmul@grs grs `ul  1 a 4 14 ]
-[s S3710 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
-"14
-[u S3713 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3710 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S3713  1 a 2 23 ]
-"10
-[v ___flmul@bexp bexp `uc  1 a 1 18 ]
-"11
-[v ___flmul@aexp aexp `uc  1 a 1 13 ]
-"9
-[v ___flmul@sign sign `uc  1 a 1 12 ]
-"8
-[v ___flmul@b b `d  1 p 4 0 ]
-[v ___flmul@a a `d  1 p 4 4 ]
-"205
-} 0
-"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
-[v ___flge __flge `(b  1 e 0 0 ]
-{
-[v ___flge@ff1 ff1 `d  1 p 4 25 ]
-[v ___flge@ff2 ff2 `d  1 p 4 29 ]
-"19
-} 0
-"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fleq.c
-[v ___fleq __fleq `(b  1 e 0 0 ]
-{
-[v ___fleq@ff1 ff1 `d  1 p 4 0 ]
-[v ___fleq@ff2 ff2 `d  1 p 4 4 ]
-"12
-} 0
-"11 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcdiv.c
-[v ___fldiv __fldiv `(d  1 e 4 0 ]
-{
-"21
-[v ___fldiv@grs grs `ul  1 a 4 19 ]
-"22
-[v ___fldiv@rem rem `ul  1 a 4 12 ]
-"20
-[v ___fldiv@new_exp new_exp `s  1 a 2 17 ]
-"19
-[v ___fldiv@aexp aexp `uc  1 a 1 24 ]
-"18
-[v ___fldiv@bexp bexp `uc  1 a 1 23 ]
-"16
-[v ___fldiv@sign sign `uc  1 a 1 16 ]
-"11
-[v ___fldiv@b b `d  1 p 4 0 ]
-[v ___fldiv@a a `d  1 p 4 4 ]
-"185
-} 0
-"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
-[v ___awmod __awmod `(i  1 e 2 0 ]
-{
-"10
-[v ___awmod@sign sign `uc  1 a 1 5 ]
-[v ___awmod@counter counter `uc  1 a 1 4 ]
-"7
-[v ___awmod@dividend dividend `i  1 p 2 0 ]
-[v ___awmod@divisor divisor `i  1 p 2 2 ]
-"34
-} 0
-"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
-[v ___awdiv __awdiv `(i  1 e 2 0 ]
-{
-"10
-[v ___awdiv@quotient quotient `i  1 a 2 6 ]
-"11
-[v ___awdiv@sign sign `uc  1 a 1 5 ]
-[v ___awdiv@counter counter `uc  1 a 1 4 ]
-"7
-[v ___awdiv@dividend dividend `i  1 p 2 0 ]
-[v ___awdiv@divisor divisor `i  1 p 2 2 ]
-"41
-} 0
-"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-{
-"10
-[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
-"11
-[v ___lwdiv@counter counter `uc  1 a 1 4 ]
-"7
-[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
-[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
-"30
-} 0
-"333 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
-[v _CAN1_ReceivedMessageCountGet CAN1_ReceivedMessageCountGet `(uc  1 e 1 0 ]
-{
-"353
-[v CAN1_ReceivedMessageCountGet@fifoHead fifoHead `uc  1 a 1 8 ]
-"352
-[v CAN1_ReceivedMessageCountGet@fifoTail fifoTail `uc  1 a 1 7 ]
-"344
-[v CAN1_ReceivedMessageCountGet@fifoDepth fifoDepth `uc  1 a 1 6 ]
-[v CAN1_ReceivedMessageCountGet@numOfMsg numOfMsg `uc  1 a 1 3 ]
-"339
-[v CAN1_ReceivedMessageCountGet@channel channel `E23201  1 a 1 5 ]
-"340
-[v CAN1_ReceivedMessageCountGet@rxMsgStatus rxMsgStatus `E23196  1 a 1 4 ]
-"335
-[v CAN1_ReceivedMessageCountGet@index index `uc  1 a 1 9 ]
-[v CAN1_ReceivedMessageCountGet@totalMsgObj totalMsgObj `uc  1 a 1 2 ]
-"374
-} 0
-"294
-[v _CAN1_Receive CAN1_Receive `(a  1 e 1 0 ]
-{
-"306
-[v CAN1_Receive@rxFifoObj rxFifoObj `*.39uc  1 a 2 27 ]
-"301
-[v CAN1_Receive@channel channel `E23201  1 a 1 30 ]
-"302
-[v CAN1_Receive@rxMsgStatus rxMsgStatus `E23196  1 a 1 29 ]
-"296
-[v CAN1_Receive@index index `uc  1 a 1 31 ]
-"297
-[v CAN1_Receive@status status `a  1 a 1 26 ]
-[s S1434 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-"294
-[u S1440 . 1 `uc 1 msgfields 1 0 `S1434 1 . 1 0 ]
-[s S1443 . 7 `ul 1 msgId 4 0 `S1440 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v CAN1_Receive@rxCanMsg rxCanMsg `*.39S1443  1 p 2 22 ]
-"331
-} 0
-"260
-[v _ReadMessageFromFifo ReadMessageFromFifo `(v  1 s 1 ReadMessageFromFifo ]
-{
-"262
-[v ReadMessageFromFifo@msgId msgId `ul  1 a 4 17 ]
-"263
-[v ReadMessageFromFifo@status status `uc  1 a 1 21 ]
-"260
-[v ReadMessageFromFifo@rxFifoObj rxFifoObj `*.39uc  1 p 2 11 ]
-[s S1434 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-[u S1440 . 1 `uc 1 msgfields 1 0 `S1434 1 . 1 0 ]
-[s S1443 . 7 `ul 1 msgId 4 0 `S1440 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v ReadMessageFromFifo@rxCanMsg rxCanMsg `*.39S1443  1 p 2 13 ]
-"292
-} 0
-"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\memcpy.c
-[v _memcpy memcpy `(*.39v  1 e 3 0 ]
-{
-"8
-[v memcpy@s s `*.39Cuc  1 a 2 9 ]
-"7
-[v memcpy@d d `*.39uc  1 a 2 7 ]
-"9
-[v memcpy@tmp tmp `uc  1 a 1 6 ]
-"4
-[v memcpy@d1 d1 `*.39v  1 p 2 0 ]
-[v memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
-[v memcpy@n n `ui  1 p 2 4 ]
-"18
-} 0
-"255 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
-[v _GetRxFifoStatus GetRxFifoStatus `(E23196  1 s 1 GetRxFifoStatus ]
-{
-[v GetRxFifoStatus@validChannel validChannel `uc  1 p 1 wreg ]
-[v GetRxFifoStatus@validChannel validChannel `uc  1 p 1 wreg ]
-"257
-[v GetRxFifoStatus@validChannel validChannel `uc  1 p 1 0 ]
-"258
-} 0
-"250
-[v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
-{
-[v GetRxFifoDepth@validChannel validChannel `uc  1 p 1 wreg ]
-[v GetRxFifoDepth@validChannel validChannel `uc  1 p 1 wreg ]
-"252
-[v GetRxFifoDepth@validChannel validChannel `uc  1 p 1 1 ]
-"253
 } 0
 "54 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\LCD.c
 [v _LCD_init LCD_init `(v  1 e 1 0 ]
@@ -2612,9 +2477,9 @@ I2C1_FAIL 2
 [v _LCD_create_custom_char LCD_create_custom_char `(v  1 e 1 0 ]
 {
 "198
-[v LCD_create_custom_char@i_2900 i `i  1 a 2 51 ]
+[v LCD_create_custom_char@i_3156 i `i  1 a 2 51 ]
 "192
-[v LCD_create_custom_char@i_2899 i `i  1 a 2 49 ]
+[v LCD_create_custom_char@i_3155 i `i  1 a 2 49 ]
 "186
 [v LCD_create_custom_char@i i `i  1 a 2 47 ]
 "174
@@ -2624,11 +2489,11 @@ I2C1_FAIL 2
 "150
 [v LCD_create_custom_char@left left `C[8]uc  1 a 8 23 ]
 "145
-[v LCD_create_custom_char@F23609 F23609 `C[8]uc  1 s 8 F23609 ]
+[v LCD_create_custom_char@F23604 F23604 `C[8]uc  1 s 8 F23604 ]
 "150
-[v LCD_create_custom_char@F23611 F23611 `C[8]uc  1 s 8 F23611 ]
+[v LCD_create_custom_char@F23606 F23606 `C[8]uc  1 s 8 F23606 ]
 "163
-[v LCD_create_custom_char@F23613 F23613 `C[8]uc  1 s 8 F23613 ]
+[v LCD_create_custom_char@F23608 F23608 `C[8]uc  1 s 8 F23608 ]
 "202
 } 0
 "41
@@ -3034,17 +2899,17 @@ I2C1_FAIL 2
 {
 "814
 } 0
-"99 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\CAN_handler.c
+"83 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\CAN_handler.c
 [v _GetDashboardData GetDashboardData `(v  1 e 1 0 ]
 {
-[s S2528 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
-[v GetDashboardData@data data `*.39S2528  1 p 2 0 ]
-"101
+[s S2790 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
+[v GetDashboardData@data data `*.39S2790  1 p 2 0 ]
+"87
 } 0
 "58 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
-"81
+"85
 } 0
 "164 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/tmr3.c
 [v _TMR3_ISR TMR3_ISR `(v  1 e 1 0 ]
@@ -3062,10 +2927,10 @@ I2C1_FAIL 2
 {
 "183
 } 0
-"365 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
+"366 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
 [v _ButtonHoldTimer ButtonHoldTimer `(v  1 e 1 0 ]
 {
-"369
+"370
 } 0
 "189 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/tmr3.c
 [v _TMR3_DefaultInterruptHandler TMR3_DefaultInterruptHandler `(v  1 e 1 0 ]
@@ -3090,27 +2955,27 @@ I2C1_FAIL 2
 {
 "190
 } 0
-"372 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
+"373 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
 [v _RealTimeClockHandler RealTimeClockHandler `(v  1 e 1 0 ]
 {
-[s S2528 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
-"375
-[v RealTimeClockHandler@data data `S2528  1 a 10 20 ]
-"372
-[v RealTimeClockHandler@F23659 F23659 `S2528  1 s 10 F23659 ]
-"388
+[s S2790 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
+"376
+[v RealTimeClockHandler@data data `S2790  1 a 10 20 ]
+"373
+[v RealTimeClockHandler@F23655 F23655 `S2790  1 s 10 F23655 ]
+"389
 } 0
 "196 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/tmr1.c
 [v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "199
 } 0
-"99 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\CAN_handler.c
+"83 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\CAN_handler.c
 [v i2_GetDashboardData GetDashboardData `(v  1 e 1 0 ]
 {
-[s S2528 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
-[v i2GetDashboardData@data data `*.39S2528  1 p 2 0 ]
-"101
+[s S2790 . 10 `us 1 BMS_pack_current 2 0 `us 1 BMS_inst_volt 2 2 `uc 1 bms_soc 1 4 `uc 1 bms_high_temp 1 5 `uc 1 bms_low_temp 1 6 `uc 1 bms_avg_temp 1 7 `uc 1 bms_internal_temp 1 8 `uc 1 VCU_CTRL_State 1 9 ]
+[v i2GetDashboardData@data data `*.39S2790  1 p 2 0 ]
+"87
 } 0
 "15 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\power.c
 [v _power_sample_average power_sample_average `(v  1 e 1 0 ]
@@ -3161,10 +3026,10 @@ I2C1_FAIL 2
 {
 "173
 } 0
-"334 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
+"335 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\main.c
 [v _ButtonPressHandler ButtonPressHandler `(v  1 e 1 0 ]
 {
-"363
+"364
 } 0
 "185 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/pin_manager.c
 [v _IOCAF0_DefaultInterruptHandler IOCAF0_DefaultInterruptHandler `(v  1 e 1 0 ]
@@ -3185,9 +3050,9 @@ I2C1_FAIL 2
 {
 "1820
 [v i2vfprintf@cfmt cfmt `*.32uc  1 a 2 83 ]
-[s S3803 _IO_FILE 0 ]
+[s S3821 _IO_FILE 0 ]
 "1817
-[v i2vfprintf@fp fp `*.39S3803  1 p 2 57 ]
+[v i2vfprintf@fp fp `*.39S3821  1 p 2 57 ]
 [v i2vfprintf@fmt fmt `*.32Cuc  1 p 2 59 ]
 [v i2vfprintf@ap ap `*.39*.39v  1 p 2 61 ]
 "1840
@@ -3195,17 +3060,17 @@ I2C1_FAIL 2
 "1177
 [v i2_vfpfcnvrt vfpfcnvrt `(i  1 s 2 i2_vfpfcnvrt ]
 {
-[u S3857 . 8 `o 1 sint 8 0 `uo 1 uint 8 0 `d 1 f 4 0 ]
+[u S3875 . 8 `o 1 sint 8 0 `uo 1 uint 8 0 `d 1 f 4 0 ]
 "1188
-[v i2vfpfcnvrt@convarg convarg `S3857  1 a 8 73 ]
+[v i2vfpfcnvrt@convarg convarg `S3875  1 a 8 73 ]
 "1179
 [v i2vfpfcnvrt@cp cp `*.32uc  1 a 2 81 ]
 [v i2vfpfcnvrt@c c `uc  1 a 1 72 ]
 "1180
 [v i2vfpfcnvrt@done done `a  1 a 1 71 ]
-[s S3803 _IO_FILE 0 ]
+[s S3821 _IO_FILE 0 ]
 "1177
-[v i2vfpfcnvrt@fp fp `*.39S3803  1 p 2 51 ]
+[v i2vfpfcnvrt@fp fp `*.39S3821  1 p 2 51 ]
 [v i2vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 53 ]
 [v i2vfpfcnvrt@ap ap `*.39*.39v  1 p 2 55 ]
 "1814
@@ -3224,9 +3089,9 @@ I2C1_FAIL 2
 [v i2xtoa@d_nonzero d_nonzero `a  1 a 1 51 ]
 "1061
 [v i2xtoa@a a `uc  1 a 1 46 ]
-[s S3803 _IO_FILE 0 ]
+[s S3821 _IO_FILE 0 ]
 "1052
-[v i2xtoa@fp fp `*.39S3803  1 p 2 27 ]
+[v i2xtoa@fp fp `*.39S3821  1 p 2 27 ]
 [v i2xtoa@d d `uo  1 p 8 29 ]
 [v i2xtoa@x x `uc  1 p 1 37 ]
 "1153
@@ -3239,9 +3104,9 @@ I2C1_FAIL 2
 [v i2utoa@w w `i  1 a 2 47 ]
 "1005
 [v i2utoa@p p `i  1 a 2 45 ]
-[s S3803 _IO_FILE 0 ]
+[s S3821 _IO_FILE 0 ]
 "1001
-[v i2utoa@fp fp `*.39S3803  1 p 2 27 ]
+[v i2utoa@fp fp `*.39S3821  1 p 2 27 ]
 [v i2utoa@d d `uo  1 p 8 29 ]
 "1047
 } 0
@@ -3278,9 +3143,9 @@ I2C1_FAIL 2
 [v i2stoa@w w `i  1 a 2 19 ]
 "945
 [v i2stoa@p p `i  1 a 2 17 ]
-[s S3803 _IO_FILE 0 ]
+[s S3821 _IO_FILE 0 ]
 "942
-[v i2stoa@fp fp `*.39S3803  1 p 2 11 ]
+[v i2stoa@fp fp `*.39S3821  1 p 2 11 ]
 [v i2stoa@s s `*.39uc  1 p 2 13 ]
 "997
 } 0
@@ -3306,24 +3171,24 @@ I2C1_FAIL 2
 [v i2otoa@p p `i  1 a 2 45 ]
 "875
 [v i2otoa@t t `uc  1 a 1 47 ]
-[s S3803 _IO_FILE 0 ]
+[s S3821 _IO_FILE 0 ]
 "872
-[v i2otoa@fp fp `*.39S3803  1 p 2 27 ]
+[v i2otoa@fp fp `*.39S3821  1 p 2 27 ]
 [v i2otoa@d d `uo  1 p 8 29 ]
 "938
 } 0
 "587
 [v i2_efgtoa efgtoa `(i  1 s 2 i2_efgtoa ]
 {
-[u S3843 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
+[u S3861 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
 "592
-[v i2efgtoa@u u `S3843  1 a 4 45 ]
-[v i2efgtoa@g g `S3843  1 a 4 37 ]
+[v i2efgtoa@u u `S3861  1 a 4 45 ]
+[v i2efgtoa@g g `S3861  1 a 4 37 ]
 "591
 [v i2efgtoa@l l `d  1 a 4 32 ]
 [v i2efgtoa@h h `d  1 a 4 28 ]
 "592
-[v i2efgtoa@ou ou `S3843  1 a 4 22 ]
+[v i2efgtoa@ou ou `S3861  1 a 4 22 ]
 "590
 [v i2efgtoa@n n `i  1 a 2 49 ]
 [v i2efgtoa@i i `i  1 a 2 43 ]
@@ -3340,9 +3205,9 @@ I2C1_FAIL 2
 [v i2efgtoa@nmode nmode `uc  1 a 1 20 ]
 [v i2efgtoa@pp pp `uc  1 a 1 11 ]
 [v i2efgtoa@esign esign `uc  1 a 1 8 ]
-[s S3803 _IO_FILE 0 ]
+[s S3821 _IO_FILE 0 ]
 "587
-[v i2efgtoa@fp fp `*.39S3803  1 p 2 45 ]
+[v i2efgtoa@fp fp `*.39S3821  1 p 2 45 ]
 [v i2efgtoa@f f `d  1 p 4 47 ]
 [v i2efgtoa@c c `uc  1 p 1 51 ]
 "868
@@ -3363,9 +3228,9 @@ I2C1_FAIL 2
 [v i2dtoa@p p `i  1 a 2 47 ]
 "515
 [v i2dtoa@s s `uc  1 a 1 51 ]
-[s S3803 _IO_FILE 0 ]
+[s S3821 _IO_FILE 0 ]
 "513
-[v i2dtoa@fp fp `*.39S3803  1 p 2 27 ]
+[v i2dtoa@fp fp `*.39S3821  1 p 2 27 ]
 [v i2dtoa@d d `o  1 p 8 29 ]
 "583
 } 0
@@ -3405,9 +3270,9 @@ I2C1_FAIL 2
 "478
 [v i2ctoa@w w `i  1 a 2 17 ]
 [v i2ctoa@l l `i  1 a 2 15 ]
-[s S3803 _IO_FILE 0 ]
+[s S3821 _IO_FILE 0 ]
 "476
-[v i2ctoa@fp fp `*.39S3803  1 p 2 11 ]
+[v i2ctoa@fp fp `*.39S3821  1 p 2 11 ]
 [v i2ctoa@c c `uc  1 p 1 13 ]
 "509
 } 0
@@ -3434,9 +3299,9 @@ I2C1_FAIL 2
 [v i2atoa@sign sign `uc  1 a 1 38 ]
 [v i2atoa@pp pp `uc  1 a 1 19 ]
 [v i2atoa@esign esign `uc  1 a 1 12 ]
-[s S3803 _IO_FILE 0 ]
+[s S3821 _IO_FILE 0 ]
 "231
-[v i2atoa@fp fp `*.39S3803  1 p 2 45 ]
+[v i2atoa@fp fp `*.39S3821  1 p 2 45 ]
 [v i2atoa@f f `d  1 p 4 47 ]
 [v i2atoa@c c `uc  1 p 1 51 ]
 "472
@@ -3456,9 +3321,9 @@ I2C1_FAIL 2
 {
 "195
 [v i2pad@i i `i  1 a 2 25 ]
-[s S3803 _IO_FILE 0 ]
+[s S3821 _IO_FILE 0 ]
 "193
-[v i2pad@fp fp `*.39S3803  1 p 2 18 ]
+[v i2pad@fp fp `*.39S3821  1 p 2 18 ]
 [v i2pad@buf buf `*.39uc  1 p 2 20 ]
 [v i2pad@p p `i  1 p 2 22 ]
 "226
@@ -3481,18 +3346,18 @@ I2C1_FAIL 2
 [v i2fputs@c c `uc  1 a 1 15 ]
 "8
 [v i2fputs@s s `*.39Cuc  1 p 2 11 ]
-[u S3782 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
-[s S3785 _IO_FILE 11 `S3782 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v i2fputs@fp fp `*.39S3785  1 p 2 13 ]
+[u S3800 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
+[s S3803 _IO_FILE 11 `S3800 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v i2fputs@fp fp `*.39S3803  1 p 2 13 ]
 "19
 } 0
 "8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputc.c
 [v i2_fputc fputc `(i  1 e 2 0 ]
 {
 [v i2fputc@c c `i  1 p 2 2 ]
-[u S3782 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
-[s S3785 _IO_FILE 11 `S3782 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v i2fputc@fp fp `*.39S3785  1 p 2 4 ]
+[u S3800 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
+[s S3803 _IO_FILE 11 `S3800 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v i2fputc@fp fp `*.39S3803  1 p 2 4 ]
 "24
 } 0
 "184 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/uart1.c
@@ -3512,27 +3377,12 @@ I2C1_FAIL 2
 [v i2UART1_Write@txData txData `uc  1 p 1 0 ]
 "177
 } 0
-"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\memcpy.c
-[v i2_memcpy memcpy `(*.39v  1 e 3 0 ]
-{
-"8
-[v i2memcpy@s s `*.39Cuc  1 a 2 9 ]
-"7
-[v i2memcpy@d d `*.39uc  1 a 2 7 ]
-"9
-[v i2memcpy@tmp tmp `uc  1 a 1 6 ]
-"4
-[v i2memcpy@d1 d1 `*.39v  1 p 2 0 ]
-[v i2memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
-[v i2memcpy@n n `ui  1 p 2 4 ]
-"18
-} 0
 "3 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\floorf.c
 [v i2_floorf floorf `(f  1 e 4 0 ]
 {
-[u S4025 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S4043 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v i2floorf@u u `S4025  1 a 4 41 ]
+[v i2floorf@u u `S4043  1 a 4 41 ]
 "7
 [v i2floorf@m m `ul  1 a 4 35 ]
 "6
@@ -3544,9 +3394,9 @@ I2C1_FAIL 2
 "4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__fpclassifyf.c
 [v i2___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S4025 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S4043 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v i2___fpclassifyf@u u `S4025  1 a 4 10 ]
+[v i2___fpclassifyf@u u `S4043  1 a 4 10 ]
 "7
 [v i2___fpclassifyf@e e `i  1 a 2 8 ]
 "4
@@ -3595,17 +3445,17 @@ I2C1_FAIL 2
 "8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
 [v i2___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S3634 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S3652 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S3639 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S3642 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3634 1 fAsBytes 4 0 `S3639 1 fAsWords 4 0 ]
-[v i2___flmul@prod prod `S3642  1 a 4 19 ]
+[s S3657 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S3660 . 4 `l 1 i 4 0 `d 1 f 4 0 `S3652 1 fAsBytes 4 0 `S3657 1 fAsWords 4 0 ]
+[v i2___flmul@prod prod `S3660  1 a 4 19 ]
 "12
 [v i2___flmul@grs grs `ul  1 a 4 14 ]
-[s S3710 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S3728 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S3713 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3710 1 nAsBytes 2 0 ]
-[v i2___flmul@temp temp `S3713  1 a 2 23 ]
+[u S3731 . 2 `s 1 i 2 0 `us 1 n 2 0 `S3728 1 nAsBytes 2 0 ]
+[v i2___flmul@temp temp `S3731  1 a 2 23 ]
 "10
 [v i2___flmul@bexp bexp `uc  1 a 1 18 ]
 "11
@@ -3684,4 +3534,125 @@ I2C1_FAIL 2
 [v _TMR3_StartTimer TMR3_StartTimer `(v  1 e 1 0 ]
 {
 "103
+} 0
+"446 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
+[v _CAN1_RXI_ISR CAN1_RXI_ISR `(v  1 e 1 0 ]
+{
+"454
+} 0
+"111
+[v _DefaultFIFO1NotEmptyHandler DefaultFIFO1NotEmptyHandler `(v  1 s 1 DefaultFIFO1NotEmptyHandler ]
+{
+"113
+} 0
+"14 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\CAN_handler.c
+[v _ProcessCANMessage ProcessCANMessage `(v  1 e 1 0 ]
+{
+"62
+[v ProcessCANMessage@i_3234 i `uc  1 a 1 50 ]
+"43
+[v ProcessCANMessage@i_3233 i `uc  1 a 1 49 ]
+"26
+[v ProcessCANMessage@i i `uc  1 a 1 48 ]
+"19
+[v ProcessCANMessage@rx_buff rx_buff `[8]uc  1 a 8 40 ]
+"80
+} 0
+"317 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
+[v _CAN1_Receive CAN1_Receive `(a  1 e 1 0 ]
+{
+"319
+[v CAN1_Receive@index index `uc  1 a 1 35 ]
+"320
+[v CAN1_Receive@status status `a  1 a 1 34 ]
+[s S1495 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+"317
+[u S1501 . 1 `uc 1 msgfields 1 0 `S1495 1 . 1 0 ]
+[s S1504 . 7 `ul 1 msgId 4 0 `S1501 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v CAN1_Receive@rxCanMsg rxCanMsg `*.39S1504  1 p 2 32 ]
+"333
+} 0
+"285
+[v _Receive Receive `(a  1 s 1 Receive ]
+{
+[v Receive@index index `uc  1 p 1 wreg ]
+"292
+[v Receive@rxFifoObj rxFifoObj `*.39uc  1 a 2 28 ]
+"288
+[v Receive@rxMsgStatus rxMsgStatus `E23191  1 a 1 30 ]
+"287
+[v Receive@status status `a  1 a 1 27 ]
+"285
+[v Receive@index index `uc  1 p 1 wreg ]
+[v Receive@channel channel `E23155  1 p 1 22 ]
+[s S1495 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+[u S1501 . 1 `uc 1 msgfields 1 0 `S1495 1 . 1 0 ]
+[s S1504 . 7 `ul 1 msgId 4 0 `S1501 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v Receive@rxCanMsg rxCanMsg `*.39S1504  1 p 2 23 ]
+"287
+[v Receive@index index `uc  1 p 1 31 ]
+"315
+} 0
+"251
+[v _ReadMessageFromFifo ReadMessageFromFifo `(v  1 s 1 ReadMessageFromFifo ]
+{
+"253
+[v ReadMessageFromFifo@msgId msgId `ul  1 a 4 17 ]
+"254
+[v ReadMessageFromFifo@status status `uc  1 a 1 21 ]
+"251
+[v ReadMessageFromFifo@rxFifoObj rxFifoObj `*.39uc  1 p 2 11 ]
+[s S1495 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+[u S1501 . 1 `uc 1 msgfields 1 0 `S1495 1 . 1 0 ]
+[s S1504 . 7 `ul 1 msgId 4 0 `S1501 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v ReadMessageFromFifo@rxCanMsg rxCanMsg `*.39S1504  1 p 2 13 ]
+"283
+} 0
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\memcpy.c
+[v i2_memcpy memcpy `(*.39v  1 e 3 0 ]
+{
+"8
+[v i2memcpy@s s `*.39Cuc  1 a 2 9 ]
+"7
+[v i2memcpy@d d `*.39uc  1 a 2 7 ]
+"9
+[v i2memcpy@tmp tmp `uc  1 a 1 6 ]
+"4
+[v i2memcpy@d1 d1 `*.39v  1 p 2 0 ]
+[v i2memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
+[v i2memcpy@n n `ui  1 p 2 4 ]
+"18
+} 0
+"246 C:\Users\Adam\OneDrive - University of Southampton\Documents\Soton Uni Docs\sufst\dash-firmware\dash-firmware\COMP\dash-firmware.X\mcc_generated_files/can1.c
+[v _GetRxFifoStatus GetRxFifoStatus `(E23191  1 s 1 GetRxFifoStatus ]
+{
+[v GetRxFifoStatus@validChannel validChannel `uc  1 p 1 wreg ]
+[v GetRxFifoStatus@validChannel validChannel `uc  1 p 1 wreg ]
+"248
+[v GetRxFifoStatus@validChannel validChannel `uc  1 p 1 0 ]
+"249
+} 0
+"241
+[v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
+{
+[v GetRxFifoDepth@validChannel validChannel `uc  1 p 1 wreg ]
+[v GetRxFifoDepth@validChannel validChannel `uc  1 p 1 wreg ]
+"243
+[v GetRxFifoDepth@validChannel validChannel `uc  1 p 1 1 ]
+"244
 } 0

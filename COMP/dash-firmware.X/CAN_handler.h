@@ -22,7 +22,7 @@ typedef struct {
     uint8_t VCU_CTRL_State;       // VCU control state (8-bit, Intel)
 } DashboardData_t;
 
-void ProcessCANMessages(void);
+void ProcessCANMessage(void);
 void GetDashboardData(DashboardData_t *data);
 
 #endif // CAN_HANDLER_H
