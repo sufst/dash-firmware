@@ -1,6 +1,8 @@
 <h1 align="center"> Dashboard Firmware </h2>
 
-# 🤖 About
+README to be updated for STAG-12. Relevant to STAG-11
+
+# 🤖 About 
 
 This repository contains the firmware that is run on the PIC18F47Q84 to display text to the driver via an LCD and 7-Segment displays.
 
@@ -8,18 +10,18 @@ This repository contains the firmware that is run on the PIC18F47Q84 to display 
 ![screenshot](https://github.com/user-attachments/assets/59248495-54ed-4f21-b953-4582fcb83004)
 
 
-<<<<<<< Updated upstream
 LCD Shows startup screen, then prompts the driver to press TSON and R2D buttons. The LCD also shows the current VCU state and errors, and when the car is in the driving state, it will display critical system information such as temperature and power.
-=======
-LCD Shows startup screen, then prompts the driver to press TSON and R2D buttons, before then showing critical system information including:
-  - BMS_Average_Temperature (msg ID 0x202)
->>>>>>> Stashed changes
 
 The dual 7-segment displays display the BMS State of Charge.
 
 Some features of the dashboard including buttons and LEDs (warning and informational) are controlled via the VCU/TSAL not the PIC microcontroller on the dash.
 
 This firmware was written in MPLAB X IDE, with MCC code generation to handle implementation of I2C and CAN.
+
+
+# 🚫 Issues
+
+LCD is slow / or most recent CAN information fails to be processed causing the display not to show the correct information. Works when Accumulator is not in the car so likely overrunning the CAN bus receive register and missing messages.
 
 # 📝 How to Build and Program
 
