@@ -98,6 +98,8 @@ void main(void)
     
     TMR1_SetInterruptHandler(RealTimeClockHandler);
     TMR0_SetInterruptHandler(animation_isr);
+    
+    CAN1_SetFIFO1NotEmptyHandler(ProcessCANMessage);
 
     // Enable global interrupts
     INTERRUPT_GlobalInterruptEnable();
@@ -116,10 +118,9 @@ void main(void)
     
     
     while(1){
-        ProcessCANMessages();
         GetDashboardData(&data);
         
-        seg_display_digits(data.bms_soc / 2); // /2 due to factor
+        seg_display_digits(data.bms_soc /2); //divide by 2 due to factor
         
         switch (data.VCU_CTRL_State)
         {
